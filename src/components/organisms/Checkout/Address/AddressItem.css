@@ -1,0 +1,75 @@
+/* Contenedor principal de cada dirección */
+.address-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--gap);
+  margin-bottom: var(--gap);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--surface);
+  transition: all 0.2s ease;
+}
+
+/* Efecto de sombra al hacer hover en la dirección */
+.address-item:hover {
+  box-shadow: var(--elev-2);
+}
+
+/* Eliminamos el estilo de contenedor para .default para evitar confusión con .selected */
+/* El badge es suficiente indicador */
+
+/* Estilos para la dirección seleccionada */
+.address-item.selected {
+  border-color: var(--primary);
+  background-color: color-mix(in srgb, var(--primary) 10%, var(--surface));
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+/* Título de la dirección */
+.address-content h4 {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+/* Texto de la dirección */
+.address-content p {
+  margin: 4px 0;
+  color: #666;
+}
+
+/* Badge para indicar dirección predeterminada */
+.default-badge {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* Contenedor de los botones de acción (seleccionar, editar, eliminar) */
+.address-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Estilos para los botones de acción */
+.address-actions button {
+  min-width: 100px;
+}
+
+@media (max-width: 600px) {
+  .address-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+  }
+  .address-content h4 {
+    font-size: 1rem;
+  }
+  .address-content p {
+    font-size: 0.95em;
+  }
+}

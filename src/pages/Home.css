@@ -1,0 +1,54 @@
+/* Estilo madera para la página principal */
+.home-banner {
+  border-radius: 16px;
+  box-shadow: var(--sombra-madera);
+  margin-bottom: 32px;
+/*
+  Archivo: Home.css
+  Descripción: Estilos para la página principal del ecommerce.
+  Incluye estilos para el banner, título de la lista y grid de productos, además de responsividad para dispositivos móviles.
+*/
+}
+
+.home-list-title {
+  font-family: var(--fuente-titulo);
+  color: var(--madera-oscuro);
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(166, 124, 82, 0.12);
+}
+
+.home-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  background: var(--beige);
+  border-radius: 16px;
+  box-shadow: var(--sombra-madera);
+  padding: 24px;
+}
+/* Estilos responsivos para móviles */
+@media (max-width: 600px) {
+  .home-container {
+    padding: 8px;
+  }
+  .product-list {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .product-card {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-products-grid {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+  .home-list-title {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,109 @@
+/* Estilos modernos para ecommerce de madera */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --madera-claro: #f5e9da;
+  --madera-oscuro: #a67c52;
+  --verde-suave: #b7c9a3;
+  --beige: #f9f6f2;
+  --marron: #7c5e3c;
+  --dorado: #c9a063;
+  --gris-suave: #ececec;
+  --fuente-titulo: 'Playfair Display', serif;
+  --fuente-texto: 'Montserrat', sans-serif;
+  --sombra-madera: 0 4px 16px rgba(166, 124, 82, 0.15);
+  --borde-madera: 2px solid #a67c52;
+}
+
+body {
+  background: var(--madera-claro);
+  color: var(--marron);
+  font-family: var(--fuente-texto);
+}
+
+h1, h2, h3, .h1, .h2 {
+  font-family: var(--fuente-titulo);
+  color: var(--madera-oscuro);
+  letter-spacing: 1px;
+}
+
+.card {
+  background: var(--beige);
+  border: var(--borde-madera);
+  border-radius: 12px;
+  box-shadow: var(--sombra-madera);
+  padding: 20px;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(166, 124, 82, 0.25);
+}
+
+.button, button {
+  background: var(--madera-oscuro);
+  color: var(--beige);
+  font-family: var(--fuente-texto);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: var(--sombra-madera);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.button:hover, button:hover {
+  background: var(--dorado);
+  color: var(--marron);
+  box-shadow: 0 6px 24px rgba(166, 124, 82, 0.18);
+}
+
+input, select, textarea {
+  border: var(--borde-madera);
+  border-radius: 6px;
+  padding: 8px;
+  font-family: var(--fuente-texto);
+  background: var(--gris-suave);
+  color: var(--marron);
+}
+
+.navbar {
+  background: var(--madera-oscuro);
+  color: var(--beige);
+  font-family: var(--fuente-titulo);
+  box-shadow: var(--sombra-madera);
+  padding: 16px 0;
+}
+
+.navbar a {
+  color: var(--beige);
+  text-decoration: none;
+  margin: 0 16px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: var(--dorado);
+}
+
+/* Detalles decorativos */
+.decor-madera {
+  background: repeating-linear-gradient(135deg, #f5e9da, #a67c52 20px, #f5e9da 40px);
+  border-radius: 16px;
+  box-shadow: var(--sombra-madera);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    padding: 12px;
+  }
+  .navbar {
+    padding: 8px 0;
+  }
+  h1, .h1 {
+    font-size: 2rem;
+  }
+}

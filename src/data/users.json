@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "67fc9bda370302bf46079352",
+    "displayName": "José de Jesús Acutía",
+    "email": "cliente@email.com",
+    "role": "customer",
+    "avatar": "/assets/avatar-88.svg",
+    "isActive": true
+  },
+  {
+    "_id": "67fc9bda370302bf46079350",
+    "displayName": "Admin User",
+    "email": "admin@email.com",
+    "role": "admin",
+    "avatar": "/assets/avatar-80.svg",
+    "isActive": true
+  }
+]

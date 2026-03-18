@@ -1,0 +1,193 @@
+
+/* 1) Reset mínimo y tipografía */
+/* Aplica box-sizing a todos los elementos para evitar problemas de tamaño */
+* {
+  box-sizing: border-box;
+}
+/* Establece altura completa para html y body */
+html,
+body {
+  height: 100%;
+}
+/* Estilos base del body: tipografía, colores y fondo */
+body {
+  margin: 0; /* Elimina el margen por defecto */
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .container {
+    padding: 8px;
+    width: 100%;
+  }
+  h1, h2, h3 {
+    font-size: 1.2rem;
+  }
+}
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol"; /* Fuentes modernas y de sistema */
+  font-size: 14px; /* Tamaño base de fuente */
+  line-height: 1.5; /* Altura de línea para legibilidad */
+  font-weight: 400; /* Peso normal */
+  background: var(--bg); /* Fondo según tema */
+  color: var(--text); /* Color de texto según tema */
+  -webkit-font-smoothing: antialiased; /* Suavizado en Webkit */
+  -moz-osx-font-smoothing: grayscale; /* Suavizado en Firefox */
+}
+
+/* 2) Variables CSS completas */
+/* Define variables globales para colores, tema y diseño */
+:root {
+  --navigation-bg: #c9a063; /* Fondo de navegación */
+  /* Colores madera y cálidos */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-madera-claro: #f5e9da;
+  --color-madera-oscuro: #a67c52;
+  --color-beige: #f9f6f2;
+  --color-marron: #7c5e3c;
+  --color-dorado: #c9a063;
+  --color-verde-suave: #b7c9a3;
+  --color-gris-suave: #ececec;
+  --color-rojo: #dc2626;
+  --color-light-gray: #ededed;
+  --color-strong-gray: #d1d2d2;
+  --color-gray: #6b7280;
+  --color-dark: #1f2937;
+  --color-darker: #111827;
+
+  /* Tema claro madera */
+  --bg: var(--color-madera-claro); /* Fondo principal */
+  --surface: var(--color-beige); /* Fondo de tarjetas */
+  --text: var(--color-marron); /* Color de texto */
+  --muted: #a67c52; /* Color secundario */
+  --border: #c9a063; /* Color de borde */
+  --accent: var(--color-dorado); /* Color de acento */
+  --accent-contrast: #ffffff; /* Contraste de acento */
+  --accent-rgb: 201, 160, 99; /* RGB de acento */
+
+  /* Variables adicionales para diseño */
+  --radius: 8px; /* Radio de borde estándar */
+  --r1: 4px;
+  --r2: 6px;
+  --r3: 8px;
+  --r4: 12px;
+  --r5: 16px;
+  --gap: 16px; /* Espaciado estándar */
+
+  /* Elevaciones para sombras */
+  --elev-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --elev-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  --elev-3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  --elev-4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  --elev-5: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+/* Tema oscuro: redefine variables para modo dark */
+:root[data-theme="dark"] {
+  --bg: #7c5e3c; /* Fondo oscuro */
+  --surface: #a67c52; /* Superficie oscura */
+    /* Colores madera y cálidos personalizados */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-cafe: #7c5e3c;
+    --color-dorado-mostaza: #c9a063;
+    --color-camel: #d2b48c;
+      --bg: var(--color-cafe); /* Fondo principal oscuro */
+      --surface: var(--color-camel); /* Fondo de tarjetas oscuro */
+      --text: var(--color-durazno); /* Color de texto oscuro */
+      --muted: var(--color-dorado-mostaza); /* Color secundario */
+      --border: var(--color-cafe); /* Borde oscuro */
+      --accent: var(--color-dorado-mostaza); /* Acento oscuro */
+      --accent-contrast: #7c5e3c; /* Contraste de acento */
+      --accent-rgb: 201, 160, 99; /* RGB de acento */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid responsivo */
+}
+
+/* Utilidades flexbox */
+.flex {
+  display: flex; /* Activa flexbox */
+  gap: clamp(12px, 2vw, 16px); /* Espaciado adaptable */
+}
+.flex-col {
+  flex-direction: column; /* Dirección columna */
+}
+.flex-center {
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+}
+.flex-between {
+  justify-content: space-between; /* Espacia entre extremos */
+}
+.flex-wrap {
+  flex-wrap: wrap; /* Permite salto de línea */
+}
+
+/* Oculta elementos visualmente */
+.hidden {
+  display: none !important;
+}
+
+/* Tipografía para títulos y textos secundarios */
+.h1 {
+  font-size: clamp(30px, 4vw, 38px); /* Tamaño adaptable */
+  font-weight: 700; /* Negrita */
+  margin: 0 0 12px; /* Espaciado inferior */
+  letter-spacing: -0.8px; /* Espaciado entre letras */
+  line-height: 1.2; /* Altura de línea */
+}
+
+.h2 {
+  font-size: clamp(24px, 3vw, 30px); /* Tamaño adaptable */
+  font-weight: 600; /* Seminegrita */
+  margin: 0 0 8px; /* Espaciado inferior */
+  letter-spacing: -0.4px; /* Espaciado entre letras */
+  line-height: 1.3; /* Altura de línea */
+}
+
+.muted {
+  color: var(--muted); /* Color secundario */
+  font-weight: 400; /* Peso normal */
+}
+
+/* Estilos base para tarjetas */
+.card {
+  background: var(--surface); /* Fondo de tarjeta */
+  border: 1px solid var(--border); /* Borde de tarjeta */
+  border-radius: var(--radius); /* Bordes redondeados */
+  box-shadow: var(--elev-1); /* Sombra */
+  padding: 16px; /* Espaciado interno */
+}
+
+/* Focus y accesibilidad para elementos interactivos */
+:where(button, input, select, textarea, a):focus-visible {
+  outline: 2px solid var(--accent); /* Borde de enfoque */
+  outline-offset: 2px; /* Separación del borde */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos para enlaces */
+a {
+  color: var(--accent); /* Color de acento */
+  transition: all 0.2s ease; /* Transición suave */
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent) 80%, black); /* Mezcla de color en hover */
+}
+
+/* Tema oscuro específico para enlaces */
+[data-theme="dark"] a:hover {
+  color: color-mix(in srgb, var(--accent) 80%, white); /* Mezcla de color en hover modo oscuro */
+}
+
+/* Responsive base para grids */
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas adaptables */
+  }
+}

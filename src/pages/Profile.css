@@ -1,0 +1,114 @@
+
+/* Contenedor principal del perfil */
+.profile-container {
+  max-width: 600px; /* Limita el ancho máximo */
+  margin: 40px auto; /* Centra el contenedor verticalmente */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Tarjeta de perfil */
+.profile-card {
+  background: white; /* Fondo blanco */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  padding: 30px; /* Espaciado interno */
+}
+
+/* Título de la tarjeta de perfil */
+.profile-card h2 {
+  margin-bottom: 30px; /* Espacio debajo del título */
+  color: var(--text); /* Color de texto */
+  border-bottom: 2px solid var(--accent); /* Línea decorativa debajo */
+  padding-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Sección de información del perfil */
+.profile-info {
+  margin-bottom: 30px; /* Espacio debajo de la info */
+}
+
+/* Ítem de información individual */
+.info-item {
+  display: flex; /* Usa flexbox para alinear */
+  justify-content: space-between; /* Espacia los elementos */
+  align-items: center; /* Centra verticalmente */
+  padding: 12px 0; /* Espaciado vertical */
+  border-bottom: 1px solid var(--border); /* Línea divisoria */
+}
+
+/* Etiqueta de cada ítem de información */
+.info-item label {
+  font-weight: 500; /* Negrita */
+  color: var(--text); /* Color de texto */
+}
+
+/* Insignia de rol del usuario */
+.role-badge {
+  padding: 4px 8px; /* Espaciado interno */
+  border-radius: 12px; /* Bordes redondeados */
+  font-size: 12px; /* Tamaño de fuente pequeño */
+  font-weight: 500; /* Negrita */
+  text-transform: uppercase; /* Mayúsculas */
+}
+
+/* Insignia para rol admin */
+.role-badge.admin {
+  background-color: var(--color-verde-suave); /* Verde */
+  color: var(--color-darker); /* Texto negro para contraste en verde suave */
+}
+
+/* Insignia para rol cliente */
+.role-badge.cliente {
+  background-color: var(--accent); /* Acento/dorado */
+  color: var(--color-darker); /* Contraste */
+}
+
+/* Título de acciones del perfil */
+.profile-actions h3 {
+  margin-bottom: 15px; /* Espacio debajo del título */
+  color: var(--text); /* Color de texto */
+}
+
+/* Botón de acción en el perfil */
+.action-btn {
+  display: block; /* Ocupa todo el ancho */
+  width: 100%;
+  margin-bottom: 10px; /* Espacio entre botones */
+  padding: 12px; /* Espaciado interno */
+  background-color: var(--surface); /* Fondo tarjeta */
+  border: 1px solid var(--border); /* Borde estandar */
+  border-radius: 4px; /* Bordes redondeados */
+  color: var(--text);
+  cursor: pointer; /* Cursor de mano */
+  transition: all 0.2s; /* Transición suave */
+}
+
+/* Efecto hover para el botón de acción */
+.action-btn:hover {
+  background-color: color-mix(in srgb, var(--surface) 90%, black); /* Fondo más oscuro al pasar el mouse */
+  border-color: var(--accent); /* Borde de acento */
+}
+
+/* Estilos responsivos para móviles */
+@media (max-width: 600px) {
+  .profile-container {
+    padding: 8px;
+    margin: 16px auto;
+    width: 100%;
+  }
+  .profile-card {
+    padding: 12px;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .profile-card h2 {
+    font-size: 1.3rem;
+    padding-bottom: 6px;
+  }
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 0;
+  }
+}
+

@@ -1,0 +1,205 @@
+
+/*
+  Contenedor principal de la lista de productos.
+  Centra y limita el ancho.
+*/
+.list-container {
+  padding: var(--gap-lg, 32px) var(--gap-md, 20px);
+  max-width: var(--content-max-width, 1200px);
+  margin: 0 auto;
+}
+
+/* Encabezado de la lista */
+.list-header {
+  margin-bottom: var(--gap-lg, 32px);
+  text-align: center;
+}
+
+/* Título de la lista */
+.list-title {
+  font-family: var(--font-family, system-ui, sans-serif);
+  font-size: var(--text-2xl, 32px);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: var(--gap-md, 16px);
+}
+
+/* Controles de la lista (filtros, orden, etc) */
+.list-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+/* Grid de productos */
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .list-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .list-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* Lista vertical de productos */
+.list-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilos para cada ítem de la lista */
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-md, 20px);
+  padding: var(--gap-md, 20px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--elev-1);
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover en el ítem */
+.list-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--elev-2);
+  border-color: var(--accent);
+}
+
+/* Imagen del producto en el ítem */
+.list-item__image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Contenido textual del ítem */
+.list-item__content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Título del producto */
+.list-item__title {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+/* Descripción del producto */
+.list-item__description {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* Precio del producto */
+.list-item__price {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+/* Indicador de stock */
+.list-item__stock {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Stock disponible */
+.list-item__stock--in-stock {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Sin stock */
+.list-item__stock--out-of-stock {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Botón de acción en el ítem */
+.list-item__button {
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .list-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .list-item__image {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .list-item__button {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+}
+
+/* Fila de productos horizontal (scroll) */
+.list-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 24px; /* Espacio para el scrollbar */
+  padding-top: 10px; /* Espacio para el glow/hover superior */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ocultar barra de desplazamiento o estilizarla para un look más limpio */
+.list-row::-webkit-scrollbar {
+  height: 6px;
+}
+.list-row::-webkit-scrollbar-track {
+  background: rgba(200, 200, 200, 0.1);
+  border-radius: 10px;
+}
+.list-row::-webkit-scrollbar-thumb {
+  background: rgba(201, 160, 99, 0.5); /* Semi-transparent accent color */
+  border-radius: 10px;
+}
+.list-row::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+.list-row-item {
+  flex: 0 0 260px; /* Tamaño armónico para las tarjetas en horizontal */
+  scroll-snap-align: center;
+}

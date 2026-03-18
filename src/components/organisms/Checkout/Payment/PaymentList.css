@@ -1,0 +1,56 @@
+
+/*
+  Estilos para el contenedor principal de la lista de métodos de pago.
+  Centra y limita el ancho de la lista.
+*/
+.payment-list {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/*
+  Encabezado de la lista: título y botón de agregar.
+  Usa flex para distribuir los elementos.
+*/
+.payment-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Título del encabezado */
+.payment-list-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/*
+  Contenido de la lista: acomoda los ítems en columna y con espacio entre ellos.
+*/
+.payment-list-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .payment-list {
+    max-width: 100%;
+    padding: 8px;
+  }
+  .payment-list-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .payment-list-header h3 {
+    font-size: 1.1rem;
+  }
+  .payment-list-content {
+    gap: 8px;
+  }
+}

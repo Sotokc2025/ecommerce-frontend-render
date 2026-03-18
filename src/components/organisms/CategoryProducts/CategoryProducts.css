@@ -1,0 +1,112 @@
+/* Contenedor principal de la vista de productos por categoría */
+.category-products-root {
+  min-height: 60vh;
+  padding: calc(var(--gap) * 2) 0;
+}
+
+/* Contenedor de los productos y estructura interna */
+.category-products-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
+/* Encabezado de la categoría */
+.category-products-header {
+  margin-bottom: calc(var(--gap) * 2);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--gap);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--gap);
+}
+
+.category-products-sort {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: calc(var(--gap) * 1.5);
+}
+
+.category-products-sort label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.sort-select {
+  padding: 8px 16px;
+  border-radius: var(--radius-sm, 4px);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-base);
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.sort-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(var(--primary-rgb), 0.1);
+}
+
+/* Título de la categoría */
+.category-products-title {
+  margin-bottom: calc(var(--gap) * 1.5);
+}
+
+/* Estilos para el título principal de la categoría */
+.category-products-h1 {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 600;
+  margin: 0 0 var(--gap);
+  color: var(--text);
+  letter-spacing: -0.4px;
+}
+
+/* Estilos para el subtítulo de la categoría */
+.category-products-h2 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 500;
+  margin: 0 0 var(--gap);
+  color: var(--text);
+}
+
+/* Texto secundario o descripciones */
+.category-products-muted {
+  color: var(--muted);
+  margin: calc(var(--gap) * 0.5) 0;
+  font-size: 0.95rem;
+}
+
+
+
+/* Grid para mostrar los productos de la categoría */
+.category-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--gap);
+  margin-bottom: calc(var(--gap) * 2);
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .category-products-root {
+    padding: var(--gap) 0;
+  }
+
+  .category-products-header {
+    margin-bottom: var(--gap);
+  }
+
+  .category-subcategories-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .category-products-grid {
+    grid-template-columns: 1fr;
+  }
+}

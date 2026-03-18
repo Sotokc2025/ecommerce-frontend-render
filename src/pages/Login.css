@@ -1,0 +1,138 @@
+/*
+  Archivo: Login.css
+  Descripción: Estilos para la página y formulario de inicio de sesión.
+  Incluye estilos para el contenedor, tarjeta, formulario, inputs, mensajes de error y responsividad.
+*/
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+  padding: 20px;
+}
+
+.login-card {
+  background: var(--surface);
+  border-radius: 8px;
+  box-shadow: var(--elev-1);
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--text);
+}
+
+.demo-users {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.demo-users h4 {
+  margin: 0 0 10px 0;
+  color: var(--accent);
+}
+
+.user-demo {
+  margin-bottom: 5px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-contrast);
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #f44336;
+}
+
+.login-btn {
+  background-color: var(--accent);
+  color: var(--accent-contrast);
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--accent) 80%, black);
+}
+
+.login-btn:disabled {
+  background-color: var(--border);
+  cursor: not-allowed;
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .login-container {
+    padding: 8px;
+  }
+  .login-card {
+    padding: 16px;
+    max-width: 100%;
+  }
+  .demo-users {
+    padding: 8px;
+    font-size: 0.95em;
+  }
+}

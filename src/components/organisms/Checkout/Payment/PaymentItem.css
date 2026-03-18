@@ -1,0 +1,82 @@
+
+/*
+  Estilos para el ítem de método de pago.
+  Define la apariencia del contenedor principal, bordes, espaciado y fondo.
+*/
+.payment-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--gap);
+  margin-bottom: var(--gap);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--surface);
+  transition: all 0.2s ease;
+}
+
+/* Efecto hover para resaltar el ítem */
+.payment-item:hover {
+  box-shadow: var(--elev-2);
+}
+
+/*
+  Estilos para el ítem seleccionado.
+  Cambia el color del borde y el fondo para indicar selección.
+*/
+.payment-item.selected {
+  border-color: var(--primary);
+  background-color: color-mix(in srgb, var(--primary) 10%, var(--surface));
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+/* Título del método de pago */
+.payment-content h4 {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+/* Detalles del método de pago */
+.payment-content p {
+  margin: 4px 0;
+  color: #666;
+}
+
+/*
+  Badge para indicar método predeterminado.
+  Se muestra solo si el método es default.
+*/
+.default-badge {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* Contenedor de los botones de acción */
+.payment-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Estilo mínimo para los botones */
+.payment-actions button {
+  min-width: 100px;
+}
+
+@media (max-width: 600px) {
+  .payment-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+  }
+  .payment-content h4 {
+    font-size: 1rem;
+  }
+  .payment-content p {
+    font-size: 0.95em;
+  }
+}

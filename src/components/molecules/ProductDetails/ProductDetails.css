@@ -1,0 +1,132 @@
+/*
+  Contenedor principal del detalle de producto.
+  Centra el contenido y define ancho máximo.
+*/
+.product-details-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+/*
+  Migas de pan para navegación.
+  Espaciado y estilo de texto.
+*/
+.product-details-breadcrumb {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+  font-size: 1.05em;
+}
+
+/*
+  Área principal con imagen e información.
+  Usa grid para disposición responsiva.
+*/
+.product-details-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 32px;
+}
+
+/*
+  Contenedor de la imagen del producto.
+  Centra la imagen y aplica fondo y bordes.
+*/
+.product-details-image {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+  Imagen del producto, se adapta al contenedor.
+*/
+.product-details-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+/*
+  Información textual del producto.
+  Disposición en columna y separación.
+*/
+.product-details-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/*
+  Título del producto y categoría.
+*/
+.product-details-title {
+  margin-bottom: 8px;
+}
+
+/*
+  Categoría del producto, color atenuado.
+*/
+.product-details-category {
+  color: var(--muted);
+}
+
+/*
+  Descripción del producto.
+*/
+.product-details-description {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/*
+  Estado de stock y cantidad disponible.
+*/
+.product-details-stock {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/*
+  Precio del producto, destacado.
+*/
+.product-details-price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/*
+  Acciones: botones para agregar al carrito y ver carrito.
+*/
+.product-details-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 600px) {
+  .product-details-container {
+    padding: 8px 0;
+  }
+  .product-details-main {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px;
+  }
+  .product-details-image {
+    min-width: 100px;
+    min-height: 100px;
+    padding: 8px;
+  }
+}

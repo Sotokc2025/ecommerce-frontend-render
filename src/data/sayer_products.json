@@ -1,0 +1,4810 @@
+[
+  {
+    "name": "AQUA SEALER",
+    "price": 291.3,
+    "category": "Barnices Madera - Fondo Base Agua",
+    "imageUrl": "/assets/products/sayer/AQUA_SEALER_0.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Fondo Base Agua. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "FONDO FINITURA AQUA",
+    "price": 295.3,
+    "category": "Barnices Madera - Fondo Base Agua",
+    "imageUrl": "/assets/products/sayer/FONDO_FINITURA_AQUA_1.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Fondo Base Agua. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA RAPID FONDO-ACABADO BASE AGUA",
+    "price": 476.5,
+    "category": "Barnices Madera - Fondo Base Agua",
+    "imageUrl": "/assets/products/sayer/AQUA_RAPID_FONDO-ACABADO_BASE_AGUA_2.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Fondo Base Agua. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Barnices Madera - Fondo Base Agua",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_3.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Fondo Base Agua. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Barnices Madera - Fondo Base Agua",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_4.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Fondo Base Agua. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Barnices Madera - Fondo Base Agua",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_5.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Fondo Base Agua. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Barnices Madera - Fondo Base Agua",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_6.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Fondo Base Agua. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Barniz para madera-Fondo base agua",
+    "price": 0.0,
+    "category": "Barnices Madera - Fondo Base Agua",
+    "imageUrl": "/assets/products/sayer/Barniz_para_madera-Fondo_base_agua_7.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Fondo Base Agua. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Barnices Madera - Fondo Base Agua",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_8.jpg",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Fondo Base Agua. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Barnices Madera - Fondo Base Agua",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_9.jpg",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Fondo Base Agua. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_0.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_1.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_2.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_3.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERMEALACK SATINADO",
+    "price": 197.4,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/IMPERMEALACK_SATINADO_4.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "FONDO FINITURA AQUA",
+    "price": 295.3,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/FONDO_FINITURA_AQUA_5.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CHROMAWOOD AQUA BASE BLANCA",
+    "price": 327.4,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/CHROMAWOOD_AQUA_BASE_BLANCA_6.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA HARDENER",
+    "price": 414.48,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/AQUA_HARDENER_7.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK ALTO TRÁNSITO",
+    "price": 1520.0,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_ALTO_TRÁNSITO_8.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA RAPID FONDO-ACABADO BASE AGUA",
+    "price": 476.5,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/AQUA_RAPID_FONDO-ACABADO_BASE_AGUA_9.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_10.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_11.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_12.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_13.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Barniz para madera-Acabados",
+    "price": 0.0,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/Barniz_para_madera-Acabados_14.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_15.jpg",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Barnices Madera - Acabados",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_16.jpg",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Acabados. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK MATE DE COLOR",
+    "price": 361.8,
+    "category": "Barnices Madera - Exterior",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_MATE_DE_COLOR_0.jpg",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Exterior. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Barnices Madera - Exterior",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_1.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Exterior. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Barnices Madera - Exterior",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_2.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Exterior. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERMEALACK SATINADO",
+    "price": 197.4,
+    "category": "Barnices Madera - Exterior",
+    "imageUrl": "/assets/products/sayer/IMPERMEALACK_SATINADO_3.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Exterior. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LIMPIADOR PARA MADERA PASO 1",
+    "price": 789.2,
+    "category": "Barnices Madera - Exterior",
+    "imageUrl": "/assets/products/sayer/LIMPIADOR_PARA_MADERA_PASO_1_4.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Exterior. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ACONDICIONADOR PARA MADERA PASO 2",
+    "price": 201.5,
+    "category": "Barnices Madera - Exterior",
+    "imageUrl": "/assets/products/sayer/ACONDICIONADOR_PARA_MADERA_PASO_2_5.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Exterior. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Barnices Madera - Exterior",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_6.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Exterior. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Barnices Madera - Exterior",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_7.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Exterior. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Barnices Madera - Exterior",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_8.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Exterior. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Barnices Madera - Exterior",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_9.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Exterior. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Barnices para madera-Exterior",
+    "price": 0.0,
+    "category": "Barnices Madera - Exterior",
+    "imageUrl": "/assets/products/sayer/Barnices_para_madera-Exterior_10.jpg",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Exterior. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Barnices Madera - Exterior",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_11.jpg",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Exterior. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Barnices Madera - Exterior",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_12.jpg",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Exterior. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "TINTA AQUAGEL UNIVERSAL",
+    "price": 71.5,
+    "category": "Barnices Madera - Tintas",
+    "imageUrl": "/assets/products/sayer/TINTA_AQUAGEL_UNIVERSAL_0.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK MATE DE COLOR",
+    "price": 361.8,
+    "category": "Barnices Madera - Tintas",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_MATE_DE_COLOR_1.jpg",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA STAIN",
+    "price": 138.2,
+    "category": "Barnices Madera - Tintas",
+    "imageUrl": "/assets/products/sayer/AQUA_STAIN_2.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "TINTA HIDRO",
+    "price": 258.4,
+    "category": "Barnices Madera - Tintas",
+    "imageUrl": "/assets/products/sayer/TINTA_HIDRO_3.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Barnices Madera - Tintas",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_4.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Barnices Madera - Tintas",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_5.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Barnices Madera - Tintas",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_6.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Barnices Madera - Tintas",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_7.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Barnices para madera-Tintas",
+    "price": 0.0,
+    "category": "Barnices Madera - Tintas",
+    "imageUrl": "/assets/products/sayer/Barnices_para_madera-Tintas_8.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Barnices Madera - Tintas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_9.jpg",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Barnices Madera - Tintas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_10.jpg",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "RESANALACK",
+    "price": 45.28,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/RESANALACK_0.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Silack",
+    "price": 85.08,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/Silack_1.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MARCADORES PARA RETOQUE",
+    "price": 45.6,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/MARCADORES_PARA_RETOQUE_2.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ACEITE LIMPIADOR CON AROMA",
+    "price": 142.68,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/ACEITE_LIMPIADOR_CON_AROMA_3.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LUSTRADOR EN CREMA PARA MUEBLES",
+    "price": 100.31,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/LUSTRADOR_EN_CREMA_PARA_MUEBLES_4.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LIMPIADOR LIQUIDO PARA ELECTRÓNICOS",
+    "price": 11.9,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/LIMPIADOR_LIQUIDO_PARA_ELECTRÓNICOS_5.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CREMA QUITA PINTURA",
+    "price": 96.08,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/CREMA_QUITA_PINTURA_6.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SAYER GONE",
+    "price": 77.7,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/SAYER_GONE_7.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SILICÓN CRISTAL PARA MUEBLES",
+    "price": 77.5,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/SILICÓN_CRISTAL_PARA_MUEBLES_8.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LIMPIADOR DE ACERO INOXIDABLE",
+    "price": 23.22,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/LIMPIADOR_DE_ACERO_INOXIDABLE_9.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "GEL ANTIBACTERIAL",
+    "price": 7.4,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/GEL_ANTIBACTERIAL_10.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SAYER PINE",
+    "price": 230.8,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/SAYER_PINE_11.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT REVITALIZADOR DE MADERA DE COCINA",
+    "price": 473.7,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/KIT_REVITALIZADOR_DE_MADERA_DE_COCINA_12.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT RESTAURADOR TEKA OIL",
+    "price": 443.61,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/KIT_RESTAURADOR_TEKA_OIL_13.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_14.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_15.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_16.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_17.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Restauradores y limpiadores de madera",
+    "price": 0.0,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/Restauradores_y_limpiadores_de_madera_18.png",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_19.jpg",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Barnices Madera - Restauradores",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_20.jpg",
+    "description": "Producto profesional Sayer Lack - Barnices Madera - Restauradores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CONTRACTOR",
+    "price": 154.4,
+    "category": "Pinturas - Vinil Acrílicas",
+    "imageUrl": "/assets/products/sayer/CONTRACTOR_0.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Vinil Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PINTURA VINIL ACRILICA MAGICOLOR",
+    "price": 293.6,
+    "category": "Pinturas - Vinil Acrílicas",
+    "imageUrl": "/assets/products/sayer/PINTURA_VINIL_ACRILICA_MAGICOLOR_1.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Vinil Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PINTURA VINIL ACRILICA PROMASTER",
+    "price": 129.9,
+    "category": "Pinturas - Vinil Acrílicas",
+    "imageUrl": "/assets/products/sayer/PINTURA_VINIL_ACRILICA_PROMASTER_2.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Vinil Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PINTURA VINIL ACRILICA FACILITA BLANCO",
+    "price": 188.4,
+    "category": "Pinturas - Vinil Acrílicas",
+    "imageUrl": "/assets/products/sayer/PINTURA_VINIL_ACRILICA_FACILITA_BLANCO_3.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Vinil Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PINTURA VINIL ACRILICA EXTENXA PLUS",
+    "price": 378.4,
+    "category": "Pinturas - Vinil Acrílicas",
+    "imageUrl": "/assets/products/sayer/PINTURA_VINIL_ACRILICA_EXTENXA_PLUS_4.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Vinil Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Pinturas - Vinil Acrílicas",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_5.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Vinil Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Pinturas - Vinil Acrílicas",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_6.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Vinil Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Pinturas - Vinil Acrílicas",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_7.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Vinil Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Pinturas - Vinil Acrílicas",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_8.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Vinil Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Pinturas Vinil Acrílicas",
+    "price": 0.0,
+    "category": "Pinturas - Vinil Acrílicas",
+    "imageUrl": "/assets/products/sayer/Pinturas_Vinil_Acrílicas_9.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Vinil Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Pinturas - Vinil Acrílicas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_10.jpg",
+    "description": "Producto profesional Sayer Lack - Pinturas - Vinil Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Pinturas - Vinil Acrílicas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_11.jpg",
+    "description": "Producto profesional Sayer Lack - Pinturas - Vinil Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PINTURA 100% ACRILICA MÁXIMA",
+    "price": 148.9,
+    "category": "Pinturas - 100% Acrílicas",
+    "imageUrl": "/assets/products/sayer/PINTURA_100%_ACRILICA_MÁXIMA_0.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - 100% Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ULTRA PROFESIONAL",
+    "price": 181.7,
+    "category": "Pinturas - 100% Acrílicas",
+    "imageUrl": "/assets/products/sayer/ULTRA_PROFESIONAL_1.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - 100% Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ULTRA TOTAL ANTIBACTERIAL BLANCO",
+    "price": 183.0,
+    "category": "Pinturas - 100% Acrílicas",
+    "imageUrl": "/assets/products/sayer/ULTRA_TOTAL_ANTIBACTERIAL_BLANCO_2.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - 100% Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ULTRA NO MÁS MANCHAS BLANCO",
+    "price": 716.4,
+    "category": "Pinturas - 100% Acrílicas",
+    "imageUrl": "/assets/products/sayer/ULTRA_NO_MÁS_MANCHAS_BLANCO_3.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - 100% Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PINTURA 100% ACRILICA HIPOALERGÉNICA ANTIBACTERIAL",
+    "price": 2490.0,
+    "category": "Pinturas - 100% Acrílicas",
+    "imageUrl": "/assets/products/sayer/PINTURA_100%_ACRILICA_HIPOALERGÉNICA_ANTIBACTERIAL_4.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - 100% Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Pinturas - 100% Acrílicas",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_5.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - 100% Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Pinturas - 100% Acrílicas",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_6.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - 100% Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Pinturas - 100% Acrílicas",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_7.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - 100% Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Pinturas - 100% Acrílicas",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_8.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - 100% Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Pinturas 100% acrílicas",
+    "price": 0.0,
+    "category": "Pinturas - 100% Acrílicas",
+    "imageUrl": "/assets/products/sayer/Pinturas_100%_acrílicas_9.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - 100% Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Pinturas - 100% Acrílicas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_10.jpg",
+    "description": "Producto profesional Sayer Lack - Pinturas - 100% Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Pinturas - 100% Acrílicas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_11.jpg",
+    "description": "Producto profesional Sayer Lack - Pinturas - 100% Acrílicas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SELLA BLOCK FILLER",
+    "price": 682.1,
+    "category": "Pinturas - Selladores",
+    "imageUrl": "/assets/products/sayer/SELLA_BLOCK_FILLER_0.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Sellalack 10 a 1",
+    "price": 133.5,
+    "category": "Pinturas - Selladores",
+    "imageUrl": "/assets/products/sayer/Sellalack_10_a_1_1.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SELLALACK 5 A 1",
+    "price": 105.0,
+    "category": "Pinturas - Selladores",
+    "imageUrl": "/assets/products/sayer/SELLALACK_5_A_1_2.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SELLADOR PIGMENTADO",
+    "price": 406.0,
+    "category": "Pinturas - Selladores",
+    "imageUrl": "/assets/products/sayer/SELLADOR_PIGMENTADO_3.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SELLADOR CONTRA ALCALI",
+    "price": 261.5,
+    "category": "Pinturas - Selladores",
+    "imageUrl": "/assets/products/sayer/SELLADOR_CONTRA_ALCALI_4.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SAYER STOP",
+    "price": 963.6,
+    "category": "Pinturas - Selladores",
+    "imageUrl": "/assets/products/sayer/SAYER_STOP_5.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Pinturas - Selladores",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_6.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Pinturas - Selladores",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_7.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Pinturas - Selladores",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_8.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Pinturas - Selladores",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_9.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Selladores",
+    "price": 0.0,
+    "category": "Pinturas - Selladores",
+    "imageUrl": "/assets/products/sayer/Selladores_10.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Pinturas - Selladores",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_11.jpg",
+    "description": "Producto profesional Sayer Lack - Pinturas - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Pinturas - Selladores",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_12.jpg",
+    "description": "Producto profesional Sayer Lack - Pinturas - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROSAYER DTM BLANCO",
+    "price": 223.9,
+    "category": "Pinturas - Esmaltes",
+    "imageUrl": "/assets/products/sayer/HIDROSAYER_DTM_BLANCO_0.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Esmaltes. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROSAYER MAX DTM BLANCO BRILLANTE",
+    "price": 242.1,
+    "category": "Pinturas - Esmaltes",
+    "imageUrl": "/assets/products/sayer/HIDROSAYER_MAX_DTM_BLANCO_BRILLANTE_1.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Esmaltes. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROSAYER DTM PRIMARIO GRIS",
+    "price": 248.4,
+    "category": "Pinturas - Esmaltes",
+    "imageUrl": "/assets/products/sayer/HIDROSAYER_DTM_PRIMARIO_GRIS_2.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Esmaltes. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Pinturas - Esmaltes",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_3.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Esmaltes. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Pinturas - Esmaltes",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_4.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Esmaltes. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Pinturas - Esmaltes",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_5.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Esmaltes. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Pinturas - Esmaltes",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_6.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Esmaltes. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Pinturas-Esmaltes",
+    "price": 0.0,
+    "category": "Pinturas - Esmaltes",
+    "imageUrl": "/assets/products/sayer/Pinturas-Esmaltes_7.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Esmaltes. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Pinturas - Esmaltes",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_8.jpg",
+    "description": "Producto profesional Sayer Lack - Pinturas - Esmaltes. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Pinturas - Esmaltes",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_9.jpg",
+    "description": "Producto profesional Sayer Lack - Pinturas - Esmaltes. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PINTURA PARA PASTO",
+    "price": 76.7,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/PINTURA_PARA_PASTO_0.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PRIMER MAGNÉTICO",
+    "price": 242.6,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/PRIMER_MAGNÉTICO_1.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PINTURA PARA PIZARRON DE GIS NEGRO",
+    "price": 242.1,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/PINTURA_PARA_PIZARRON_DE_GIS_NEGRO_2.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ULTRA TOTAL ANTIBACTERIAL BLANCO",
+    "price": 183.0,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/ULTRA_TOTAL_ANTIBACTERIAL_BLANCO_3.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "TEXTURIZADO GRANO MEDIO BLANCO",
+    "price": 1010.8,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/TEXTURIZADO_GRANO_MEDIO_BLANCO_4.jpg",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ULTRA NO MÁS MANCHAS BLANCO",
+    "price": 716.4,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/ULTRA_NO_MÁS_MANCHAS_BLANCO_5.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PINTURA TRÁFICO BASE AGUA",
+    "price": 830.0,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/PINTURA_TRÁFICO_BASE_AGUA_6.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PINTURA 100% ACRILICA HIPOALERGÉNICA ANTIBACTERIAL",
+    "price": 2490.0,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/PINTURA_100%_ACRILICA_HIPOALERGÉNICA_ANTIBACTERIAL_7.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SAYER ONE-PASS",
+    "price": 749.6,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/SAYER_ONE-PASS_8.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "TEXTURIZADO GRANO FINO BLANCO",
+    "price": 1073.5,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/TEXTURIZADO_GRANO_FINO_BLANCO_9.jpg",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PINTURA PURIFICADORA DE AMBIENTES ANTIBACTERIAL",
+    "price": 2746.0,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/PINTURA_PURIFICADORA_DE_AMBIENTES_ANTIBACTERIAL_10.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_11.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_12.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_13.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_14.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Pinturas-Pinturas Especiales",
+    "price": 0.0,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/Pinturas-Pinturas_Especiales_15.png",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_16.jpg",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Pinturas - Especiales",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_17.jpg",
+    "description": "Producto profesional Sayer Lack - Pinturas - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SAYER CHALK PAINT",
+    "price": 81.73,
+    "category": "Chalk Paint - Pintura",
+    "imageUrl": "/assets/products/sayer/SAYER_CHALK_PAINT_0.png",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Pintura. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SAYER CHALK PAINT GLAZE COLORES",
+    "price": 74.35,
+    "category": "Chalk Paint - Pintura",
+    "imageUrl": "/assets/products/sayer/SAYER_CHALK_PAINT_GLAZE_COLORES_1.png",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Pintura. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Chalk Paint - Pintura",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_2.png",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Pintura. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Chalk Paint - Pintura",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_3.png",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Pintura. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Chalk Paint - Pintura",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_4.png",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Pintura. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Chalk Paint - Pintura",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_5.png",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Pintura. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Línea Chalk Paint-Pintura",
+    "price": 0.0,
+    "category": "Chalk Paint - Pintura",
+    "imageUrl": "/assets/products/sayer/Línea_Chalk_Paint-Pintura_6.png",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Pintura. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Chalk Paint - Pintura",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_7.jpg",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Pintura. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Chalk Paint - Pintura",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_8.jpg",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Pintura. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SAYER CHALK PAINT CERA DE COLOR",
+    "price": 136.28,
+    "category": "Chalk Paint - Ceras",
+    "imageUrl": "/assets/products/sayer/SAYER_CHALK_PAINT_CERA_DE_COLOR_0.png",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Ceras. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Chalk Paint - Ceras",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_1.png",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Ceras. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Chalk Paint - Ceras",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_2.png",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Ceras. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Chalk Paint - Ceras",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_3.png",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Ceras. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Chalk Paint - Ceras",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_4.png",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Ceras. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Línea Chalk Paint-Ceras",
+    "price": 0.0,
+    "category": "Chalk Paint - Ceras",
+    "imageUrl": "/assets/products/sayer/Línea_Chalk_Paint-Ceras_5.png",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Ceras. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Chalk Paint - Ceras",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_6.jpg",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Ceras. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Chalk Paint - Ceras",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_7.jpg",
+    "description": "Producto profesional Sayer Lack - Chalk Paint - Ceras. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER AISLAMAX FIBRADO 5 AÑOS",
+    "price": 919.6,
+    "category": "Impermeabilizantes - Acrílicos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_AISLAMAX_FIBRADO_5_AÑOS_0.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Acrílicos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER TAPA GRIETAS ACRÍLICO",
+    "price": 145.6,
+    "category": "Impermeabilizantes - Acrílicos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_TAPA_GRIETAS_ACRÍLICO_1.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Acrílicos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER AISLAMAX FIBRADO 3 AÑOS BLANCO",
+    "price": 769.5,
+    "category": "Impermeabilizantes - Acrílicos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_AISLAMAX_FIBRADO_3_AÑOS_BLANCO_2.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Acrílicos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER FACIL FIBRADO 5 AÑOS",
+    "price": 409.2,
+    "category": "Impermeabilizantes - Acrílicos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_FACIL_FIBRADO_5_AÑOS_3.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Acrílicos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER FACIL FIBRADO 15 AÑOS",
+    "price": 3136.9,
+    "category": "Impermeabilizantes - Acrílicos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_FACIL_FIBRADO_15_AÑOS_4.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Acrílicos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER SELLO ACRÍLICO",
+    "price": 225.6,
+    "category": "Impermeabilizantes - Acrílicos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_SELLO_ACRÍLICO_5.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Acrílicos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER FACIL FIBRADO 7 AÑOS",
+    "price": 490.8,
+    "category": "Impermeabilizantes - Acrílicos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_FACIL_FIBRADO_7_AÑOS_6.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Acrílicos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Impermeabilizantes - Acrílicos",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_7.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Acrílicos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Impermeabilizantes - Acrílicos",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_8.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Acrílicos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Impermeabilizantes - Acrílicos",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_9.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Acrílicos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Impermeabilizantes - Acrílicos",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_10.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Acrílicos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Impermeabilizantes Acrílicos",
+    "price": 0.0,
+    "category": "Impermeabilizantes - Acrílicos",
+    "imageUrl": "/assets/products/sayer/Impermeabilizantes_Acrílicos_11.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Acrílicos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Impermeabilizantes - Acrílicos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_12.jpg",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Acrílicos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Impermeabilizantes - Acrílicos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_13.jpg",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Acrílicos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER FLEX",
+    "price": 123.8,
+    "category": "Impermeabilizantes - Asfálticos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_FLEX_0.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Asfálticos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER ROLL 3.5 MM (SBS-FV)",
+    "price": 1359.6,
+    "category": "Impermeabilizantes - Asfálticos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_ROLL_3.5_MM_(SBS-FV)_1.jpg",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Asfálticos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER AQUA",
+    "price": 221.2,
+    "category": "Impermeabilizantes - Asfálticos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_AQUA_2.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Asfálticos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER ROLL 4.0 MM (SBS-FP)",
+    "price": 1989.3,
+    "category": "Impermeabilizantes - Asfálticos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_ROLL_4.0_MM_(SBS-FP)_3.jpg",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Asfálticos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER ROLL 3.0 MM ROJO (SBS-FV)",
+    "price": 1262.0,
+    "category": "Impermeabilizantes - Asfálticos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_ROLL_3.0_MM_ROJO_(SBS-FV)_4.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Asfálticos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER SEAL",
+    "price": 75.3,
+    "category": "Impermeabilizantes - Asfálticos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_SEAL_5.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Asfálticos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "GRAVILLA DE 1.5 KG",
+    "price": 77.55,
+    "category": "Impermeabilizantes - Asfálticos",
+    "imageUrl": "/assets/products/sayer/GRAVILLA_DE_1.5_KG_6.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Asfálticos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Impermeabilizantes - Asfálticos",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_7.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Asfálticos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Impermeabilizantes - Asfálticos",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_8.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Asfálticos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Impermeabilizantes - Asfálticos",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_9.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Asfálticos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Impermeabilizantes - Asfálticos",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_10.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Asfálticos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Impermeabilizantes Asfálticos",
+    "price": 0.0,
+    "category": "Impermeabilizantes - Asfálticos",
+    "imageUrl": "/assets/products/sayer/Impermeabilizantes_Asfálticos_11.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Asfálticos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Impermeabilizantes - Asfálticos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_12.jpg",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Asfálticos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Impermeabilizantes - Asfálticos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_13.jpg",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Asfálticos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER INMERSIÓN",
+    "price": 112.0,
+    "category": "Impermeabilizantes - Complementos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_INMERSIÓN_0.jpg",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER SELLACISTERNA",
+    "price": 1080.0,
+    "category": "Impermeabilizantes - Complementos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_SELLACISTERNA_1.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER INTEGRAL (aditivo para cemento)",
+    "price": 162.0,
+    "category": "Impermeabilizantes - Complementos",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_INTEGRAL_(aditivo_para_cemento)_2.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Impermeabilizantes - Complementos",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_3.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Impermeabilizantes - Complementos",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_4.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Impermeabilizantes - Complementos",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_5.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Impermeabilizantes - Complementos",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_6.png",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Impermeabilizantes Complementos",
+    "price": 0.0,
+    "category": "Impermeabilizantes - Complementos",
+    "imageUrl": "/assets/products/sayer/Impermeabilizantes_Complementos_7.jpg",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Impermeabilizantes - Complementos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_8.jpg",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Impermeabilizantes - Complementos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_9.jpg",
+    "description": "Producto profesional Sayer Lack - Impermeabilizantes - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PINTURA ESCOLAR KIDS",
+    "price": 5.54,
+    "category": "Línea Escolar - Pinturas",
+    "imageUrl": "/assets/products/sayer/PINTURA_ESCOLAR_KIDS_0.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CORRECTOR LÍQUIDO",
+    "price": 10.31,
+    "category": "Línea Escolar - Pinturas",
+    "imageUrl": "/assets/products/sayer/CORRECTOR_LÍQUIDO_1.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Línea Escolar - Pinturas",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_2.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Línea Escolar - Pinturas",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_3.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Línea Escolar - Pinturas",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_4.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Línea Escolar - Pinturas",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_5.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Linea Escolar-Pinturas",
+    "price": 0.0,
+    "category": "Línea Escolar - Pinturas",
+    "imageUrl": "/assets/products/sayer/Linea_Escolar-Pinturas_6.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Línea Escolar - Pinturas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_7.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Línea Escolar - Pinturas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_8.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SILICÓN LÍQUIDO EN FRÍO BASE AGUA",
+    "price": 9.75,
+    "category": "Línea Escolar - Pegamentos",
+    "imageUrl": "/assets/products/sayer/SILICÓN_LÍQUIDO_EN_FRÍO_BASE_AGUA_0.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pegamentos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KRAMA FACILITO ESCOLAR",
+    "price": 4.58,
+    "category": "Línea Escolar - Pegamentos",
+    "imageUrl": "/assets/products/sayer/KRAMA_FACILITO_ESCOLAR_1.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pegamentos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PEGASAYER BLANCO ESCOLAR",
+    "price": 7.06,
+    "category": "Línea Escolar - Pegamentos",
+    "imageUrl": "/assets/products/sayer/PEGASAYER_BLANCO_ESCOLAR_2.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pegamentos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LAPIZ ADHESIVO 3 PZAS PAQ BLISTER",
+    "price": 28.5,
+    "category": "Línea Escolar - Pegamentos",
+    "imageUrl": "/assets/products/sayer/LAPIZ_ADHESIVO_3_PZAS_PAQ_BLISTER_3.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pegamentos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Línea Escolar - Pegamentos",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_4.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pegamentos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Línea Escolar - Pegamentos",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_5.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pegamentos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Línea Escolar - Pegamentos",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_6.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pegamentos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Línea Escolar - Pegamentos",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_7.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pegamentos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Linea Escolar-Pegamentos",
+    "price": 0.0,
+    "category": "Línea Escolar - Pegamentos",
+    "imageUrl": "/assets/products/sayer/Linea_Escolar-Pegamentos_8.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pegamentos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Línea Escolar - Pegamentos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_9.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pegamentos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Línea Escolar - Pegamentos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_10.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Pegamentos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MÁSTER ACRÍLICO",
+    "price": 42.45,
+    "category": "Línea Escolar - Artísticas",
+    "imageUrl": "/assets/products/sayer/MÁSTER_ACRÍLICO_0.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Artísticas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "RETA RDANTE PARA ACRÍLICO",
+    "price": 36.35,
+    "category": "Línea Escolar - Artísticas",
+    "imageUrl": "/assets/products/sayer/RETA_RDANTE_PARA_ACRÍLICO_1.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Artísticas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LIMPIAFÁCIL",
+    "price": 50.3,
+    "category": "Línea Escolar - Artísticas",
+    "imageUrl": "/assets/products/sayer/LIMPIAFÁCIL_2.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Artísticas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LIMPIATODO OLEO",
+    "price": 29.83,
+    "category": "Línea Escolar - Artísticas",
+    "imageUrl": "/assets/products/sayer/LIMPIATODO_OLEO_3.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Artísticas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BARNIZ BRILLAMÁS",
+    "price": 85.8,
+    "category": "Línea Escolar - Artísticas",
+    "imageUrl": "/assets/products/sayer/BARNIZ_BRILLAMÁS_4.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Artísticas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ADELGAZANTE PARA BARNIZ BRILLAMÁS",
+    "price": 63.73,
+    "category": "Línea Escolar - Artísticas",
+    "imageUrl": "/assets/products/sayer/ADELGAZANTE_PARA_BARNIZ_BRILLAMÁS_5.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Artísticas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AGUARRÁS NATURAL DE PINO",
+    "price": 71.15,
+    "category": "Línea Escolar - Artísticas",
+    "imageUrl": "/assets/products/sayer/AGUARRÁS_NATURAL_DE_PINO_6.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Artísticas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BARNIZ DAMAR",
+    "price": 91.85,
+    "category": "Línea Escolar - Artísticas",
+    "imageUrl": "/assets/products/sayer/BARNIZ_DAMAR_7.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Artísticas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Línea Escolar - Artísticas",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_8.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Artísticas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Línea Escolar - Artísticas",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_9.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Artísticas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Línea Escolar - Artísticas",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_10.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Artísticas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Línea Escolar - Artísticas",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_11.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Artísticas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Línea escolar-Pinturas artísticas",
+    "price": 0.0,
+    "category": "Línea Escolar - Artísticas",
+    "imageUrl": "/assets/products/sayer/Línea_escolar-Pinturas_artísticas_12.png",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Artísticas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Línea Escolar - Artísticas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_13.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Artísticas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Línea Escolar - Artísticas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_14.jpg",
+    "description": "Producto profesional Sayer Lack - Línea Escolar - Artísticas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Metalack",
+    "price": 350.0,
+    "category": "Alta Decoración - Pinturas",
+    "imageUrl": "/assets/products/sayer/Metalack_0.jpg",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PINTURA APERLADA",
+    "price": 498.5,
+    "category": "Alta Decoración - Pinturas",
+    "imageUrl": "/assets/products/sayer/PINTURA_APERLADA_1.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PRIMUS",
+    "price": 456.4,
+    "category": "Alta Decoración - Pinturas",
+    "imageUrl": "/assets/products/sayer/PRIMUS_2.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Alta Decoración - Pinturas",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_3.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Alta Decoración - Pinturas",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_4.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Alta Decoración - Pinturas",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_5.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Alta Decoración - Pinturas",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_6.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Alta Decoración-Pinturas",
+    "price": 0.0,
+    "category": "Alta Decoración - Pinturas",
+    "imageUrl": "/assets/products/sayer/Alta_Decoración-Pinturas_7.jpg",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Alta Decoración - Pinturas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_8.jpg",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Alta Decoración - Pinturas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_9.jpg",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pinturas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MARMOLACK BASE BLANCA",
+    "price": 890.8,
+    "category": "Alta Decoración - Pastas",
+    "imageUrl": "/assets/products/sayer/MARMOLACK_BASE_BLANCA_0.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pastas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "TRAVERTINO ROMANO",
+    "price": 1104.0,
+    "category": "Alta Decoración - Pastas",
+    "imageUrl": "/assets/products/sayer/TRAVERTINO_ROMANO_1.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pastas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "STUCCO LEGGERO BLANCO",
+    "price": 1605.0,
+    "category": "Alta Decoración - Pastas",
+    "imageUrl": "/assets/products/sayer/STUCCO_LEGGERO_BLANCO_2.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pastas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Alta Decoración - Pastas",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_3.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pastas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Alta Decoración - Pastas",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_4.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pastas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Alta Decoración - Pastas",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_5.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pastas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Alta Decoración - Pastas",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_6.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pastas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Alta Decoración-Pastas Decorativas",
+    "price": 0.0,
+    "category": "Alta Decoración - Pastas",
+    "imageUrl": "/assets/products/sayer/Alta_Decoración-Pastas_Decorativas_7.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pastas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Alta Decoración - Pastas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_8.jpg",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pastas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Alta Decoración - Pastas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_9.jpg",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Pastas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Alta Decoración - Tintas",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_0.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Alta Decoración - Tintas",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_1.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Alta Decoración - Tintas",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_2.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Alta Decoración - Tintas",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_3.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Alta Decoración-Tintas",
+    "price": 0.0,
+    "category": "Alta Decoración - Tintas",
+    "imageUrl": "/assets/products/product_general.png",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Alta Decoración - Tintas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_5.jpg",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Alta Decoración - Tintas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_6.jpg",
+    "description": "Producto profesional Sayer Lack - Alta Decoración - Tintas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Vidrio Lack",
+    "price": 378.4,
+    "category": "Pintura para Vidrio",
+    "imageUrl": "/assets/products/sayer/Vidrio_Lack_0.png",
+    "description": "Producto profesional Sayer Lack - Pintura para Vidrio. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Vidriolack Traslucido",
+    "price": 1198.8,
+    "category": "Pintura para Vidrio",
+    "imageUrl": "/assets/products/sayer/Vidriolack_Traslucido_1.png",
+    "description": "Producto profesional Sayer Lack - Pintura para Vidrio. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Promotor para vidriolack",
+    "price": 550.15,
+    "category": "Pintura para Vidrio",
+    "imageUrl": "/assets/products/sayer/Promotor_para_vidriolack_2.jpg",
+    "description": "Producto profesional Sayer Lack - Pintura para Vidrio. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Catalizador para vidriolack",
+    "price": 493.43,
+    "category": "Pintura para Vidrio",
+    "imageUrl": "/assets/products/product_general.png",
+    "description": "Producto profesional Sayer Lack - Pintura para Vidrio. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Vidriolack Cobre",
+    "price": 1759.6,
+    "category": "Pintura para Vidrio",
+    "imageUrl": "/assets/products/sayer/Vidriolack_Cobre_4.png",
+    "description": "Producto profesional Sayer Lack - Pintura para Vidrio. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Vidriolack Kit Nacarado",
+    "price": 575.6,
+    "category": "Pintura para Vidrio",
+    "imageUrl": "/assets/products/sayer/Vidriolack_Kit_Nacarado_5.png",
+    "description": "Producto profesional Sayer Lack - Pintura para Vidrio. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Pintura para Vidrio",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_6.png",
+    "description": "Producto profesional Sayer Lack - Pintura para Vidrio. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Pintura para Vidrio",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_7.png",
+    "description": "Producto profesional Sayer Lack - Pintura para Vidrio. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Pintura para Vidrio",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_8.png",
+    "description": "Producto profesional Sayer Lack - Pintura para Vidrio. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Pintura para Vidrio",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_9.png",
+    "description": "Producto profesional Sayer Lack - Pintura para Vidrio. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Pintura para vidrio",
+    "price": 0.0,
+    "category": "Pintura para Vidrio",
+    "imageUrl": "/assets/products/sayer/Pintura_para_vidrio_10.png",
+    "description": "Producto profesional Sayer Lack - Pintura para Vidrio. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Pintura para Vidrio",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_11.jpg",
+    "description": "Producto profesional Sayer Lack - Pintura para Vidrio. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Pintura para Vidrio",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_12.jpg",
+    "description": "Producto profesional Sayer Lack - Pintura para Vidrio. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SAYER GLUE",
+    "price": 46.33,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/SAYER_GLUE_0.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PEGASAYER PRACTICO AMARILLO",
+    "price": 70.6,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/PEGASAYER_PRACTICO_AMARILLO_1.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SUPER CLAVO",
+    "price": 38.24,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/SUPER_CLAVO_2.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PEGASAYER FACILITO",
+    "price": 187.6,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/PEGASAYER_FACILITO_3.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ADHESIVO DE CONTACTO BASE AGUA",
+    "price": 362.7,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/ADHESIVO_DE_CONTACTO_BASE_AGUA_4.jpg",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PEGASAYER CARPINTERO",
+    "price": 28.33,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/PEGASAYER_CARPINTERO_5.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PEGASAYER DE CONTACTO",
+    "price": 40.55,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/PEGASAYER_DE_CONTACTO_6.jpg",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ADHESIVO DE CONTACTO BASE AGUA",
+    "price": 362.7,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/ADHESIVO_DE_CONTACTO_BASE_AGUA_7.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PEGASAYER PRÁCTICO",
+    "price": 70.6,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/PEGASAYER_PRÁCTICO_8.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PEGASAYER BLANCO",
+    "price": 28.33,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/PEGASAYER_BLANCO_9.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_10.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_11.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_12.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_13.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ADHESIVOS",
+    "price": 0.0,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/ADHESIVOS_14.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_15.jpg",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Adhesivos - General",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_16.jpg",
+    "description": "Producto profesional Sayer Lack - Adhesivos - General. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "COLORES PARA CEMENTO",
+    "price": 122.9,
+    "category": "Adhesivos - Construcción",
+    "imageUrl": "/assets/products/sayer/COLORES_PARA_CEMENTO_0.jpg",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Construcción. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "TEXTURIZADO GRANO MEDIO BLANCO",
+    "price": 1010.8,
+    "category": "Adhesivos - Construcción",
+    "imageUrl": "/assets/products/sayer/TEXTURIZADO_GRANO_MEDIO_BLANCO_1.jpg",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Construcción. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CORRE MIX",
+    "price": 611.8,
+    "category": "Adhesivos - Construcción",
+    "imageUrl": "/assets/products/sayer/CORRE_MIX_2.jpg",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Construcción. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "TEXTURIZADO GRANO FINO BLANCO",
+    "price": 1073.5,
+    "category": "Adhesivos - Construcción",
+    "imageUrl": "/assets/products/sayer/TEXTURIZADO_GRANO_FINO_BLANCO_3.jpg",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Construcción. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ADHESIVO PARA YESO",
+    "price": 98.2,
+    "category": "Adhesivos - Construcción",
+    "imageUrl": "/assets/products/sayer/ADHESIVO_PARA_YESO_4.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Construcción. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ADHESIVO PARA LA CONSTRUCCIÓN",
+    "price": 79.9,
+    "category": "Adhesivos - Construcción",
+    "imageUrl": "/assets/products/sayer/ADHESIVO_PARA_LA_CONSTRUCCIÓN_5.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Construcción. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "IMPERSAYER BOND",
+    "price": 122.0,
+    "category": "Adhesivos - Construcción",
+    "imageUrl": "/assets/products/sayer/IMPERSAYER_BOND_6.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Construcción. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Adhesivos - Construcción",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_7.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Construcción. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Adhesivos - Construcción",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_8.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Construcción. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Adhesivos - Construcción",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_9.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Construcción. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Adhesivos - Construcción",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_10.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Construcción. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Para la construcción",
+    "price": 0.0,
+    "category": "Adhesivos - Construcción",
+    "imageUrl": "/assets/products/sayer/Para_la_construcción_11.jpg",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Construcción. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Adhesivos - Construcción",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_12.jpg",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Construcción. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Adhesivos - Construcción",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_13.jpg",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Construcción. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SELLADOR T-REX",
+    "price": 325.0,
+    "category": "Adhesivos - Selladores",
+    "imageUrl": "/assets/products/sayer/SELLADOR_T-REX_0.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SILICON BAÑOS Y COCINAS",
+    "price": 106.5,
+    "category": "Adhesivos - Selladores",
+    "imageUrl": "/assets/products/sayer/SILICON_BAÑOS_Y_COCINAS_1.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SELLADOR POLIURETANO",
+    "price": 148.8,
+    "category": "Adhesivos - Selladores",
+    "imageUrl": "/assets/products/sayer/SELLADOR_POLIURETANO_2.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SELLADOR ACRILICO",
+    "price": 55.6,
+    "category": "Adhesivos - Selladores",
+    "imageUrl": "/assets/products/sayer/SELLADOR_ACRILICO_3.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SILICON",
+    "price": 110.2,
+    "category": "Adhesivos - Selladores",
+    "imageUrl": "/assets/products/sayer/SILICON_4.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Adhesivos - Selladores",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_5.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Adhesivos - Selladores",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_6.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Adhesivos - Selladores",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_7.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Adhesivos - Selladores",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_8.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Adhesivos-Selladores",
+    "price": 0.0,
+    "category": "Adhesivos - Selladores",
+    "imageUrl": "/assets/products/sayer/Adhesivos-Selladores_9.png",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Adhesivos - Selladores",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_10.jpg",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Adhesivos - Selladores",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_11.jpg",
+    "description": "Producto profesional Sayer Lack - Adhesivos - Selladores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "DESENGRASANTE PARA MOTOR",
+    "price": 252.0,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/DESENGRASANTE_PARA_MOTOR_0.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SHAMPOO PREMIUM",
+    "price": 61.79,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/SHAMPOO_PREMIUM_1.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SHAMPOO USO FRECUENTE",
+    "price": 251.6,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/SHAMPOO_USO_FRECUENTE_2.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLISH KR ABRILLANTADOR",
+    "price": 111.65,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/POLISH_KR_ABRILLANTADOR_3.png",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLISH DE CORTE",
+    "price": 122.9,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/POLISH_DE_CORTE_4.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PROTECTOR DE PIEL",
+    "price": 130.28,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/PROTECTOR_DE_PIEL_5.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MIRACLE BRIGHT",
+    "price": 319.95,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/MIRACLE_BRIGHT_6.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LIMPIADOR DE CRISTALES CONCENTRADO",
+    "price": 54.9,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/LIMPIADOR_DE_CRISTALES_CONCENTRADO_7.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SHAMPOO CON CARNAUBA",
+    "price": 132.89,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/SHAMPOO_CON_CARNAUBA_8.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLISH 3 EN 1 ALTO DESEMPEÑO",
+    "price": 627.75,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/POLISH_3_EN_1_ALTO_DESEMPEÑO_9.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CERA PROTECTORA",
+    "price": 121.68,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/CERA_PROTECTORA_10.png",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LIMPIADOR MULTIUSOS",
+    "price": 180.9,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/LIMPIADOR_MULTIUSOS_11.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "REVITAL KR",
+    "price": 228.4,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/REVITAL_KR_12.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_13.png",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_14.png",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_15.png",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_16.png",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Detallado Automotriz-Detallado",
+    "price": 0.0,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/Detallado_Automotriz-Detallado_17.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_18.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Automotriz - Detallado",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_19.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Detallado. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ANTIFOG",
+    "price": 64.85,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/ANTIFOG_0.png",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ESPONJA PARA ABRILLANTADO",
+    "price": 313.1,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/ESPONJA_PARA_ABRILLANTADO_1.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PAPEL PARA ENMASCARAR",
+    "price": 375.7,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/PAPEL_PARA_ENMASCARAR_2.png",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "GUANTE PARA LAVADO PROFESIONAL",
+    "price": 120.9,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/GUANTE_PARA_LAVADO_PROFESIONAL_3.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PLASTICO PARA ENMASCARAR",
+    "price": 519.5,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/PLASTICO_PARA_ENMASCARAR_4.png",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "APLICADOR PINTURA DE LLANTAS",
+    "price": 69.8,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/APLICADOR_PINTURA_DE_LLANTAS_5.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ESPONJA PARA ENCERAR",
+    "price": 313.1,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/ESPONJA_PARA_ENCERAR_6.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ESPONJA PARA PULIMENTO DE CORTE",
+    "price": 313.1,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/ESPONJA_PARA_PULIMENTO_DE_CORTE_7.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BORLA DE MICROLANA PROFESIONAL",
+    "price": 378.6,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/BORLA_DE_MICROLANA_PROFESIONAL_8.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PAD CON MICROABRASIVO PARA PULIDO",
+    "price": 779.1,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/PAD_CON_MICROABRASIVO_PARA_PULIDO_9.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "TOALLA DE MICROFIBRA",
+    "price": 613.7,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/TOALLA_DE_MICROFIBRA_10.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "TRAPO DE MICROFIBRA PARA VIDRIO CON TEXTURA",
+    "price": 59.9,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/TRAPO_DE_MICROFIBRA_PARA_VIDRIO_CON_TEXTURA_11.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "TRAPO DE MICROFIBRA PROFESIONAL",
+    "price": 118.2,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/TRAPO_DE_MICROFIBRA_PROFESIONAL_12.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_13.png",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_14.png",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_15.png",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_16.png",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Detallado Automotriz-Complementos",
+    "price": 0.0,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/Detallado_Automotriz-Complementos_17.png",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_18.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Automotriz - Complementos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_19.jpg",
+    "description": "Producto profesional Sayer Lack - Automotriz - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "METALITE OXI-PRIMER",
+    "price": 451.4,
+    "category": "Mantenimiento Industrial - Preparadores",
+    "imageUrl": "/assets/products/sayer/METALITE_OXI-PRIMER_0.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Preparadores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Mantenimiento Industrial - Preparadores",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_1.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Preparadores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Mantenimiento Industrial - Preparadores",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_2.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Preparadores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Mantenimiento Industrial - Preparadores",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_3.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Preparadores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Mantenimiento Industrial - Preparadores",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_4.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Preparadores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Mantenimiento industrial-Preparadores de superficie",
+    "price": 0.0,
+    "category": "Mantenimiento Industrial - Preparadores",
+    "imageUrl": "/assets/products/sayer/Mantenimiento_industrial-Preparadores_de_superficie_5.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Preparadores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Mantenimiento Industrial - Preparadores",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_6.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Preparadores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Mantenimiento Industrial - Preparadores",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_7.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Preparadores. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Mantenimiento Industrial - Anticorrosivos",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_0.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Anticorrosivos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Mantenimiento Industrial - Anticorrosivos",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_1.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Anticorrosivos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Mantenimiento Industrial - Anticorrosivos",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_2.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Anticorrosivos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Mantenimiento Industrial - Anticorrosivos",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_3.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Anticorrosivos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Mantenimiento Industrial-Primarios anticorrosivos",
+    "price": 0.0,
+    "category": "Mantenimiento Industrial - Anticorrosivos",
+    "imageUrl": "/assets/products/product_general.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Anticorrosivos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Mantenimiento Industrial - Anticorrosivos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_5.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Anticorrosivos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Mantenimiento Industrial - Anticorrosivos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_6.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Anticorrosivos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Mantenimiento Industrial - Piso",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_0.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Piso. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Mantenimiento Industrial - Piso",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_1.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Piso. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Mantenimiento Industrial - Piso",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_2.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Piso. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Mantenimiento Industrial - Piso",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_3.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Piso. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Mantenimiento Industrial-Piso",
+    "price": 0.0,
+    "category": "Mantenimiento Industrial - Piso",
+    "imageUrl": "/assets/products/product_general.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Piso. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Mantenimiento Industrial - Piso",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_5.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Piso. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Mantenimiento Industrial - Piso",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_6.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Piso. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "DRY FALL BASE AGUA",
+    "price": 2933.6,
+    "category": "Mantenimiento Industrial - Especiales",
+    "imageUrl": "/assets/products/sayer/DRY_FALL_BASE_AGUA_0.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Mantenimiento Industrial - Especiales",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_1.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Mantenimiento Industrial - Especiales",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_2.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Mantenimiento Industrial - Especiales",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_3.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Mantenimiento Industrial - Especiales",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_4.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Mantenimiento Industrial- Productos especiales",
+    "price": 0.0,
+    "category": "Mantenimiento Industrial - Especiales",
+    "imageUrl": "/assets/products/sayer/Mantenimiento_Industrial-_Productos_especiales_5.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Mantenimiento Industrial - Especiales",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_6.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Mantenimiento Industrial - Especiales",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_7.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Especiales. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ZAPATOS FLEXIBLES C/PICOS",
+    "price": 1285.5,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/ZAPATOS_FLEXIBLES_CPICOS_0.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "RODILLO FENÓLICO",
+    "price": 82.5,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/RODILLO_FENÓLICO_1.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "JALADOR GOMA DE 24\" LISA S/SOPORTE",
+    "price": 494.2,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/JALADOR_GOMA_DE_24_LISA_SSOPORTE_2.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "JALADOR GOMA 24\" DENTADO 3/16\" S/SOPORTE",
+    "price": 661.8,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/JALADOR_GOMA_24_DENTADO_316_SSOPORTE_3.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SET DE GUIAS DE ESPESOR METÁLICAS",
+    "price": 635.5,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/SET_DE_GUIAS_DE_ESPESOR_METÁLICAS_4.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "JALADOR CALIBRADO 12\" Y 24\"",
+    "price": 1537.6,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/JALADOR_CALIBRADO_12_Y_24_5.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LLANA DENTADA DE 1/4”",
+    "price": 817.1,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/LLANA_DENTADA_DE_14”_6.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "RODILLO DE PICOS",
+    "price": 1179.1,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/RODILLO_DE_PICOS_7.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MEZCLADOR ELÉCTRICO 2 VELOCIDADES",
+    "price": 4157.3,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/product_general.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MEDIDOR DE PELÍCULA HÚMEDA",
+    "price": 128.5,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/MEDIDOR_DE_PELÍCULA_HÚMEDA_9.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "FELPA EPOXY GLIDE",
+    "price": 61.5,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/product_general.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MANERAL DE VARILLA",
+    "price": 411.4,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/MANERAL_DE_VARILLA_11.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MANERAL HULK BOY PARA FELPA",
+    "price": 869.5,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/MANERAL_HULK_BOY_PARA_FELPA_12.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MANERAL MINI PARA FELPA",
+    "price": 76.5,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/MANERAL_MINI_PARA_FELPA_13.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PICOS DE REPUESTO",
+    "price": 157.9,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/PICOS_DE_REPUESTO_14.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_15.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_16.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_17.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_18.png",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Mantenimiento industrial-Complementos",
+    "price": 0.0,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/Mantenimiento_industrial-Complementos_19.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_20.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Mantenimiento Industrial - Complementos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_21.jpg",
+    "description": "Producto profesional Sayer Lack - Mantenimiento Industrial - Complementos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "RESANA-SANA",
+    "price": 57.0,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/RESANA-SANA_0.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BARRA RELLENADORA",
+    "price": 79.1,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/BARRA_RELLENADORA_1.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ESPÁTULA DE PLÁSTICO",
+    "price": 14.3,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/ESPÁTULA_DE_PLÁSTICO_2.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CEPILLO DE IXTLE BLANCO",
+    "price": 97.0,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/CEPILLO_DE_IXTLE_BLANCO_3.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PISTOLA CALAFATEADORA PARA SILICÓN Y SELLADOR",
+    "price": 116.0,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/PISTOLA_CALAFATEADORA_PARA_SILICÓN_Y_SELLADOR_4.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BARRA EPÓXICA CATALIZADA",
+    "price": 246.5,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/BARRA_EPÓXICA_CATALIZADA_5.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ESPÁTULA LÁMINA FLEXIBLE",
+    "price": 46.1,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/ESPÁTULA_LÁMINA_FLEXIBLE_6.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ESPÁTULA MULTIUSOS 5 EN 1",
+    "price": 119.1,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/ESPÁTULA_MULTIUSOS_5_EN_1_7.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LLANA DE ACERO INOXIDABLE",
+    "price": 1508.7,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/LLANA_DE_ACERO_INOXIDABLE_8.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ESPÁTULA DE ACERO INOXIDABLE",
+    "price": 98.4,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/ESPÁTULA_DE_ACERO_INOXIDABLE_9.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ESPATULA 9 EN 1",
+    "price": 173.4,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/ESPATULA_9_EN_1_10.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ESPÁTULA DE METAL CON PUNTA DE MARTILLO",
+    "price": 109.9,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/ESPÁTULA_DE_METAL_CON_PUNTA_DE_MARTILLO_11.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_12.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_13.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_14.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_15.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Reparación y Resane",
+    "price": 0.0,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/Accesorios-Reparación_y_Resane_16.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_17.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Accesorios - Reparación",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_18.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Reparación. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CEPILLO PARA PICAR PINTURA 45MM",
+    "price": 72.6,
+    "category": "Accesorios - Cepillos",
+    "imageUrl": "/assets/products/sayer/CEPILLO_PARA_PICAR_PINTURA_45MM_0.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cepillos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CEPILLO DE ALAMBRE CON ESPÁTULA",
+    "price": 43.5,
+    "category": "Accesorios - Cepillos",
+    "imageUrl": "/assets/products/sayer/CEPILLO_DE_ALAMBRE_CON_ESPÁTULA_1.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cepillos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CEPILLO PARA PICAR PINTURA 32MM",
+    "price": 83.7,
+    "category": "Accesorios - Cepillos",
+    "imageUrl": "/assets/products/sayer/CEPILLO_PARA_PICAR_PINTURA_32MM_2.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cepillos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CEPILLO COBRE MINI",
+    "price": 30.2,
+    "category": "Accesorios - Cepillos",
+    "imageUrl": "/assets/products/sayer/CEPILLO_COBRE_MINI_3.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cepillos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CEPILLO 3-1 LIMPIEZA",
+    "price": 113.1,
+    "category": "Accesorios - Cepillos",
+    "imageUrl": "/assets/products/sayer/CEPILLO_3-1_LIMPIEZA_4.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cepillos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Accesorios - Cepillos",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_5.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cepillos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Accesorios - Cepillos",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_6.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cepillos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Accesorios - Cepillos",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_7.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cepillos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Accesorios - Cepillos",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_8.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cepillos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Cepillos",
+    "price": 0.0,
+    "category": "Accesorios - Cepillos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Cepillos_9.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cepillos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Accesorios - Cepillos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_10.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cepillos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Accesorios - Cepillos",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_11.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cepillos. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BROCHA PELO DE CAMELLO",
+    "price": 21.9,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/BROCHA_PELO_DE_CAMELLO_0.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BROCHA NATURAL",
+    "price": 6.3,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/BROCHA_NATURAL_1.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BROCHA PINTOR",
+    "price": 19.8,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/BROCHA_PINTOR_2.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BROCHA STANDARD",
+    "price": 26.8,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/BROCHA_STANDARD_3.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BROCHA PREMIUM",
+    "price": 29.1,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/BROCHA_PREMIUM_4.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PINCEL ESCOLAR",
+    "price": 9.5,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/PINCEL_ESCOLAR_5.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BROCHA SCOUT",
+    "price": 11.5,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/BROCHA_SCOUT_6.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT DE 3 PINCELES",
+    "price": 42.2,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/KIT_DE_3_PINCELES_7.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BROCHA LA ACEITERA",
+    "price": 46.8,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/BROCHA_LA_ACEITERA_8.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BROCHA PROFESIONAL SINTETICA",
+    "price": 155.1,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/BROCHA_PROFESIONAL_SINTETICA_9.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BROCHA CALZOMINA (PARA IMPERMEABILIZAR)",
+    "price": 63.1,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/BROCHA_CALZOMINA_(PARA_IMPERMEABILIZAR)_10.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_11.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_12.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_13.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_14.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_15.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_16.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Accesorios - Brochas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_17.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Brochas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PLIEGO LIJA AGUA (USOS GENERALES)",
+    "price": 10.1,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/PLIEGO_LIJA_AGUA_(USOS_GENERALES)_0.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ESPONJA ABRASIVA",
+    "price": 20.0,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/ESPONJA_ABRASIVA_1.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LIJA PAPEL MADERA",
+    "price": 5.8,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/LIJA_PAPEL_MADERA_2.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LIJA TELA MARRON",
+    "price": 20.9,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/LIJA_TELA_MARRON_3.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LIJA PAPEL ESTERATO",
+    "price": 8.8,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/LIJA_PAPEL_ESTERATO_4.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BLOQUE ABRASIVO",
+    "price": 18.0,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/BLOQUE_ABRASIVO_5.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LIJA DISCO VELCRO",
+    "price": 11.0,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/LIJA_DISCO_VELCRO_6.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "FIBRA MARRÓN EXTRAFINO",
+    "price": 19.0,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/FIBRA_MARRÓN_EXTRAFINO_7.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BASE PARA LIJAR",
+    "price": 113.8,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/BASE_PARA_LIJAR_8.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BASE PARA LIJAR TIPO POSTE",
+    "price": 288.2,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/BASE_PARA_LIJAR_TIPO_POSTE_9.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LIJA DISCO VELCRO (REPINTADO AUTOMOTRIZ)",
+    "price": 11.0,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/LIJA_DISCO_VELCRO_(REPINTADO_AUTOMOTRIZ)_10.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LIJA TELA EN TIRA",
+    "price": 31.0,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/LIJA_TELA_EN_TIRA_11.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PLIEGO LIJA AGUA",
+    "price": 18.0,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/PLIEGO_LIJA_AGUA_12.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_13.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_14.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_15.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_16.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Lijas",
+    "price": 0.0,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Lijas_17.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_18.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Accesorios - Lijas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_19.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Lijas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT MANERAL, FELPA Y CHAROLA 9\"",
+    "price": 129.6,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/KIT_MANERAL,_FELPA_Y_CHAROLA_9_0.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ABRIDOR DE CUBETAS",
+    "price": 36.3,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/ABRIDOR_DE_CUBETAS_1.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "EXTENSIONES DE METAL",
+    "price": 42.0,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/EXTENSIONES_DE_METAL_2.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PISTOLA DE GRAVEDAD ASTURO Y VASO DE REPUESTO",
+    "price": 720.0,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/PISTOLA_DE_GRAVEDAD_ASTURO_Y_VASO_DE_REPUESTO_3.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PLASTI-PROTECTOR",
+    "price": 28.6,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/PLASTI-PROTECTOR_4.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CREATONE (CAJA C/20)",
+    "price": 210.0,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/CREATONE_(CAJA_C20)_5.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CINTA AZUL",
+    "price": 50.0,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/CINTA_AZUL_6.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "GUANTE AZUL NITRILO INDUSTRIAL",
+    "price": 9.7,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/GUANTE_AZUL_NITRILO_INDUSTRIAL_7.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "FELPA PREMIUM",
+    "price": 53.3,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/FELPA_PREMIUM_8.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ESQUINERO APLICADOR",
+    "price": 47.1,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/ESQUINERO_APLICADOR_9.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CINTA MASKING TAPE 18 X 50",
+    "price": 27.0,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/CINTA_MASKING_TAPE_18_X_50_10.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MEZCLADOR PROFESIONAL DE PINTURA",
+    "price": 36.3,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/MEZCLADOR_PROFESIONAL_DE_PINTURA_11.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CHAROLA NEGRA CON PATAS",
+    "price": 71.7,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/CHAROLA_NEGRA_CON_PATAS_12.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "GUANTE PARA PINTAR EN TUBULAR",
+    "price": 146.8,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/GUANTE_PARA_PINTAR_EN_TUBULAR_13.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CREATONE MULTICOLOR(CAJA C/20)",
+    "price": 210.0,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/CREATONE_MULTICOLOR(CAJA_C20)_14.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Escurridor multilata",
+    "price": 25.3,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/Escurridor_multilata_15.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_16.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_17.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_18.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_19.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_20.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_21.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Accesorios - Para pintar",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_22.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Para pintar. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ZAPATOS FLEXIBLES C/PICOS",
+    "price": 1285.5,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/ZAPATOS_FLEXIBLES_CPICOS_0.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MANERAL HULK BOY PARA FELPA",
+    "price": 869.5,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/MANERAL_HULK_BOY_PARA_FELPA_1.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MANERAL MINI PARA FELPA",
+    "price": 76.5,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/MANERAL_MINI_PARA_FELPA_2.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MANERAL DE VARILLA",
+    "price": 411.4,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/MANERAL_DE_VARILLA_3.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "FELPA EPOXY GLIDE",
+    "price": 61.5,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/product_general.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MEDIDOR DE PELÍCULA HÚMEDA",
+    "price": 128.5,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/MEDIDOR_DE_PELÍCULA_HÚMEDA_5.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MEZCLADOR ELÉCTRICO 2 VELOCIDADES",
+    "price": 4157.3,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/product_general.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PICOS DE REPUESTO",
+    "price": 157.9,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/PICOS_DE_REPUESTO_7.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LLANA DENTADA DE 1/4”",
+    "price": 817.1,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/LLANA_DENTADA_DE_14”_8.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "JALADOR CALIBRADO 12\" Y 24\"",
+    "price": 1537.6,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/JALADOR_CALIBRADO_12_Y_24_9.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SET DE GUIAS DE ESPESOR METÁLICAS",
+    "price": 635.5,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/SET_DE_GUIAS_DE_ESPESOR_METÁLICAS_10.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "JALADOR GOMA 24\" DENTADO 3/16\" S/SOPORTE",
+    "price": 661.8,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/JALADOR_GOMA_24_DENTADO_316_SSOPORTE_11.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "JALADOR GOMA DE 24\" LISA S/SOPORTE",
+    "price": 494.2,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/JALADOR_GOMA_DE_24_LISA_SSOPORTE_12.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "RODILLO FENÓLICO",
+    "price": 82.5,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/RODILLO_FENÓLICO_13.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "RODILLO DE PICOS",
+    "price": 1179.1,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/RODILLO_DE_PICOS_14.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_15.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_16.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_17.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_18.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Metalite",
+    "price": 0.0,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/Accesorios-Metalite_19.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_20.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Accesorios - Metalite",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_21.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Metalite. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CINTA AZUL 3M",
+    "price": 66.1,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/CINTA_AZUL_3M_0.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CINTA DUCT TAPE GRIS 3M",
+    "price": 44.5,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/CINTA_DUCT_TAPE_GRIS_3M_1.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CINTA MASKING TAPE 3M",
+    "price": 41.1,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/CINTA_MASKING_TAPE_3M_2.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PLÁSTICO PRE-ENCINTADO 3M",
+    "price": 127.3,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/PLÁSTICO_PRE-ENCINTADO_3M_3.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MASCARILLA DESECHABLE USO DIARIO 3M 10 PZA",
+    "price": 137.9,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/MASCARILLA_DESECHABLE_USO_DIARIO_3M_10_PZA_4.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "RESPIRADOR VALVULA PARA LIJAR (8511) 3M 5pc",
+    "price": 361.3,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/RESPIRADOR_VALVULA_PARA_LIJAR_(8511)_3M_5pc_5.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "RESPIRADOR AURA 9320D 3M 3pck",
+    "price": 206.5,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/RESPIRADOR_AURA_9320D_3M_3pck_6.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LENTES DE SEGURIDAD USO INTERIORES 3M",
+    "price": 92.8,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/LENTES_DE_SEGURIDAD_USO_INTERIORES_3M_7.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CINTA MARCAJE HAZARD 3M",
+    "price": 143.3,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/CINTA_MARCAJE_HAZARD_3M_8.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CINTA DOBLE CARA VERDE 3M",
+    "price": 76.8,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/CINTA_DOBLE_CARA_VERDE_3M_9.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CINTA DOBLE CARA EXTREMO ROJO 3M",
+    "price": 137.2,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/CINTA_DOBLE_CARA_EXTREMO_ROJO_3M_10.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CINTA DE AISLAR VINIL NEGRO 3M",
+    "price": 103.1,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/CINTA_DE_AISLAR_VINIL_NEGRO_3M_11.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_12.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_13.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_14.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_15.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-3M",
+    "price": 0.0,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/Accesorios-3M_16.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_17.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Accesorios - 3M",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_18.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - 3M. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LLANA ELITE PRO INOX",
+    "price": 774.5,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/LLANA_ELITE_PRO_INOX_0.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SPATOLA SCAPPER INOX",
+    "price": 259.5,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/SPATOLA_SCAPPER_INOX_1.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LLANA IOX DENTATO FINE",
+    "price": 180.5,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/LLANA_IOX_DENTATO_FINE_2.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LLANA ACRILICA",
+    "price": 176.6,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/LLANA_ACRILICA_3.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LLANA ACRILICA",
+    "price": 204.0,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/LLANA_ACRILICA_4.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PETTINE INOX DENTATO FINE",
+    "price": 210.1,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/PETTINE_INOX_DENTATO_FINE_5.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SPATOLA ESCULTORE INOX",
+    "price": 259.5,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/SPATOLA_ESCULTORE_INOX_6.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "RULLO RIGATO",
+    "price": 515.7,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/RULLO_RIGATO_7.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "GUANTI DOBLE POL/SPUGNA",
+    "price": 127.7,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/GUANTI_DOBLE_POLSPUGNA_8.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PENNELLO SPALTER",
+    "price": 467.4,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/PENNELLO_SPALTER_9.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BARROCO/CENEFA",
+    "price": 1387.3,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/BARROCOCENEFA_10.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "FRATTONE RIGATO",
+    "price": 369.3,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/FRATTONE_RIGATO_11.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "FRATTONE PER VELATURE PVC",
+    "price": 271.4,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/FRATTONE_PER_VELATURE_PVC_12.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "STILCOLOR LIGHT MANICO ABS",
+    "price": 203.0,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/STILCOLOR_LIGHT_MANICO_ABS_13.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BORDE TRADICIONAL CON ESQUINERO/CENEFA",
+    "price": 734.5,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/BORDE_TRADICIONAL_CON_ESQUINEROCENEFA_14.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "SOFT WAVES/CENEFA",
+    "price": 734.5,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/SOFT_WAVESCENEFA_15.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_16.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_17.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_18.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_19.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios- Italian Masters",
+    "price": 0.0,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/Accesorios-_Italian_Masters_20.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_21.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Accesorios - Italian Masters",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_22.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Italian Masters. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MUESTRARIO DE PARED PRIMUS",
+    "price": 1240.3,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/MUESTRARIO_DE_PARED_PRIMUS_0.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "EXHIBIDOR HORIZONTAL PLANO",
+    "price": 24476.5,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/EXHIBIDOR_HORIZONTAL_PLANO_1.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "EXHIBIDOR DE HOJAS FANDELI",
+    "price": 1939.2,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/EXHIBIDOR_DE_HOJAS_FANDELI_2.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "JUEGO DE BANNERS AUTO SAYER",
+    "price": 388.6,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/JUEGO_DE_BANNERS_AUTO_SAYER_3.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BANNER ITALIAN MASTERS",
+    "price": 982.3,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/BANNER_ITALIAN_MASTERS_4.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "JUEGO DE BANNERS PINTU SAYER",
+    "price": 1564.5,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/JUEGO_DE_BANNERS_PINTU_SAYER_5.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CARTA PLASTIFICADA",
+    "price": 666.3,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/CARTA_PLASTIFICADA_6.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LAPIZ SAYER CARPINTERO 50P",
+    "price": 1172.3,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/LAPIZ_SAYER_CARPINTERO_50P_7.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LLAVERO SAYERLACK 20 P",
+    "price": 370.3,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/LLAVERO_SAYERLACK_20_P_8.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "DESTAPADOR SAYER LACK 50P",
+    "price": 507.7,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/DESTAPADOR_SAYER_LACK_50P_9.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "PLUMA SAYER LACK 50P",
+    "price": 558.6,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/PLUMA_SAYER_LACK_50P_10.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BOLSA DE VINIL PARA LITROS 500 PIEZAS",
+    "price": 1229.0,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/BOLSA_DE_VINIL_PARA_LITROS_500_PIEZAS_11.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "FLEXOMETRO SAYER LACK 6P",
+    "price": 1147.4,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/FLEXOMETRO_SAYER_LACK_6P_12.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "ENCENDEDOR SAYER LACK 50P",
+    "price": 1819.1,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/ENCENDEDOR_SAYER_LACK_50P_13.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "TAZA SAYER LACK",
+    "price": 514.2,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/TAZA_SAYER_LACK_14.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "MALETA SAYER LACK 6P",
+    "price": 1125.0,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/MALETA_SAYER_LACK_6P_15.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_16.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_17.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_18.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_19.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Publicidad",
+    "price": 0.0,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/Accesorios-Publicidad_20.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_21.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Accesorios - Publicidad",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_22.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Publicidad. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Accesorios - Cabinas",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_0.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cabinas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Accesorios - Cabinas",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_1.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cabinas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Accesorios - Cabinas",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_2.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cabinas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Accesorios - Cabinas",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_3.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cabinas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Cabinas",
+    "price": 0.0,
+    "category": "Accesorios - Cabinas",
+    "imageUrl": "/assets/products/product_general.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cabinas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Accesorios - Cabinas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_5.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cabinas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Accesorios - Cabinas",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_6.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Cabinas. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Limpia Lentes",
+    "price": 22.7,
+    "category": "Accesorios - Otros",
+    "imageUrl": "/assets/products/sayer/Limpia_Lentes_0.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Otros. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "LIMPIADOR LIQUIDO PARA ELECTRÓNICOS",
+    "price": 11.9,
+    "category": "Accesorios - Otros",
+    "imageUrl": "/assets/products/sayer/LIMPIADOR_LIQUIDO_PARA_ELECTRÓNICOS_1.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Otros. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "CREMA QUITA PINTURA",
+    "price": 96.08,
+    "category": "Accesorios - Otros",
+    "imageUrl": "/assets/products/sayer/CREMA_QUITA_PINTURA_2.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Otros. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "GEL ANTIBACTERIAL",
+    "price": 7.4,
+    "category": "Accesorios - Otros",
+    "imageUrl": "/assets/products/sayer/GEL_ANTIBACTERIAL_3.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Otros. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BARRERA ABSORBENTE PARA DERRAME CUADRADO",
+    "price": 261.4,
+    "category": "Accesorios - Otros",
+    "imageUrl": "/assets/products/sayer/BARRERA_ABSORBENTE_PARA_DERRAME_CUADRADO_4.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Otros. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "BARRERA ABSORBENTE PARA DERRAME EN TUBO",
+    "price": 261.4,
+    "category": "Accesorios - Otros",
+    "imageUrl": "/assets/products/sayer/BARRERA_ABSORBENTE_PARA_DERRAME_EN_TUBO_5.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Otros. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "POLY LACK AQUA",
+    "price": 435.8,
+    "category": "Accesorios - Otros",
+    "imageUrl": "/assets/products/sayer/POLY_LACK_AQUA_6.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Otros. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "AQUA LACK BRILLANTE",
+    "price": 295.3,
+    "category": "Accesorios - Otros",
+    "imageUrl": "/assets/products/sayer/AQUA_LACK_BRILLANTE_7.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Otros. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "KIT HIDROLACK CHROMA",
+    "price": 730.7,
+    "category": "Accesorios - Otros",
+    "imageUrl": "/assets/products/sayer/KIT_HIDROLACK_CHROMA_8.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Otros. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "HIDROLACK TRANSPARENTE",
+    "price": 361.8,
+    "category": "Accesorios - Otros",
+    "imageUrl": "/assets/products/sayer/HIDROLACK_TRANSPARENTE_9.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Otros. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Otros",
+    "price": 0.0,
+    "category": "Accesorios - Otros",
+    "imageUrl": "/assets/products/sayer/Accesorios-Otros_10.png",
+    "description": "Producto profesional Sayer Lack - Accesorios - Otros. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Brochas",
+    "price": 0.0,
+    "category": "Accesorios - Otros",
+    "imageUrl": "/assets/products/sayer/Accesorios-Brochas_11.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Otros. Máxima calidad para tus proyectos.",
+    "stock": 100
+  },
+  {
+    "name": "Accesorios-Para pintar",
+    "price": 0.0,
+    "category": "Accesorios - Otros",
+    "imageUrl": "/assets/products/sayer/Accesorios-Para_pintar_12.jpg",
+    "description": "Producto profesional Sayer Lack - Accesorios - Otros. Máxima calidad para tus proyectos.",
+    "stock": 100
+  }
+]

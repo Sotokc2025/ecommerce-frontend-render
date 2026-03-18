@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Artesanía en Madera Premium",
+    "subtitle": "Descubre maderas para una decoración con elegancia natural",
+    "image": "https://img.freepik.com/fotos-premium/captura-interior-carpintero-atractivo-delantal-marron-gorra-negra-que-aplica-pintura-taller-carpinteria-artesano-que-trabaja-su-oficio-taller-herramientas-carpinteria_176532-23503.jpg",
+    "buttonText": "Ver Colección",
+    "buttonLink": "/coleccion-madera",
+    "backgroundColor": "#a67c52"
+  },
+  {
+    "title": "Ofertas en Madera Moderna",
+    "subtitle": "Hasta 40% de descuento en productos seleccionados",
+    "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&h=600&fit=crop",
+    "buttonText": "Ver Ofertas",
+    "buttonLink": "/ofertas-madera",
+    "backgroundColor": "#c9a063"
+  },
+  {
+    "title": "Triplay Natural y Elegante",
+    "subtitle": "Renueva tu hogar con piezas únicas de madera",
+    "image": "https://tse4.mm.bing.net/th/id/OIP.2OebgUUciqZ017KXrtUR2QHaFg?pid=Api&P=0&h=180",
+    "buttonText": "Explorar Decoración",
+    "buttonLink": "/decoracion",
+    "backgroundColor": "#b7c9a3"
+  },
+  {
+    "title": "Envío Gratis",
+    "subtitle": "En compras superiores a $1000 MXN",
+    "image": "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=1200&h=600&fit=crop",
+    "buttonText": "Comprar Ahora",
+    "buttonLink": "/envio-gratis",
+    "backgroundColor": "#f5e9da"
+  }
+]

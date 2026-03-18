@@ -1,0 +1,31 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.star-full {
+    color: #ff9900;
+    /* Amazon Gold */
+    fill: currentColor;
+}
+
+.star-half {
+    color: #ff9900;
+    fill: currentColor;
+}
+
+.star-empty {
+    color: var(--border, #ddd);
+}
+
+.rating-count {
+    font-size: 13px;
+    color: var(--primary, #007185);
+    font-weight: 500;
+}

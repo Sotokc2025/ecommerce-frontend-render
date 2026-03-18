@@ -1,0 +1,85 @@
+
+/*
+  Estilos base para el componente Button.
+  Define la apariencia general del botón.
+*/
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--gap) * 0.5);
+  padding: calc(var(--gap) * 0.75) var(--gap);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  white-space: normal;
+  text-align: center;
+}
+
+/*
+  Estilo para botón deshabilitado.
+*/
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/*
+  Variantes de color para el botón.
+  primary: principal, secondary: alternativo, outline: borde, danger: alerta.
+*/
+.btn-primary {
+  background: var(--accent);
+  color: #2d1c00;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: rgba(var(--accent-rgb), 0.9);
+}
+
+.btn-secondary {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: rgba(var(--accent-rgb), 0.05);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.btn-outline:hover:not(:disabled) {
+  background: rgba(var(--accent-rgb), 0.1);
+}
+
+.btn-danger {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: #c82333;
+}
+
+/*
+  Tamaños de botón: sm (pequeño), lg (grande).
+*/
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.btn-lg {
+  padding: 16px 32px;
+  font-size: 16px;
+}

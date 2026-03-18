@@ -1,0 +1,65 @@
+[
+  {
+    "_id": "68893a08da8c6a62057bb3b5",
+    "name": "Dark woods",
+    "description": "Maderas oscuras ideales para decoraciones elegantes",
+    "imageURL": "https://placehold.co/800x600.png",
+    "parentCategory": null
+  },
+  {
+    "_id": "688ab1a717b528ee6009bc19", 
+    "name": "Madera de pino",
+    "description": "Producto especial para barnizar, de origen nacional",
+    "imageURL": "https://placehold.co/800x600.png",
+    "parentCategory": null
+  },
+  {
+    "_id": "68912ea3f83ea05283a2d897",
+    "name": "Caoba de pino", 
+    "description": "Madera semi ligera resistente a la humedad",
+    "imageURL": "https://placehold.co/800x600.png",
+    "parentCategory": null
+  },
+  {
+    "_id": "689fd794fd4677348c5e6078",
+    "name": "Aglomerado",
+    "description": "Aglomerado de alta resistencia al impacto, al manchado y desgaste",
+    "imageURL": "https://placehold.co/800x600.png", 
+    "parentCategory": null
+  },
+  {
+    "_id": "689fd922fd4677348c5e607a",
+    "name": "Aglomerado melaminado",
+    "description": "Aglomerado con baja resistencia a la abrasión, hecho de pino",
+    "imageURL": "https://placehold.co/800x600.png",
+    "parentCategory": "689fd794fd4677348c5e6078"
+  },
+  {
+    "_id": "689fdb41fd4677348c5e607e", 
+    "name": "MDF enchapado",
+    "description": "Baja resistencia a la abrasión con pino ponderosa 100%",
+    "imageURL": "https://placehold.co/800x600.png",
+    "parentCategory": null
+  },
+  {
+    "_id": "689fdd39fd4677348c5e6080",
+    "name": "Madera importada", 
+    "description": "Maderas originarias de países varios",
+    "imageURL": "https://placehold.co/800x600.png",
+    "parentCategory": null
+  },
+  {
+    "_id": "689fde18fd4677348c5e6082",
+    "name": "Sande",
+    "description": "Tipo de triplay originario de Ecuador, color amarillento y textura fina", 
+    "imageURL": "https://placehold.co/800x600.png",
+    "parentCategory": "689fdd39fd4677348c5e6080"
+  },
+  {
+    "_id": "689fe09cfd4677348c5e6086",
+    "name": "Madera de cedro",
+    "description": "Madera color rojizo, ideal para decoración de interiores",
+    "imageURL": "https://placehold.co/800x600.png", 
+    "parentCategory": null
+  }
+]

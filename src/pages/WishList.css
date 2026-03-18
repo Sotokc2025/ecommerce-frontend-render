@@ -1,0 +1,121 @@
+.wishlist-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.wishlist-page h1 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: var(--text);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 12px;
+}
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .wishlist-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.wishlist-item {
+  display: flex;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  gap: 20px;
+  box-shadow: var(--elev-1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  align-items: flex-start;
+}
+
+.wishlist-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--elev-2);
+}
+
+.wishlist-item img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: var(--r2);
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.wishlist-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.wishlist-info a {
+  text-decoration: none;
+}
+
+.wishlist-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  color: var(--text);
+}
+
+.wishlist-desc {
+  font-size: 0.9rem;
+  color: var(--gray, #6b7280);
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wishlist-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.wishlist-badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.badge {
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--r1);
+  text-transform: uppercase;
+}
+
+.badge-outline {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.badge-stock {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.badge-out-of-stock {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.wishlist-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,90 @@
+
+/*
+  Estilos para el contenedor principal de la sección resumen.
+  Define bordes, fondo y transición.
+*/
+.summary-section {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition: all 0.3s ease;
+}
+
+/* Espaciado entre secciones resumen */
+.summary-section:not(:last-child) {
+  margin-bottom: var(--gap);
+}
+
+/*
+  Encabezado de la sección: flex para distribuir título y acciones.
+  Permite interacción tipo acordeón.
+*/
+.summary-header {
+  padding: var(--gap);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Título de la sección */
+.summary-title h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+/*
+  Contenido resumen: muestra datos y botón cambiar.
+  Usa flex para alinear elementos.
+*/
+.summary-content {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/*
+  Badge de selección: círculo verde con check.
+*/
+.summary-badge {
+  background-color: var(--color-green);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+/*
+  Contenido expandido: muestra los children cuando la sección está abierta.
+*/
+.summary-expanded-content {
+  border-top: 1px solid var(--border);
+  padding: var(--gap);
+}
+
+/*
+  Sombra para la sección expandida.
+*/
+.summary-section.expanded {
+  box-shadow: var(--elev-2);
+}
+
+/* Responsive: acomoda el encabezado y badge en pantallas pequeñas */
+@media (max-width: 768px) {
+  .summary-header {
+    flex-direction: column;
+  }
+
+  .summary-badge {
+    margin-top: var(--gap);
+    align-self: flex-end;
+  }
+}
