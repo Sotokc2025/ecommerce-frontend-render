@@ -1,4 +1,6 @@
-const API_URL = "http://localhost:3000/api/orders"; // Ajustar si el puerto es distinto o usar variable de entorno
+import { http } from "./http";
+
+const API_URL = "/orders";
 
 /**
  * Crea una nueva orden en el backend.
@@ -6,23 +8,12 @@ const API_URL = "http://localhost:3000/api/orders"; // Ajustar si el puerto es d
  * @returns {Promise<Object>} - La orden creada.
  */
 export async function createOrder(orderData) {
-    const token = localStorage.getItem("authToken"); // Sincronizado con auth.js
-
-    const response = await fetch(API_URL, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${token}`
-        },
-        body: JSON.stringify(orderData),
-    });
-
-    if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || "Error al crear la orden");
+    try {
+        const response = await http.post(API_URL, orderData);
+        return response.data;
+    } catch (error) {
+        throw new Error(error.response?.data?.message || "Error al crear la orden");
     }
-
-    return response.json();
 }
 
 /**
@@ -31,16 +22,10 @@ export async function createOrder(orderData) {
  * @returns {Promise<Array>} - Lista de órdenes.
  */
 export async function getUserOrders(userId) {
-    const token = localStorage.getItem("authToken");
-    const response = await fetch(`${API_URL}/user/${userId}`, {
-        headers: {
-            "Authorization": `Bearer ${token}`
-        }
-    });
-
-    if (!response.ok) {
+    try {
+        const response = await http.get(`${API_URL}/user/${userId}`);
+        return response.data;
+    } catch (error) {
         throw new Error("Error al obtener las órdenes");
     }
-
-    return response.json();
 }

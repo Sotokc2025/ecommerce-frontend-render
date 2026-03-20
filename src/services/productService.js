@@ -1,8 +1,5 @@
 import { fetchWithCache } from "../utils/apiCache";
 
-// URL base del Backend
-const API_BASE_URL = 'http://localhost:3000/api';
-
 /**
  * Obtiene todos los productos desde el Backend (con paginación).
  * Devuelve el array plano de productos para mantener compatibilidad con los componentes del FE.
@@ -10,7 +7,7 @@ const API_BASE_URL = 'http://localhost:3000/api';
  * @param {number} limit - Resultados por página (default: 50)
  */
 export const fetchProducts = async (page = 1, limit = 50) => {
-  const data = await fetchWithCache(`${API_BASE_URL}/products?page=${page}&limit=${limit}`);
+  const data = await fetchWithCache(`/products?page=${page}&limit=${limit}`);
   // El BE devuelve { products, pagination }; retornamos solo el array
   return data.products ?? data;
 };
@@ -20,7 +17,7 @@ export const fetchProducts = async (page = 1, limit = 50) => {
  * @param {number} limit - Cantidad de productos a mostrar (default: 12)
  */
 export const fetchBestSellers = async (limit = 12) => {
-  return fetchWithCache(`${API_BASE_URL}/products/bestsellers?limit=${limit}`);
+  return fetchWithCache(`/products/bestsellers?limit=${limit}`);
 };
 
 /**
@@ -29,7 +26,7 @@ export const fetchBestSellers = async (limit = 12) => {
  */
 export const searchProducts = async (query) => {
   const params = new URLSearchParams({ q: query.trim() });
-  const data = await fetchWithCache(`${API_BASE_URL}/products/search?${params.toString()}`);
+  const data = await fetchWithCache(`/products/search?${params.toString()}`);
   return data.products ?? data;
 };
 
@@ -38,7 +35,7 @@ export const searchProducts = async (query) => {
  * @param {string} categoryId - ID de la categoría (MongoDB ObjectId)
  */
 export const getProductsByCategory = async (categoryId) => {
-  const data = await fetchWithCache(`${API_BASE_URL}/products/category/${categoryId}`);
+  const data = await fetchWithCache(`/products/category/${categoryId}`);
   // El endpoint /category/:id devuelve un array plano
   return Array.isArray(data) ? data : data.products ?? [];
 };
@@ -49,9 +46,9 @@ export const getProductsByCategory = async (categoryId) => {
  */
 export async function getProductById(id) {
   try {
-    return await fetchWithCache(`${API_BASE_URL}/products/${id}`);
+    return await fetchWithCache(`/products/${id}`);
   } catch (error) {
-    if (error.message.includes("404")) return undefined;
+    if (error.response?.status === 404) return undefined;
     throw error;
   }
 }

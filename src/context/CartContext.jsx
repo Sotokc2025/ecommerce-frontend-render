@@ -10,7 +10,7 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 // (import ya declarado arriba)
 // Importar servicios de carrito
 import * as cartService from "../services/cartService";
-import { isAuthenticated, getCurrentUser } from "../utils/auth";
+import { isAuthenticated, getCurrentUser } from "../services/auth";
 
 const CartContext = createContext();
 

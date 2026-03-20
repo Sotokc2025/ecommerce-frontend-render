@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import * as authUtils from "../utils/auth";
+import * as authUtils from "../services/auth";
+import { setLogoutCallback } from "../services/http";
 
 const AuthContext = createContext();
 
@@ -8,7 +9,10 @@ export function AuthProvider({ children }) {
   const [token, setToken] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Inicialización: Re-hidratar sesión desde localStorage
+  // Registrar el callback de logout en el cliente HTTP
+  useEffect(() => {
+    setLogoutCallback(logout);
+  }, []);
   useEffect(() => {
     const initializeAuth = () => {
       const savedToken = localStorage.getItem("authToken");

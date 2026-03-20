@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Button from "../components/atoms/Button";
 import Icon from "../components/atoms/Icon/Icon";
 import Loading from "../components/atoms/Loading/Loading";
-import { getCurrentUser } from "../utils/auth";
+import { getCurrentUser } from "../services/auth";
 import { getUserOrders } from "../services/orderService";
 import "./Orders.css";
 

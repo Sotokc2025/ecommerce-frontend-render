@@ -25,7 +25,7 @@ import {
   deleteShippingAddress,
 } from "../services/shippingService";
 import { createOrder as apiCreateOrder } from "../services/orderService";
-import { getCurrentUser } from "../utils/auth";
+import { getCurrentUser } from "../services/auth";
 import "./Checkout.css";
 
 export default function Checkout() {

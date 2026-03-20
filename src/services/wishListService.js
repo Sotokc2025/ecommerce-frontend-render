@@ -1,68 +1,53 @@
 import { fetchWithCache } from "../utils/apiCache";
-
-// URL base del Backend
-const API_BASE_URL = 'http://localhost:3000/api';
+import { http } from "./http";
 
 export const getUserWishList = async () => {
-  const token = localStorage.getItem("authToken");
-  const response = await fetch(`${API_BASE_URL}/wishList`, {
-    headers: { Authorization: `Bearer ${token}` },
-  });
-  if (!response.ok) throw new Error(`Error al obtener wishlist: ${response.status}`);
-  return response.json();
+  try {
+    const response = await http.get("/wishList");
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response?.data?.message || `Error al obtener wishlist: ${error.message}`);
+  }
 };
 
 export const addToWishList = async (productId) => {
-  const token = localStorage.getItem("authToken");
-  const response = await fetch(`${API_BASE_URL}/wishList/add`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
-    body: JSON.stringify({ productId }),
-  });
-  if (!response.ok) {
-    const err = await response.json().catch(() => null);
-    throw new Error(err?.message || `Error agregando a wishlist: ${response.status}`);
+  try {
+    const response = await http.post("/wishList/add", { productId });
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response?.data?.message || `Error agregando a wishlist: ${error.message}`);
   }
-  return response.json();
 };
 
 export const removeFromWishList = async (productId) => {
-  const token = localStorage.getItem("authToken");
-  const response = await fetch(`${API_BASE_URL}/wishList/remove/${productId}`, {
-    method: "DELETE",
-    headers: { Authorization: `Bearer ${token}` },
-  });
-  if (!response.ok) throw new Error(`Error removiendo de wishlist: ${response.status}`);
-  return response.json();
+  try {
+    const response = await http.delete(`/wishList/remove/${productId}`);
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response?.data?.message || `Error removiendo de wishlist: ${error.message}`);
+  }
 };
 // ... existing code ...
 
 export const checkProductInWishList = async (productId) => {
-  const token = localStorage.getItem("authToken");
-  const options = {
-    headers: { Authorization: `Bearer ${token}` },
-  };
   // Usamos un TTL de 30 segundos para la wishlist para que sea fluido pero no sature.
-  return fetchWithCache(`${API_BASE_URL}/wishList/check/${productId}`, options, 30000);
+  return fetchWithCache(`/wishList/check/${productId}`, {}, 30000);
 };
 
 export const moveToCart = async (productId) => {
-  const token = localStorage.getItem("authToken");
-  const response = await fetch(`${API_BASE_URL}/wishList/move-to-cart`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
-    body: JSON.stringify({ productId }),
-  });
-  if (!response.ok) throw new Error(`Error moviendo a carrito: ${response.status}`);
-  return response.json();
+  try {
+    const response = await http.post("/wishList/move-to-cart", { productId });
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response?.data?.message || `Error moviendo a carrito: ${error.message}`);
+  }
 };
 
 export const clearWishList = async () => {
-  const token = localStorage.getItem("authToken");
-  const response = await fetch(`${API_BASE_URL}/wishList/clear`, {
-    method: "DELETE",
-    headers: { Authorization: `Bearer ${token}` },
-  });
-  if (!response.ok) throw new Error(`Error vaciando wishlist: ${response.status}`);
-  return response.json();
+  try {
+    const response = await http.delete("/wishList/clear");
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response?.data?.message || `Error vaciando wishlist: ${error.message}`);
+  }
 };

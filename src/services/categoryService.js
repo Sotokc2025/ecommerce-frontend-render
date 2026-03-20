@@ -1,15 +1,15 @@
-// URL base del Backend
-const API_BASE_URL = 'http://localhost:3000/api';
+import { http } from "./http";
 
 /**
  * Obtiene todas las categorías desde el Backend.
  */
 export const fetchCategories = async () => {
-  const response = await fetch(`${API_BASE_URL}/categories`);
-  if (!response.ok) {
-    throw new Error(`Error al obtener categorías: ${response.status} ${response.statusText}`);
+  try {
+    const response = await http.get("/categories");
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response?.data?.message || `Error al obtener categorías: ${error.message}`);
   }
-  return response.json();
 };
 
 /**
@@ -17,12 +17,12 @@ export const fetchCategories = async () => {
  * Nota: Es preferible usar fetchProducts de productService.js, pero mantenemos esta aquí por compatibilidad.
  */
 export const fetchProducts = async () => {
-  const response = await fetch(`${API_BASE_URL}/products`);
-  if (!response.ok) {
-    throw new Error(`Error al obtener productos: ${response.status} ${response.statusText}`);
+  try {
+    const response = await http.get("/products");
+    return response.data.products || response.data;
+  } catch (error) {
+    throw new Error(error.response?.data?.message || `Error al obtener productos: ${error.message}`);
   }
-  const data = await response.json();
-  return data.products || data;
 };
 
 /**
@@ -31,24 +31,25 @@ export const fetchProducts = async () => {
  */
 export const searchCategories = async (query) => {
   const params = new URLSearchParams({ q: query.trim() });
-  const response = await fetch(`${API_BASE_URL}/categories/search?${params.toString()}`);
-  if (!response.ok) {
-    throw new Error(`Error en búsqueda de categorías: ${response.status} ${response.statusText}`);
+  try {
+    const response = await http.get(`/categories/search?${params.toString()}`);
+    return response.data.categories || response.data;
+  } catch (error) {
+    throw new Error(error.response?.data?.message || `Error en búsqueda de categorías: ${error.message}`);
   }
-  const data = await response.json();
-  return data.categories || data;
 };
 
 /**
  * Obtiene una categoría por su ID.
  */
 export const getCategoryById = async (categoryId) => {
-  const response = await fetch(`${API_BASE_URL}/categories/${categoryId}`);
-  if (!response.ok) {
-    if (response.status === 404) return null;
-    throw new Error(`Error al obtener categoría: ${response.status} ${response.statusText}`);
+  try {
+    const response = await http.get(`/categories/${categoryId}`);
+    return response.data;
+  } catch (error) {
+    if (error.response?.status === 404) return null;
+    throw new Error(error.response?.data?.message || `Error al obtener categoría: ${error.message}`);
   }
-  return response.json();
 };
 
 /**
@@ -67,11 +68,12 @@ export const getChildCategories = async (parentCategoryId) => {
  * Obtiene productos por categoría específica.
  */
 export const getProductsByCategory = async (categoryId) => {
-  const response = await fetch(`${API_BASE_URL}/products/category/${categoryId}`);
-  if (!response.ok) {
-    throw new Error(`Error al obtener productos por categoría: ${response.status} ${response.statusText}`);
+  try {
+    const response = await http.get(`/products/category/${categoryId}`);
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response?.data?.message || `Error al obtener productos por categoría: ${error.message}`);
   }
-  return response.json();
 };
 
 /**

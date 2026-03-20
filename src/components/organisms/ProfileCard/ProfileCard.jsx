@@ -1,7 +1,7 @@
 
 // Importa función para obtener el usuario actual desde utilidades de autenticación.
 import { useState } from "react";
-import { getCurrentUser } from "../../../utils/auth";
+import { getCurrentUser } from "../../../services/auth";
 // Importa el componente de botón reutilizable.
 import Button from "../../atoms/Button";
 // Importa los estilos CSS para la tarjeta de perfil.
