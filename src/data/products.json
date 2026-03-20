@@ -5,7 +5,7 @@
     "description": "Fabricado de madera negra, ideal para decoraciones de color negro.",
     "price": 800,
     "stock": 100,
-    "imagesUrl": ["https://tse2.mm.bing.net/th/id/OIP.s_y3Q4JOrm8ozIgjBIMzPQHaE8?pid=Api&P=0&h=180"],
+    "imagesUrl": ["https://placehold.co/800x600.png?text=Dark+Wood"],
     "category": {
       "_id": "68893a08da8c6a62057bb3b5",
       "name": "Dark woods",
@@ -20,7 +20,7 @@
     "description": "Compuesto de varias hojas de madera de pino adheridas con resinas",
     "price": 800,
     "stock": 100,
-    "imagesUrl": ["https://tse4.mm.bing.net/th/id/OIP.lijV7xxu2bSkVChks9uHqgHaE1?pid=Api&P=0&h=180"],
+    "imagesUrl": ["https://placehold.co/800x600.png?text=Pine+Wood"],
     "category": {
       "_id": "688ab1a717b528ee6009bc19",
       "name": "madera de pino",
@@ -35,7 +35,7 @@
     "description": "Compuesto de varias hojas de caoba de pino adheridas con resinas y melanina prensada a altas temperaturas.",
     "price": 1100,
     "stock": 100,
-    "imagesUrl": ["http://triplayymaderas.com/images/maderas_caoba.png"],
+    "imagesUrl": ["https://placehold.co/800x600.png?text=Mahogany"],
     "category": {
       "_id": "68912ea3f83ea05283a2d897",
       "name": "caoba de pino",
@@ -50,7 +50,7 @@
     "description": "Compuesto de capas de madera tipo pino y resinas urea-formaldehído y melamina prensada a altas temperaturas",
     "price": 700,
     "stock": 100,
-    "imagesUrl": ["https://maderasmarbella.es/wp-content/uploads/2020/04/aglomerado-r.jpg"],
+    "imagesUrl": ["https://placehold.co/800x600.png?text=Aglomerado"],
     "category": {
       "_id": "689fd794fd4677348c5e6078",
       "name": "Aglomerado",
@@ -65,7 +65,7 @@
     "description": "Compuesto de capas de madera con material melamínico resinas urea-formaldehído prensado a altas temperaturas.",
     "price": 1000,
     "stock": 400,
-    "imagesUrl": ["http://triplayymaderas.com/images/aglomerados_melaminicos.png"],
+    "imagesUrl": ["https://placehold.co/800x600.png?text=Melamina"],
     "category": {
       "_id": "689fd922fd4677348c5e607a",
       "name": "Aglomerado melaminado",
@@ -80,7 +80,7 @@
     "description": "Compuesto de capas de madera fina de alta calidad, adherido con resinas urea-formaldehído",
     "price": 1800,
     "stock": 400,
-    "imagesUrl": ["https://tse4.mm.bing.net/th/id/OIP.2ei7zYByNnzFdWmfM5bTdgHaE5?pid=Api&P=0&h=180"],
+    "imagesUrl": ["https://placehold.co/800x600.png?text=MDF"],
     "category": {
       "_id": "689fdb41fd4677348c5e607e",
       "name": "mdf enchapado",
@@ -95,7 +95,7 @@
     "description": "Compuesto de capas de madera super fina con un veteado ligero con muy buena resistencia.",
     "price": 1800,
     "stock": 400,
-    "imagesUrl": ["http://triplayymaderas.com/images/triplay_cedro.png"],
+    "imagesUrl": ["https://placehold.co/800x600.png?text=Sande"],
     "category": {
       "_id": "689fde18fd4677348c5e6082",
       "name": "Sande",
@@ -110,7 +110,7 @@
     "description": "Compuesto de fibra de madera y resinas sintéticas, con textura homogénea y delicada.",
     "price": 1700,
     "stock": 100,
-    "imagesUrl": ["https://tse1.mm.bing.net/th/id/OIP.ngJOTrYUOrKzejVhF9eV4AHaDi?pid=Api&P=0&h=180"],
+    "imagesUrl": ["https://placehold.co/800x600.png?text=MDF+English"],
     "category": {
       "_id": "689fdd39fd4677348c5e6080",
       "name": "madera importada",
@@ -125,11 +125,11 @@
     "description": "Compuesto de placas de cedro y resinas sintéticas, con textura sumamente fina y estética.",
     "price": 1700,
     "stock": 100,
-    "imagesUrl": ["https://tse3.mm.bing.net/th/id/OIP.QIEn1WqReRbTiaNL4Y0VwAHaEJ?pid=Api&P=0&h=180"],
+    "imagesUrl": ["https://placehold.co/800x600.png?text=Cedar"],
     "category": {
       "_id": "689fe09cfd4677348c5e6086",
       "name": "madera color rojizo, ideal par decoración de interiores",
-      "description": "Modelos de iPhone",
+      "description": "Madera rojiza decorativa",
       "imageURL": "https://placehold.co/800x600.png",
       "parentCategory": "null"
     }
@@ -140,11 +140,11 @@
   "description": "fabricado de madera amarilla, textura de media a bastante gruesa y resina",
   "price": 800,
   "stock": 100,
-  "imagesUrl": ["https://tse3.mm.bing.net/th/id/OIP.fUjPbKMmK1edLX6Yb_ELEwHaE8?pid=Api&P=0&h=180"],
+  "imagesUrl": ["https://placehold.co/800x600.png?text=Primavera"],
   "category": {
     "_id": "68a4f493ff7fd9ac99435a05",
     "name": "madera primavera",
-    "description": "madera con moderada resistencia a plagas y menos prpopensa a deformarse",
+    "description": "madera con moderada resistencia a plagas y menos propensa a deformarse",
     "imageURL": "https://placehold.co/800x600.png",
     "parentCategory": null
   }

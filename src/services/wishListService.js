@@ -1,3 +1,5 @@
+import { fetchWithCache } from "../utils/apiCache";
+
 // URL base del Backend
 const API_BASE_URL = 'http://localhost:3000/api';
 
@@ -33,17 +35,15 @@ export const removeFromWishList = async (productId) => {
   if (!response.ok) throw new Error(`Error removiendo de wishlist: ${response.status}`);
   return response.json();
 };
+// ... existing code ...
 
 export const checkProductInWishList = async (productId) => {
   const token = localStorage.getItem("authToken");
-  const response = await fetch(`${API_BASE_URL}/wishList/check/${productId}`, {
+  const options = {
     headers: { Authorization: `Bearer ${token}` },
-  });
-  if (!response.ok) {
-    const err = await response.json().catch(() => null);
-    throw new Error(err?.message || `Error verificando wishlist: ${response.status}`);
-  }
-  return response.json();
+  };
+  // Usamos un TTL de 30 segundos para la wishlist para que sea fluido pero no sature.
+  return fetchWithCache(`${API_BASE_URL}/wishList/check/${productId}`, options, 30000);
 };
 
 export const moveToCart = async (productId) => {

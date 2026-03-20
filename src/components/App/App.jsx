@@ -1,102 +1,91 @@
 // Importa los componentes y páginas principales de la app.
+import { lazy, Suspense } from "react"; // Para lazy loading y suspense.
 import { BrowserRouter, Route, Routes } from "react-router-dom"; // Para la navegación entre rutas.
 import { AuthProvider } from "../../context/AuthContext"; // Proveedor de contexto para autenticación.
 import { CartProvider } from "../../context/CartContext"; // Proveedor de contexto para el carrito.
 import Layout from "../templates/Layout/Layout"; // Componente de layout general (header, footer, etc).
-import Cart from "../../pages/Cart"; // Página del carrito.
-import CategoryPage from "../../pages/CategoryPage"; // Página de categorías.
-import Checkout from "../../pages/Checkout"; // Página de checkout.
-import Home from "../../pages/Home"; // Página principal (catálogo).
-import Login from "../../pages/Login"; // Página de login.
-import Register from "../../pages/Register"; // Página de registro.
-import OrderConfirmation from "../../pages/OrderConfirmation"; // Página de confirmación de compra.
-import Orders from "../../pages/Orders"; // Página de órdenes.
-import Product from "../../pages/Product"; // Página de detalle de producto.
-import Profile from "../../pages/Profile"; // Página de perfil de usuario.
+import Loading from "../atoms/Loading/Loading"; // Componente de carga para fallbacks.
+import Home from "../../pages/Home"; // Página principal (catálogo) -> Crítica, no lazy-load.
 import ProtectedRoute from "../templates/ProtectedRoute/ProtectedRoute"; // Componente para proteger rutas privadas.
-import SearchResults from "../../pages/SearchResults"; // Página de resultados de búsqueda.
-import Settings from "../../pages/Settings"; // Página de configuración.
-import WishList from "../../pages/WishList"; // Página de lista de deseos.
+
+// Lazy loading para páginas no críticas (Code Splitting).
+const Cart = lazy(() => import("../../pages/Cart"));
+const CategoryPage = lazy(() => import("../../pages/CategoryPage"));
+const Checkout = lazy(() => import("../../pages/Checkout"));
+const Login = lazy(() => import("../../pages/Login"));
+const Register = lazy(() => import("../../pages/Register"));
+const OrderConfirmation = lazy(() => import("../../pages/OrderConfirmation"));
+const Orders = lazy(() => import("../../pages/Orders"));
+const Product = lazy(() => import("../../pages/Product"));
+const Profile = lazy(() => import("../../pages/Profile"));
+const SearchResults = lazy(() => import("../../pages/SearchResults"));
+const Settings = lazy(() => import("../../pages/Settings"));
+const WishList = lazy(() => import("../../pages/WishList"));
 
 // Componente principal de la aplicación.
 function App() {
   return (
-    // AuthProvider debe envolver a CartProvider para que el carrito pueda reaccionar a la sesión.
     <AuthProvider>
       <CartProvider>
-        {/* BrowserRouter habilita la navegación por rutas en la app. */}
         <BrowserRouter>
-          {/* Layout envuelve todas las páginas con la estructura general (header, footer, etc). */}
           <Layout>
-            {/* Routes define las rutas disponibles en la aplicación. */}
-            <Routes>
-              {/* Ruta principal (catálogo de productos) */}
-              <Route path="/" element={<Home />} />
-              {/* Ruta del carrito */}
-              <Route path="/cart" element={<Cart />} />
-              {/* Ruta de login */}
-              <Route path="/login" element={<Login />} />
-              {/* Ruta de registro */}
-              <Route path="/register" element={<Register />} />
-              {/* Ruta de búsqueda */}
-              <Route path="/search" element={<SearchResults />} />
-              {/* Ruta de detalle de producto */}
-              <Route path="/product/:productId" element={<Product />} />
-              {/* Ruta de categoría */}
-              <Route path="/category/:categoryId" element={<CategoryPage />} />
-              {/* Ruta de perfil protegida, solo para usuarios autenticados */}
-              <Route
-                path="/profile"
-                element={
-                  <ProtectedRoute
-                    redirectTo="/login"
-                    allowedRoles={["admin", "customer", "cliente"]}
-                  >
-                    <Profile />
-                  </ProtectedRoute>
-                }
-              />
-              {/* Ruta de checkout protegida */}
-              <Route
-                path="/checkout"
-                element={
-                  <ProtectedRoute>
-                    <Checkout></Checkout>
-                  </ProtectedRoute>
-                }
-              />
-              {/* Ruta de wishlist protegida */}
-              <Route
-                path="/wishlist"
-                element={
-                  <ProtectedRoute>
-                    <WishList></WishList>
-                  </ProtectedRoute>
-                }
-              />
-              {/* Ruta de órdenes protegida */}
-              <Route
-                path="/orders"
-                element={
-                  <ProtectedRoute>
-                    <Orders />
-                  </ProtectedRoute>
-                }
-              />
-              {/* Ruta de confirmación de compra */}
-              <Route path="/order-confirmation" element={<OrderConfirmation />} />
-              {/* Ruta de configuración protegida */}
-              <Route
-                path="/settings"
-                element={
-                  <ProtectedRoute>
-                    <Settings></Settings>
-                  </ProtectedRoute>
-                }
-              />
-              {/* Ruta para manejar rutas no encontradas */}
-              <Route path="*" element={<div>Ruta no encontrada</div>} />
-            </Routes>
+            <Suspense fallback={<Loading>Cargando sección...</Loading>}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/cart" element={<Cart />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/search" element={<SearchResults />} />
+                <Route path="/product/:productId" element={<Product />} />
+                <Route path="/category/:categoryId" element={<CategoryPage />} />
+                
+                <Route
+                  path="/profile"
+                  element={
+                    <ProtectedRoute
+                      redirectTo="/login"
+                      allowedRoles={["admin", "customer", "cliente"]}
+                    >
+                      <Profile />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/checkout"
+                  element={
+                    <ProtectedRoute>
+                      <Checkout />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/wishlist"
+                  element={
+                    <ProtectedRoute>
+                      <WishList />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/orders"
+                  element={
+                    <ProtectedRoute>
+                      <Orders />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route path="/order-confirmation" element={<OrderConfirmation />} />
+                <Route
+                  path="/settings"
+                  element={
+                    <ProtectedRoute>
+                      <Settings />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route path="*" element={<div>Ruta no encontrada</div>} />
+              </Routes>
+            </Suspense>
           </Layout>
         </BrowserRouter>
       </CartProvider>
@@ -104,5 +93,4 @@ function App() {
   );
 }
 
-// Exporta el componente principal para ser usado en index.js
 export default App;

@@ -1,6 +1,5 @@
-
 // Importa los hooks necesarios de React para crear el contexto y manejar el estado.
-import { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 // TODO: Usar useMemo para optimizar cálculos de totales si el carrito crece.
 // TODO: Agregar manejo de errores para operaciones con localStorage (try/catch).
 // TODO: Permitir agregar descuentos o cupones en el contexto del carrito.
@@ -181,9 +180,11 @@ export function CartProvider({ children }) {
   const getTotalItems = () => cartItems.reduce((total, item) => total + item.quantity, 0);
   const getTotalPrice = () => cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
 
-  const value = {
+  // Memoizar el valor del contexto para evitar re-renders innecesarios en toda la app.
+  const value = React.useMemo(() => ({
     cartItems,
-    total: getTotalPrice(),
+    total: cartItems.reduce((total, item) => total + item.price * item.quantity, 0),
+    itemsCount: cartItems.reduce((total, item) => total + item.quantity, 0),
     addToCart,
     removeFromCart,
     updateQuantity,
@@ -191,7 +192,7 @@ export function CartProvider({ children }) {
     getTotalItems,
     getTotalPrice,
     isLoading
-  };
+  }), [cartItems, isLoading]); // Solo cambia si cambian los items o el estado de carga.
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }

@@ -120,6 +120,7 @@ export default function ProductCard({ product, orientation = "vertical" }) {
             src={imagesUrl ? imagesUrl[0] : "/img/products/placeholder.svg"}
             alt={name}
             className="product-card-image"
+            loading="lazy"
             onError={(event) => {
               event.target.src = "/img/products/placeholder.svg";
             }}
@@ -174,6 +175,7 @@ export default function ProductCard({ product, orientation = "vertical" }) {
             src={imagesUrl ? imagesUrl[0] : "/img/products/placeholder.svg"}
             alt={name}
             className="product-card-image"
+            loading="lazy"
             onError={(event) => {
               event.target.src = "/img/products/placeholder.svg";
             }}

@@ -59,14 +59,13 @@ export default function LoginForm() {
     <div className="login-container">
       <div className="login-card">
         <h2>Iniciar Sesión</h2>
-        {/* Usuarios de prueba para facilitar el acceso */}
         <div className="demo-users">
           <h4>Usuarios de prueba:</h4>
           <div className="user-demo">
-            <strong>Cliente:</strong> cliente@email.com / cliente123
+            <strong>Cliente:</strong> customer1@example.com / Customer123!
           </div>
           <div className="user-demo">
-            <strong>Admin:</strong> admin@email.com / admin123
+            <strong>Admin:</strong> admin@tymco.mx / AdminTyMCO2026!
           </div>
         </div>
         <form className="login-form" onSubmit={handleSubmit}>
