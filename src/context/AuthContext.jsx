@@ -54,8 +54,8 @@ export function AuthProvider({ children }) {
   /**
    * Maneja el registro de usuario.
    */
-  const register = async (displayName, email, password) => {
-    return await authUtils.register(displayName, email, password);
+  const register = async (userData) => {
+    return await authUtils.register(userData);
   };
 
   const value = {

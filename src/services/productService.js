@@ -1,54 +1,56 @@
-import { fetchWithCache } from "../utils/apiCache";
+import { http } from "./http";
 
 /**
- * Obtiene todos los productos desde el Backend (con paginación).
- * Devuelve el array plano de productos para mantener compatibilidad con los componentes del FE.
- * @param {number} page - Número de página (default: 1)
- * @param {number} limit - Resultados por página (default: 50)
+ * Obtiene todos los productos con paginación opcional.
+ * Retorna el array de productos para compatibilidad con los componentes.
  */
 export const fetchProducts = async (page = 1, limit = 50) => {
-  const data = await fetchWithCache(`/products?page=${page}&limit=${limit}`);
-  // El BE devuelve { products, pagination }; retornamos solo el array
-  return data.products ?? data;
-};
-
-/**
- * Obtiene los productos más vendidos desde el Backend.
- * @param {number} limit - Cantidad de productos a mostrar (default: 12)
- */
-export const fetchBestSellers = async (limit = 12) => {
-  return fetchWithCache(`/products/bestsellers?limit=${limit}`);
-};
-
-/**
- * Busca productos por nombre o descripción using el endpoint de búsqueda del BE.
- * @param {string} query - Texto a buscar
- */
-export const searchProducts = async (query) => {
-  const params = new URLSearchParams({ q: query.trim() });
-  const data = await fetchWithCache(`/products/search?${params.toString()}`);
-  return data.products ?? data;
-};
-
-/**
- * Obtiene productos filtrados por categoría.
- * @param {string} categoryId - ID de la categoría (MongoDB ObjectId)
- */
-export const getProductsByCategory = async (categoryId) => {
-  const data = await fetchWithCache(`/products/category/${categoryId}`);
-  // El endpoint /category/:id devuelve un array plano
-  return Array.isArray(data) ? data : data.products ?? [];
+  try {
+    const response = await http.get(`/products?page=${page}&limit=${limit}`);
+    // El backend devuelve { products: [], pagination: {} }
+    return response.data.products || response.data || [];
+  } catch (error) {
+    console.error("Error fetching products", error);
+    return [];
+  }
 };
 
 /**
  * Obtiene un producto por su ID.
- * @param {string} id - ID del producto (MongoDB ObjectId)
  */
-export async function getProductById(id) {
+export const getProductById = async (productId) => {
   try {
-    return await fetchWithCache(`/products/${id}`);
+    const response = await http.get(`/products/${productId}`);
+    return response.data;
   } catch (error) {
-    if (error.response?.status === 404) return undefined;
-    throw error;
+    console.error("Error fetching product by id", error);
+    return null;
   }
-}
+};
+
+/**
+ * Obtiene los productos más vendidos.
+ */
+export const fetchBestSellers = async (limit = 12) => {
+  try {
+    const response = await http.get(`/products/bestsellers?limit=${limit}`);
+    // Si el backend devuelve un objeto con una propiedad, la extraemos, si no, el array directo
+    return response.data.products || response.data || [];
+  } catch (error) {
+    console.error("Error fetching best sellers", error);
+    return [];
+  }
+};
+
+/**
+ * Busca productos por término de búsqueda.
+ */
+export const searchProducts = async (query) => {
+  try {
+    const response = await http.get(`/products/search?q=${query}`);
+    return response.data.products || response.data || [];
+  } catch (error) {
+    console.error("Error searching products", error);
+    return [];
+  }
+};

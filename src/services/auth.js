@@ -2,7 +2,6 @@ import { http } from "./http";
 
 /**
  * Decodifica el payload de un JWT sin usar librerías externas.
- * @param {string} token - El token JWT.
  */
 const decodeToken = (token) => {
   try {
@@ -20,14 +19,14 @@ const decodeToken = (token) => {
 const saveAuthData = (token, refreshToken) => {
   localStorage.setItem("authToken", token);
   if (refreshToken) localStorage.setItem("refreshToken", refreshToken);
-  
+
   const decoded = decodeToken(token);
   if (decoded) {
     const user = {
       _id: decoded.userId || decoded.id,
       displayName: decoded.displayName,
       role: decoded.role,
-      email: decoded.email
+      email: decoded.email,
     };
     localStorage.setItem("userData", JSON.stringify(user));
     return user;
@@ -35,22 +34,22 @@ const saveAuthData = (token, refreshToken) => {
   return null;
 };
 
+/**
+ * Registra un nuevo usuario.
+ */
 export const register = async (userData) => {
   try {
     const response = await http.post("/auth/register", userData);
-    const { displayName, email } = response.data;
-
-    if (displayName && email) {
-      return { success: true, email };
-    } else {
-      return { success: false, error: "Error en el formato de respuesta del servidor" };
-    }
+    return { success: true, data: response.data };
   } catch (error) {
-    console.error("Error al registrar un usuario", error.message, userData);
-    return { success: false, error: error.response?.data?.message || "Error de conexión" };
+    console.error("Error al registrar un usuario", error);
+    return { success: false, error: error.response?.data?.message || "Error al registrar" };
   }
 };
 
+/**
+ * Inicia sesión de un usuario.
+ */
 export const login = async (email, password) => {
   try {
     const response = await http.post("/auth/login", { email, password });
@@ -58,15 +57,17 @@ export const login = async (email, password) => {
     if (token) {
       const user = saveAuthData(token, refreshToken);
       return { success: true, user };
-    } else {
-      return { success: false, error: "Token no recibido" };
     }
+    return { success: false, error: "Token no recibido" };
   } catch (error) {
-    console.error("Error al iniciar sesión del usuario", error.message, email);
+    console.error("Error al iniciar sesión del usuario", error);
     return { success: false, error: error.response?.data?.message || "Error de credenciales" };
   }
 };
 
+/**
+ * Refresca el token de acceso.
+ */
 export const refresh = async () => {
   try {
     const refreshToken = localStorage.getItem("refreshToken");
@@ -82,35 +83,44 @@ export const refresh = async () => {
     return null;
   } catch (error) {
     console.error("Error al refrescar el token", error);
-    logout(); // Si falla el refresh, forzamos logout
+    logout();
     return null;
   }
 };
 
+/**
+ * Cierra la sesión del usuario.
+ */
 export const logout = () => {
   localStorage.removeItem("authToken");
   localStorage.removeItem("refreshToken");
   localStorage.removeItem("userData");
-  // Opcional: recargar la página para limpiar estados de memoria
-  // window.location.href = '/login';
 };
 
+/**
+ * Obtiene el usuario actual desde localStorage.
+ */
 export const getCurrentUser = () => {
   const userData = localStorage.getItem("userData");
   return userData ? JSON.parse(userData) : null;
 };
 
+/**
+ * Verifica si hay un token de autenticación.
+ */
 export const isAuthenticated = () => {
   return !!localStorage.getItem("authToken");
 };
 
+/**
+ * Verifica disponibilidad de email.
+ */
 export const checkEmail = async (email) => {
   try {
     const response = await http.get(`/auth/check-email?email=${email}`);
-    const { taken } = response.data;
-    return taken;
+    return response.data.taken;
   } catch (error) {
-    console.error("Error al consultar la disponibilidad del email", error.message, email);
+    console.error("Error al consultar la disponibilidad del email", error);
     return null;
   }
 };

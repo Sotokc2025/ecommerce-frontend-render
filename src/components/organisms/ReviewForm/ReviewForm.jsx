@@ -19,15 +19,18 @@ export default function ReviewForm({ productId, onCreated }) {
     e.preventDefault();
     setError(null);
     if (!productId) return setError("Producto inválido");
+    if (!comment.trim()) return setError("El comentario no puede estar vacío");
+    
     setIsSubmitting(true);
     try {
-      await createReview({ product: productId, rating: Number(rating), comment });
+      await createReview({ product: productId, rating: Number(rating), comment: comment.trim() });
       setComment("");
       setRating(5);
       if (onCreated) onCreated();
     } catch (err) {
       console.error(err);
-      setError(err.message || "Error creando la reseña");
+      const serverMessage = err.response?.data?.message || err.response?.data?.errors?.[0]?.msg;
+      setError(serverMessage || "Error creando la reseña");
     } finally {
       setIsSubmitting(false);
     }

@@ -1,31 +1,46 @@
 import { http } from "./http";
-
-const API_URL = "/orders";
-
-/**
- * Crea una nueva orden en el backend.
- * @param {Object} orderData - Datos de la orden (user, products, shippingAddress, paymentMethod, shippingCost).
- * @returns {Promise<Object>} - La orden creada.
- */
-export async function createOrder(orderData) {
-    try {
-        const response = await http.post(API_URL, orderData);
-        return response.data;
-    } catch (error) {
-        throw new Error(error.response?.data?.message || "Error al crear la orden");
-    }
-}
+import { getCurrentUser } from "./auth";
 
 /**
- * Obtiene las órdenes del usuario actual.
- * @param {string} userId - ID del usuario.
- * @returns {Promise<Array>} - Lista de órdenes.
+ * Obtiene los pedidos de un usuario específico.
  */
-export async function getUserOrders(userId) {
-    try {
-        const response = await http.get(`${API_URL}/user/${userId}`);
-        return response.data;
-    } catch (error) {
-        throw new Error("Error al obtener las órdenes");
+export const getUserOrders = async () => {
+  try {
+    const user = getCurrentUser();
+    if (!user?._id) {
+      console.warn("No user found to fetch orders");
+      return [];
     }
-}
+    const response = await http.get(`/orders/user/${user._id}`);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching user orders", error);
+    throw error;
+  }
+};
+
+/**
+ * Crea una nueva orden.
+ */
+export const createOrder = async (orderData) => {
+  try {
+    const response = await http.post("/orders", orderData);
+    return response.data;
+  } catch (error) {
+    console.error("Error creating a order", error);
+    throw error;
+  }
+};
+
+/**
+ * Obtiene una orden por su ID.
+ */
+export const getOrderById = async (id) => {
+  try {
+    const response = await http.get(`/orders/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching a order", error);
+    throw error;
+  }
+};

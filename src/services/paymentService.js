@@ -1,71 +1,77 @@
-
-// TODO: Validar los datos importados antes de usarlos (estructura, campos obligatorios).
-// TODO: Manejar errores en las promesas y operaciones de pago.
-// TODO: Permitir métodos de pago adicionales y simulaciones.
-// TODO: Documentar cada función para facilitar el mantenimiento.
-// TODO: Agregar pruebas unitarias para los métodos de pago y validaciones.
-
 import { http } from "./http";
 
-const API_URL = "/payment-methods";
-
 /**
- * Obtiene los métodos de pago reales del backend.
+ * Obtiene los métodos de pago del usuario autenticado.
+ * Usa el endpoint /me para evitar errores de permisos (403).
  */
-export async function getPaymentMethods() {
+export const getPaymentMethods = async () => {
   try {
-    const response = await http.get(`${API_URL}/me`);
-    return response.data;
-  } catch (err) {
-    if (err.response?.status === 401) return [];
-    console.error("getPaymentMethods error:", err);
+    const response = await http.get("/payment-methods/me");
+    // El backend devuelve { message, count, paymentMethods } o el array directamente
+    return response.data.paymentMethods || response.data || [];
+  } catch (error) {
+    console.error("Error fetching payment methods", error);
     return [];
   }
-}
-/**
- * Obtiene el método de pago predeterminado desde el servidor.
- */
-export async function getDefaultPaymentMethod() {
-  try {
-    const response = await http.get(`${API_URL}/default`);
-    return response.data;
-  } catch (err) {
-    console.error("getDefaultPaymentMethod error:", err);
-    const methods = await getPaymentMethods();
-    return methods.find((m) => m.isDefault) || methods[0] || null;
-  }
-}/**
- * Crea un nuevo método de pago en el backend.
- */
-export async function createPaymentMethod(paymentData) {
-  try {
-    const response = await http.post(API_URL, paymentData);
-    return response.data;
-  } catch (error) {
-    throw new Error(error.response?.data?.message || "Error al crear el método de pago");
-  }
-}
+};
 
 /**
- * Actualiza un método de pago existente.
+ * Obtiene el método de pago por defecto.
  */
-export async function updatePaymentMethod(paymentId, paymentData) {
+export const getDefaultPaymentMethod = async () => {
   try {
-    const response = await http.put(`${API_URL}/${paymentId}`, paymentData);
+    const response = await http.get("/payment-methods/default");
+    // El backend devuelve { message, paymentMethod } o { message, address } (según el controlador)
+    return response.data.paymentMethod || response.data.address || response.data;
+  } catch (error) {
+    // No logueamos error para el default si es un 404 (común si no tiene ninguno)
+    if (error.response?.status !== 404) {
+      console.error("Error fetching default payment method", error);
+    }
+    return null;
+  }
+};
+
+/**
+ * Agrega un nuevo método de pago.
+ */
+export const addPaymentMethod = async (paymentData) => {
+  try {
+    const response = await http.post("/payment-methods", paymentData);
     return response.data;
   } catch (error) {
-    throw new Error(error.response?.data?.message || "Error al actualizar el método de pago");
+    console.error("Error adding payment method", error);
+    throw error;
   }
-}
+};
+
+/**
+ * Crea un método de pago (Alias para addPaymentMethod).
+ */
+export const createPaymentMethod = addPaymentMethod;
+
+/**
+ * Actualiza un método de pago.
+ */
+export const updatePaymentMethod = async (id, paymentData) => {
+  try {
+    const response = await http.put(`/payment-methods/${id}`, paymentData);
+    return response.data;
+  } catch (error) {
+    console.error("Error updating payment method", error);
+    throw error;
+  }
+};
 
 /**
  * Elimina un método de pago.
  */
-export async function deletePaymentMethod(paymentId) {
+export const deletePaymentMethod = async (id) => {
   try {
-    await http.delete(`${API_URL}/${paymentId}`);
-    return true;
+    const response = await http.delete(`/payment-methods/${id}`);
+    return response.data;
   } catch (error) {
-    throw new Error(error.response?.data?.message || "Error al eliminar el método de pago");
+    console.error("Error deleting payment method", error);
+    throw error;
   }
-}
+};

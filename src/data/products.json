@@ -5,12 +5,12 @@
     "description": "Fabricado de madera negra, ideal para decoraciones de color negro.",
     "price": 800,
     "stock": 100,
-    "imagesUrl": ["https://placehold.co/800x600.png?text=Dark+Wood"],
+    "imagesUrl": ["/assets/products/dark_wood.png"],
     "category": {
       "_id": "68893a08da8c6a62057bb3b5",
       "name": "Dark woods",
       "description": "really dark woods",
-      "imageURL": "https://placehold.co/800x600.png",
+      "imageURL": "/assets/products/dark_wood.png",
       "parentCategory": "null"
     }
   },
@@ -20,12 +20,12 @@
     "description": "Compuesto de varias hojas de madera de pino adheridas con resinas",
     "price": 800,
     "stock": 100,
-    "imagesUrl": ["https://placehold.co/800x600.png?text=Pine+Wood"],
+    "imagesUrl": ["/assets/products/pine_wood.png"],
     "category": {
       "_id": "688ab1a717b528ee6009bc19",
       "name": "madera de pino",
       "description": "producto especial para barnizar",
-      "imageURL": "https://placehold.co/800x600.png",
+      "imageURL": "/assets/products/pine_wood.png",
       "parentCategory": "null"
     }
   },
@@ -35,12 +35,12 @@
     "description": "Compuesto de varias hojas de caoba de pino adheridas con resinas y melanina prensada a altas temperaturas.",
     "price": 1100,
     "stock": 100,
-    "imagesUrl": ["https://placehold.co/800x600.png?text=Mahogany"],
+    "imagesUrl": ["/assets/products/mahogany.png"],
     "category": {
       "_id": "68912ea3f83ea05283a2d897",
       "name": "caoba de pino",
       "description": "madera semi ligera resistente a la humedad",
-      "imageURL": "https://placehold.co/800x600.png",
+      "imageURL": "/assets/products/mahogany.png",
       "parentCategory": "null"
     }
   },
@@ -50,12 +50,12 @@
     "description": "Compuesto de capas de madera tipo pino y resinas urea-formaldehído y melamina prensada a altas temperaturas",
     "price": 700,
     "stock": 100,
-    "imagesUrl": ["https://placehold.co/800x600.png?text=Aglomerado"],
+    "imagesUrl": ["/assets/products/particle_board.png"],
     "category": {
       "_id": "689fd794fd4677348c5e6078",
       "name": "Aglomerado",
       "description": "aglomerado de alta resistencia al impacto, al manchado y desgaste ideal para cambios de temperatura",
-      "imageURL": "https://placehold.co/800x600.png",
+      "imageURL": "/assets/products/particle_board.png",
       "parentCategory": "null"
     }
   },
@@ -65,12 +65,12 @@
     "description": "Compuesto de capas de madera con material melamínico resinas urea-formaldehído prensado a altas temperaturas.",
     "price": 1000,
     "stock": 400,
-    "imagesUrl": ["https://placehold.co/800x600.png?text=Melamina"],
+    "imagesUrl": ["/assets/products/melamine.png"],
     "category": {
       "_id": "689fd922fd4677348c5e607a",
       "name": "Aglomerado melaminado",
       "description": "aglomerado baja resistencia a la abrasión en el corte hecha de pino",
-      "imageURL": "https://placehold.co/800x600.png",
+      "imageURL": "/assets/products/melamine.png",
       "parentCategory": "689fd794fd4677348c5e6078"
     }
   },
@@ -80,27 +80,27 @@
     "description": "Compuesto de capas de madera fina de alta calidad, adherido con resinas urea-formaldehído",
     "price": 1800,
     "stock": 400,
-    "imagesUrl": ["https://placehold.co/800x600.png?text=MDF"],
+    "imagesUrl": ["/assets/products/mdf.png"],
     "category": {
       "_id": "689fdb41fd4677348c5e607e",
       "name": "mdf enchapado",
       "description": "baja resistencia a la abrasión en el corte con utilizacion de pino ponderosa en 100% en sustratos y resinas",
-      "imageURL": "https://placehold.co/800x600.png",
+      "imageURL": "/assets/products/mdf.png",
       "parentCategory": "null"
     }
   },
   {
     "id": "689ff351ea2b45bf914f01ea",
     "name": "Tablero de Sande",
-    "description": "Compuesto de capas de madera super fina con un veteado ligero con muy buena resistencia.",
+    "description": "Compuesto de capas de madera super fina con un veteado ligero with very good resistance.",
     "price": 1800,
     "stock": 400,
-    "imagesUrl": ["https://placehold.co/800x600.png?text=Sande"],
+    "imagesUrl": ["/assets/products/sande.png"],
     "category": {
       "_id": "689fde18fd4677348c5e6082",
       "name": "Sande",
       "description": "Tipo de triplay originario de Ecuador, color amarillento y textura fina",
-      "imageURL": "https://placehold.co/800x600.png",
+      "imageURL": "/assets/products/sande.png",
       "parentCategory": "689fdd39fd4677348c5e6080"
     }
   },
@@ -110,12 +110,12 @@
     "description": "Compuesto de fibra de madera y resinas sintéticas, con textura homogénea y delicada.",
     "price": 1700,
     "stock": 100,
-    "imagesUrl": ["https://placehold.co/800x600.png?text=MDF+English"],
+    "imagesUrl": ["/assets/products/mdf.png"],
     "category": {
       "_id": "689fdd39fd4677348c5e6080",
       "name": "madera importada",
       "description": "originaria de paises varios",
-      "imageURL": "https://placehold.co/800x600.png",
+      "imageURL": "/assets/products/mdf.png",
       "parentCategory": "null"
     }
   },
@@ -125,28 +125,28 @@
     "description": "Compuesto de placas de cedro y resinas sintéticas, con textura sumamente fina y estética.",
     "price": 1700,
     "stock": 100,
-    "imagesUrl": ["https://placehold.co/800x600.png?text=Cedar"],
+    "imagesUrl": ["/assets/products/cedar.png"],
     "category": {
       "_id": "689fe09cfd4677348c5e6086",
       "name": "madera color rojizo, ideal par decoración de interiores",
       "description": "Madera rojiza decorativa",
-      "imageURL": "https://placehold.co/800x600.png",
+      "imageURL": "/assets/products/cedar.png",
       "parentCategory": "null"
     }
   },
   {
-  "id": "68a4f5ec15bbe7361efc787e",
-  "name": "Tablero madera primavera",
-  "description": "fabricado de madera amarilla, textura de media a bastante gruesa y resina",
-  "price": 800,
-  "stock": 100,
-  "imagesUrl": ["https://placehold.co/800x600.png?text=Primavera"],
-  "category": {
-    "_id": "68a4f493ff7fd9ac99435a05",
-    "name": "madera primavera",
-    "description": "madera con moderada resistencia a plagas y menos propensa a deformarse",
-    "imageURL": "https://placehold.co/800x600.png",
-    "parentCategory": null
+    "id": "68a4f5ec15bbe7361efc787e",
+    "name": "Tablero madera primavera",
+    "description": "fabricado de madera amarilla, textura de media a bastante gruesa y resina",
+    "price": 800,
+    "stock": 100,
+    "imagesUrl": ["/assets/products/primavera.png"],
+    "category": {
+      "_id": "68a4f493ff7fd9ac99435a05",
+      "name": "madera primavera",
+      "description": "madera con moderada resistencia a plagas y menos propensa a deformarse",
+      "imageURL": "/assets/products/primavera.png",
+      "parentCategory": null
+    }
   }
-}
 ]

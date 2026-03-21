@@ -42,9 +42,9 @@ export default function ProductCard({ product, orientation = "vertical" }) {
 
     const check = async () => {
       try {
-        const res = await wishListService.checkProductInWishList(prodId);
+        const isHearted = await wishListService.checkProductInWishList(prodId);
         if (!mounted) return;
-        setIsInWishList(!!res.inWishList);
+        setIsInWishList(!!isHearted);
       } catch (err) {
         console.warn("check wishlist failed", err);
         if (mounted) setIsInWishList(false);

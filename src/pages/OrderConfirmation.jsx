@@ -12,25 +12,17 @@ export default function OrderConfirmation() {
   const navigate = useNavigate();
   const { order } = location.state || {};
 
-  // Redirige al inicio si no hay orden.
-  useEffect(() => {
-    if (!order) {
-      navigate("/");
-      return;
-    }
-  }, [order, navigate]);
-
   // Extrae datos de la orden para mostrar. Corregido para mapeo del backend.
-  const address = order.shippingAddress || {};
-  const shipping = order.shippingCost || 0;
-  const total = order.totalPrice || 0;
+  const address = order?.shippingAddress || {};
+  const shipping = Number(order?.shippingCost) || 0;
+  const total = Number(order?.totalPrice) || 0;
 
   // Derivamos subtotal e IVA del total si no vienen (el BE no los guarda por separado)
   const TAX_RATE = 0.16;
-  const subtotal = (total - shipping) / (1 + TAX_RATE);
-  const tax = total - shipping - subtotal;
+  const subtotal = (total - shipping) > 0 ? (total - shipping) / (1 + TAX_RATE) : 0;
+  const tax = (total - shipping - subtotal) > 0 ? total - shipping - subtotal : 0;
 
-  const orderDate = order.createdAt
+  const orderDate = order?.createdAt
     ? new Date(order.createdAt).toLocaleDateString()
     : "No disponible";
 
@@ -39,7 +31,28 @@ export default function OrderConfirmation() {
     new Intl.NumberFormat("es-MX", {
       style: "currency",
       currency: "MXN",
-    }).format(v);
+    }).format(Number(v) || 0);
+
+  // Redirige al inicio si no hay orden después de un tiempo, pero muestra un error amigable primero.
+  useEffect(() => {
+    if (!order) {
+      const timer = setTimeout(() => navigate("/"), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [order, navigate]);
+
+  if (!order) {
+    return (
+      <div className="order-confirmation error-view">
+        <div className="confirmation-content">
+          <Icon name="error" size={64} className="error" />
+          <h1>No se encontró la información de la orden</h1>
+          <p>Redirigiendo al inicio en unos segundos...</p>
+          <Link to="/" className="button primary">Volver al inicio</Link>
+        </div>
+      </div>
+    );
+  }
 
   // Renderiza la confirmación de pedido con detalles y acciones.
   return (
@@ -50,7 +63,7 @@ export default function OrderConfirmation() {
         </div>
         <h1>¡Gracias por tu compra!</h1>
         <p className="confirmation-message">
-          Tu pedido <strong>#{order._id || order.id || "N/A"}</strong> ha sido confirmado y
+          Tu pedido <strong>#{order?._id || order?.id || "N/A"}</strong> ha sido confirmado y
           está siendo procesado
         </p>
         <div className="confirmation-details">
@@ -63,9 +76,9 @@ export default function OrderConfirmation() {
             <h3>Productos</h3>
             <ul className="order-items">
               {(order.products || order.items || []).map((item, idx) => (
-                <li key={item._id || item.id || idx}>
-                  {item.productId?.name || item.name} x {item.quantity} - {formatMoney(item.price)}
-                  <span>{formatMoney(item.price * item.quantity)}</span>
+                <li key={item?._id || item?.id || idx}>
+                  {(item?.productId?.name || item?.name || "Producto")} x {item?.quantity || 1} - {formatMoney(item?.price)}
+                  <span>{formatMoney((item?.price || 0) * (item?.quantity || 0))}</span>
                 </li>
               ))}
             </ul>
@@ -90,17 +103,17 @@ export default function OrderConfirmation() {
                 <strong>Dirección de envío:</strong>
               </p>
               <address>
-                {address.name || "No disponible"}
+                {address?.name || "No disponible"}
                 <br />
-                {address.address1 || ""}
-                {address.address1 && <br />}
-                {address.address2 || ""}
-                {address.address2 && <br />}
-                {address.city && address.postalCode
+                {address?.address1 || ""}
+                {address?.address1 && <br />}
+                {address?.address2 || ""}
+                {address?.address2 && <br />}
+                {address?.city && address?.postalCode
                   ? `${address.city}, ${address.postalCode}`
                   : "Ciudad y código postal no disponibles"}
                 <br />
-                {address.country || "País no especificado"}
+                {address?.country || "País no especificado"}
               </address>
             </div>
           </div>

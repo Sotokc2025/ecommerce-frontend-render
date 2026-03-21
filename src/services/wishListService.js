@@ -1,53 +1,66 @@
-import { fetchWithCache } from "../utils/apiCache";
 import { http } from "./http";
 
-export const getUserWishList = async () => {
+/**
+ * Obtiene la lista de deseos del usuario.
+ */
+export const getWishList = async () => {
   try {
-    const response = await http.get("/wishList");
+    const response = await http.get("/wishlist");
     return response.data;
   } catch (error) {
-    throw new Error(error.response?.data?.message || `Error al obtener wishlist: ${error.message}`);
+    console.error("Error fetching wishlist", error);
+    return { items: [] };
   }
 };
 
+/**
+ * Alias para getWishList para compatibilidad.
+ */
+export const getUserWishList = getWishList;
+
+/**
+ * Agrega un producto a la lista de deseos.
+ */
 export const addToWishList = async (productId) => {
   try {
-    const response = await http.post("/wishList/add", { productId });
+    const response = await http.post("/wishlist/add", { productId });
     return response.data;
   } catch (error) {
-    throw new Error(error.response?.data?.message || `Error agregando a wishlist: ${error.message}`);
+    console.error("Error adding to wishlist", error);
+    return null;
   }
 };
 
+/**
+ * Elimina un producto de la lista de deseos.
+ */
 export const removeFromWishList = async (productId) => {
   try {
-    const response = await http.delete(`/wishList/remove/${productId}`);
+    const response = await http.delete(`/wishlist/remove/${productId}`);
     return response.data;
   } catch (error) {
-    throw new Error(error.response?.data?.message || `Error removiendo de wishlist: ${error.message}`);
+    console.error("Error removing from wishlist", error);
+    return null;
   }
 };
-// ... existing code ...
 
-export const checkProductInWishList = async (productId) => {
-  // Usamos un TTL de 30 segundos para la wishlist para que sea fluido pero no sature.
-  return fetchWithCache(`/wishList/check/${productId}`, {}, 30000);
-};
-
-export const moveToCart = async (productId) => {
+/**
+ * Verifica si un producto está en la lista de deseos.
+ * Retorna un booleano directamente para simplicidad y compatibilidad.
+ */
+export const isInWishList = async (productId) => {
   try {
-    const response = await http.post("/wishList/move-to-cart", { productId });
-    return response.data;
+    const response = await http.get(`/wishlist/check/${productId}`);
+    // El backend devuelve { inWishlist: true/false }
+    // Retornamos el booleano directamente para que el componente no falle al leer propiedades
+    return !!(response.data.inWishlist ?? response.data.inWishList ?? response.data);
   } catch (error) {
-    throw new Error(error.response?.data?.message || `Error moviendo a carrito: ${error.message}`);
+    console.error("Error checking wishlist", error);
+    return false;
   }
 };
 
-export const clearWishList = async () => {
-  try {
-    const response = await http.delete("/wishList/clear");
-    return response.data;
-  } catch (error) {
-    throw new Error(error.response?.data?.message || `Error vaciando wishlist: ${error.message}`);
-  }
-};
+/**
+ * Alias para isInWishList para compatibilidad.
+ */
+export const checkProductInWishList = isInWishList;

@@ -1,66 +1,73 @@
 import { http } from "./http";
 
-const API_URL = "/shipping-address";
-
 /**
- * Obtiene las direcciones de envío reales del backend.
+ * Obtiene todas las direcciones de envío.
  */
-export async function getShippingAddresses() {
+export const fetchShippingAddresses = async () => {
   try {
-    const response = await http.get(API_URL);
+    const response = await http.get("/shipping-address");
+    // El backend devuelve { message, count, addresses }
     return response.data.addresses || response.data || [];
-  } catch (err) {
-    if (err.response?.status === 401) return [];
-    console.error("getShippingAddresses error:", err);
+  } catch (error) {
+    console.error("Error fetching shipping addresses", error);
     return [];
   }
-}
+};
 
 /**
- * Obtiene la dirección de envío predeterminada desde el servidor.
+ * Alias para fetchShippingAddresses para compatibilidad.
  */
-export async function getDefaultShippingAddress() {
-  try {
-    const response = await http.get(`${API_URL}/default`);
-    return response.data.address || response.data || null;
-  } catch (err) {
-    console.error("getDefaultShippingAddress error:", err);
-    const addresses = await getShippingAddresses();
-    return addresses.find((a) => a.isDefault) || addresses[0] || null;
-  }
-}
-/**
- * Crea una nueva dirección de envío en el backend.
- */
-export async function createShippingAddress(addressData) {
-  try {
-    const response = await http.post(API_URL, addressData);
-    return response.data.address || response.data;
-  } catch (error) {
-    throw new Error(error.response?.data?.message || "Error al crear la dirección");
-  }
-}
+export const getShippingAddresses = fetchShippingAddresses;
 
 /**
- * Actualiza una dirección de envío existente.
+ * Obtiene la dirección de envío por defecto.
  */
-export async function updateShippingAddress(addressId, addressData) {
+export const getDefaultShippingAddress = async () => {
   try {
-    const response = await http.put(`${API_URL}/${addressId}`, addressData);
+    const response = await http.get("/shipping-address/default");
+    // El backend devuelve { message, address }
     return response.data.address || response.data;
   } catch (error) {
-    throw new Error(error.response?.data?.message || "Error al actualizar la dirección");
+    console.error("Error fetching default shipping address", error);
+    return null;
   }
-}
+};
+
+/**
+ * Crea una dirección de envío.
+ */
+export const createShippingAddress = async (addressData) => {
+  try {
+    const response = await http.post("/shipping-address", addressData);
+    return response.data;
+  } catch (error) {
+    console.error("Error creating shipping address", error);
+    return null;
+  }
+};
+
+/**
+ * Actualiza una dirección de envío.
+ */
+export const updateShippingAddress = async (id, addressData) => {
+  try {
+    const response = await http.put(`/shipping-address/${id}`, addressData);
+    return response.data;
+  } catch (error) {
+    console.error("Error updating shipping address", error);
+    return null;
+  }
+};
 
 /**
  * Elimina una dirección de envío.
  */
-export async function deleteShippingAddress(addressId) {
+export const deleteShippingAddress = async (id) => {
   try {
-    await http.delete(`${API_URL}/${addressId}`);
-    return true;
+    const response = await http.delete(`/shipping-address/${id}`);
+    return response.data;
   } catch (error) {
-    throw new Error(error.response?.data?.message || "Error al eliminar la dirección");
+    console.error("Error deleting shipping address", error);
+    return null;
   }
-}
+};

@@ -368,29 +368,36 @@ export default function Checkout() {
       const orderPayload = {
         user: currentUser._id || currentUser.id,
         products: cartItems.map((item) => ({
-          productId: item.id || item._id,
+          productId: item.productId?._id || item.productId || item._id || item.id,
           quantity: item.quantity,
           price: item.price,
         })),
-        shippingAddress: selectedAddress._id,
-        paymentMethod: selectedPayment._id,
-        shippingCost: shippingCost
+        shippingAddress: selectedAddress._id || selectedAddress.id,
+        paymentMethod: selectedPayment._id || selectedPayment.id,
+        shippingCost: shippingCost,
+        totalPrice: Number(subtotal) + Number(shippingCost)
       };
+
+      console.log("Order Payload:", orderPayload);
 
       const createdOrder = await apiCreateOrder(orderPayload);
 
-      setIsOrderFinished(true);
-      setNotification("¡Compra realizada con éxito!");
+      if (createdOrder && (createdOrder._id || createdOrder.id)) {
+        setIsOrderFinished(true);
+        setNotification("¡Compra realizada con éxito!");
 
-      setTimeout(() => {
-        navigate("/order-confirmation", { state: { order: createdOrder } });
-        clearCart();
-        setNotification(null);
-      }, 2000);
-
+        setTimeout(() => {
+          navigate("/order-confirmation", { state: { order: createdOrder } });
+          clearCart();
+          setNotification(null);
+        }, 2000);
+      } else {
+        throw new Error("Invalid order response from server");
+      }
     } catch (err) {
       console.error("Error al crear la orden:", err);
-      setNotification(err.message || "Error al procesar la compra");
+      const msg = err.response?.data?.message || err.message || "Error al procesar la compra";
+      setNotification(msg);
       setLoadingLocal(false);
     }
   };
