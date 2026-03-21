@@ -6,11 +6,11 @@ import { CartProvider } from "../../context/CartContext"; // Proveedor de contex
 import Layout from "../templates/Layout/Layout"; // Componente de layout general (header, footer, etc).
 import Loading from "../atoms/Loading/Loading"; // Componente de carga para fallbacks.
 import Home from "../../pages/Home"; // Página principal (catálogo) -> Crítica, no lazy-load.
+import CategoryPage from "../../pages/CategoryPage";
 import ProtectedRoute from "../templates/ProtectedRoute/ProtectedRoute"; // Componente para proteger rutas privadas.
 
 // Lazy loading para páginas no críticas (Code Splitting).
 const Cart = lazy(() => import("../../pages/Cart"));
-const CategoryPage = lazy(() => import("../../pages/CategoryPage"));
 const Checkout = lazy(() => import("../../pages/Checkout"));
 const Login = lazy(() => import("../../pages/Login"));
 const Register = lazy(() => import("../../pages/Register"));

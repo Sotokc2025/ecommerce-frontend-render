@@ -16,28 +16,26 @@ const PaymentForm = ({
 }) => {
   // Estado para los datos del formulario.
   const [formData, setFormData] = useState({
-    type: "credit_card",
-    alias: "",
-    cardNumber: "",
-    cardHolderName: "",
-    expiryDate: "",
-    cvv: "",
-    isDefault: false,
-    ...initialValues,
+    type: initialValues.type || "credit_card",
+    alias: initialValues.alias || "",
+    cardNumber: initialValues.cardNumber || "",
+    cardHolderName: initialValues.cardHolderName || "",
+    expiryDate: initialValues.expiryDate || "",
+    cvv: initialValues.cvv || "",
+    isDefault: initialValues.isDefault || false,
   });
 
   // Actualiza el formulario si cambian los valores iniciales (modo edición).
   useEffect(() => {
     if (initialValues && Object.keys(initialValues).length > 0) {
       setFormData({
-        type: "credit_card",
-        alias: "",
-        cardNumber: "",
-        cardHolderName: "",
-        expiryDate: "",
-        cvv: "",
-        isDefault: false,
-        ...initialValues,
+        type: initialValues.type || "credit_card",
+        alias: initialValues.alias || "",
+        cardNumber: initialValues.cardNumber || "",
+        cardHolderName: initialValues.cardHolderName || "",
+        expiryDate: initialValues.expiryDate || "",
+        cvv: initialValues.cvv || "",
+        isDefault: initialValues.isDefault || false,
       });
     }
   }, [initialValues]);

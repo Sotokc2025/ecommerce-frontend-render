@@ -22,7 +22,8 @@ export const getDefaultPaymentMethod = async () => {
   try {
     const response = await http.get("/payment-methods/default");
     // El backend devuelve { message, paymentMethod } o { message, address } (según el controlador)
-    return response.data.paymentMethod || response.data.address || response.data;
+    // Importante: devolver null si no hay datos reales para evitar objetos "truthy" vacíos
+    return response.data?.paymentMethod || response.data?.address || null;
   } catch (error) {
     // No logueamos error para el default si es un 404 (común si no tiene ninguno)
     if (error.response?.status !== 404) {
@@ -38,7 +39,8 @@ export const getDefaultPaymentMethod = async () => {
 export const addPaymentMethod = async (paymentData) => {
   try {
     const response = await http.post("/payment-methods", paymentData);
-    return response.data;
+    // El backend devuelve { message, paymentMethod } o el objeto directamente
+    return response.data?.paymentMethod || response.data;
   } catch (error) {
     console.error("Error adding payment method", error);
     throw error;
@@ -56,7 +58,8 @@ export const createPaymentMethod = addPaymentMethod;
 export const updatePaymentMethod = async (id, paymentData) => {
   try {
     const response = await http.put(`/payment-methods/${id}`, paymentData);
-    return response.data;
+    // El backend devuelve { message, paymentMethod } o el objeto directamente
+    return response.data?.paymentMethod || response.data;
   } catch (error) {
     console.error("Error updating payment method", error);
     throw error;

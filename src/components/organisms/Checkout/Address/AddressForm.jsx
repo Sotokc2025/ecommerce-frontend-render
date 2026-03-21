@@ -17,22 +17,20 @@ const AddressForm = ({
   // Estado para los datos del formulario.
   const [formData, setFormData] = useState(() => {
     const base = {
-      name: "",
+      name: initialValues.name || "",
       address1: "",
       address2: "",
-      postalCode: "",
-      city: "",
-      state: "",
-      country: "México",
-      phone: "",
-      reference: "",
-      addressType: "home",
-      isDefault: false,
-      ...initialValues,
+      postalCode: initialValues.postalCode || "",
+      city: initialValues.city || "",
+      state: initialValues.state || "",
+      country: initialValues.country || "México",
+      phone: initialValues.phone || "",
+      reference: initialValues.reference || "",
+      addressType: initialValues.addressType || "home",
+      isDefault: initialValues.isDefault || false,
     };
 
     // Si viene 'address' del backend, lo separamos en address1 y address2
-    // IMPORTANTE: Esto debe hacerse después del spread de initialValues
     if (initialValues.address) {
       const parts = initialValues.address.split(", ");
       base.address1 = parts[0] || "";
@@ -46,7 +44,15 @@ const AddressForm = ({
     if (initialValues && Object.keys(initialValues).length > 0) {
       const parts = initialValues.address ? initialValues.address.split(", ") : ["", ""];
       setFormData({
-        ...initialValues,
+        name: initialValues.name || "",
+        postalCode: initialValues.postalCode || "",
+        city: initialValues.city || "",
+        state: initialValues.state || "",
+        country: initialValues.country || "México",
+        phone: initialValues.phone || "",
+        reference: initialValues.reference || "",
+        addressType: initialValues.addressType || "home",
+        isDefault: initialValues.isDefault || false,
         address1: parts[0] || "",
         address2: parts.slice(1).join(", "),
       });

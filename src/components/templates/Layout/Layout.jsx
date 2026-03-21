@@ -3,6 +3,7 @@ import Footer from "../../organisms/Footer/Footer";
 import Header from "../../organisms/Header/Header";
 import "./Layout.css";
 import Newsletter from "../../organisms/Newsletter/Newsletter";
+import TyMCoBot from "../../organisms/TyMCoBot/TyMCoBot";
 
 export default function Layout({ children }) {
   const location = useLocation();
@@ -13,6 +14,7 @@ export default function Layout({ children }) {
       {children}
       {isHome && <Newsletter />}
       <Footer />
+      <TyMCoBot />
     </div>
   );
 }

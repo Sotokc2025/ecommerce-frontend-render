@@ -530,8 +530,8 @@ export default function Checkout() {
             <Button
               className="pay-button"
               disabled={
-                !selectedAddress ||
-                !selectedPayment ||
+                !selectedAddress?._id ||
+                !selectedPayment?._id ||
                 !cartItems ||
                 cartItems.length === 0
               }
@@ -539,10 +539,10 @@ export default function Checkout() {
               title={
                 !cartItems || cartItems.length === 0
                   ? "No hay productos en el carrito"
-                  : !selectedAddress
-                    ? "Selecciona una dirección de envío"
-                    : !selectedPayment
-                      ? "Selecciona un método de pago"
+                  : !selectedAddress?._id
+                    ? "Selecciona una dirección de envío válida"
+                    : !selectedPayment?._id
+                      ? "Selecciona un método de pago válido"
                       : "Confirmar y realizar el pago"
               }
               onClick={handleCreateOrder}
