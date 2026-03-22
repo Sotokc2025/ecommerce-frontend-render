@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import axios from 'axios';
 import './TyMCoBot.css';
 import { useAuth } from '../../../context/AuthContext';
@@ -18,6 +18,51 @@ const TyMCoBot = () => {
     const [isTyping, setIsTyping] = useState(false);
     const scrollRef = useRef(null);
     const inputRef = useRef(null);
+    const recognitionRef = useRef(null);
+    const [isListening, setIsListening] = useState(false);
+
+    // Inicializar Reconocimiento de Voz (STT)
+    useEffect(() => {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (SpeechRecognition) {
+            recognitionRef.current = new SpeechRecognition();
+            recognitionRef.current.continuous = false;
+            recognitionRef.current.lang = 'es-MX';
+            recognitionRef.current.interimResults = false;
+
+            recognitionRef.current.onresult = (event) => {
+                const transcript = event.results[0][0].transcript;
+                setInputValue(transcript);
+                setIsListening(false);
+            };
+
+            recognitionRef.current.onerror = (event) => {
+                console.error('Error reconocimiento de voz:', event.error);
+                setIsListening(false);
+            };
+
+            recognitionRef.current.onend = () => {
+                setIsListening(false);
+            };
+        }
+    }, []);
+
+    const toggleListening = () => {
+        if (isListening) {
+            recognitionRef.current?.stop();
+        } else {
+            if (recognitionRef.current) {
+                try {
+                    recognitionRef.current.start();
+                    setIsListening(true);
+                } catch (e) {
+                    console.error('Error al iniciar reconocimiento:', e);
+                }
+            } else {
+                alert('El reconocimiento de voz no es compatible con este navegador.');
+            }
+        }
+    };
 
     // Get user display name for CLI prompt
     const getPromptName = () => {
@@ -52,14 +97,8 @@ const TyMCoBot = () => {
         }
     }, [messages, isTyping, isOpen]);
 
-    useEffect(() => {
-        if (isOpen && inputRef.current) {
-            inputRef.current.focus();
-        }
-    }, [isOpen]);
-
-    // Simple Browser TTS
-    const speak = (text) => {
+    // Simple Browser TTS con selección de voz mejorada
+    const speak = useCallback((text) => {
         if (!synthesisRef.current || isMuted) return;
         synthesisRef.current.cancel();
 
@@ -69,16 +108,41 @@ const TyMCoBot = () => {
             .replace(/#/g, '');
 
         const utterance = new SpeechSynthesisUtterance(cleanText);
+        
+        // Intentar encontrar una voz en español
+        const voices = synthesisRef.current.getVoices();
+        const preferredVoice = voices.find(v => v.lang === 'es-MX') || 
+                               voices.find(v => v.lang.startsWith('es')) || 
+                               voices[0];
+        
+        if (preferredVoice) utterance.voice = preferredVoice;
         utterance.lang = 'es-MX';
         utterance.rate = 1.0;
         utterance.pitch = 1.1;
 
         utterance.onstart = () => setIsSpeaking(true);
         utterance.onend = () => setIsSpeaking(false);
-        utterance.onerror = () => setIsSpeaking(false);
+        utterance.onerror = (e) => {
+            console.error('SpeechSynthesis Error:', e);
+            setIsSpeaking(false);
+        };
 
         synthesisRef.current.speak(utterance);
-    };
+    }, [isMuted]);
+
+    useEffect(() => {
+        if (isOpen && inputRef.current) {
+            inputRef.current.focus();
+        }
+        
+        // Hablar el mensaje de bienvenida al abrir el bot
+        if (isOpen && messages.length === 1 && messages[0].sender === 'bot') {
+            const timer = setTimeout(() => {
+                speak(messages[0].text);
+            }, 600);
+            return () => clearTimeout(timer);
+        }
+    }, [isOpen, messages, speak]);
 
     const handleSendMessage = async () => {
         if (!inputValue.trim()) return;
@@ -196,8 +260,15 @@ const TyMCoBot = () => {
                         onChange={(e) => setInputValue(e.target.value)}
                         onKeyDown={handleKeyDown}
                         maxLength={500}
-                        placeholder="..."
+                        placeholder={isListening ? "Escuchando..." : "Escribe o usa el micro..."}
                     />
+                    <button 
+                        className={`mic-btn ${isListening ? 'listening' : ''}`}
+                        onClick={toggleListening}
+                        title="Hablar con TyMCO-Bot"
+                    >
+                        {isListening ? "🎙️" : "🎤"}
+                    </button>
                 </div>
             </div>
 

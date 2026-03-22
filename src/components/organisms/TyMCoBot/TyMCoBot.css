@@ -224,11 +224,44 @@
     flex: 1;
     background: transparent;
     border: none;
-    color: #fff;
+    color: #00ff41;
     font-family: 'Fira Code', monospace;
     font-size: 0.85rem;
     outline: none;
     caret-color: #00bfff;
+    padding: 5px 0;
+}
+
+.mic-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 5px rgba(0, 191, 255, 0.3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.mic-btn:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px rgba(0, 255, 65, 0.6));
+}
+
+.mic-btn.listening {
+    color: #ff0055;
+    animation: mic-pulse 1.5s infinite linear;
+    filter: drop-shadow(0 0 15px #ff0055);
+}
+
+@keyframes mic-pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.3); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
 }
 
 .scanline {
