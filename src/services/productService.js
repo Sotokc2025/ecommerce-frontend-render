@@ -54,3 +54,18 @@ export const searchProducts = async (query) => {
     return [];
   }
 };
+
+/**
+ * Crea un producto (requiere rol de admin).
+ * Acepta FormData para permitir subida de imágenes (Multer/Cloudinary).
+ */
+export const createProduct = async (productFormData) => {
+  try {
+    // Axios automáticamente configura el multipart/form-data boundary al recibir un FormData
+    const response = await http.post("/products", productFormData);
+    return response.data;
+  } catch (error) {
+    console.error("Error creating product", error);
+    throw error;
+  }
+};

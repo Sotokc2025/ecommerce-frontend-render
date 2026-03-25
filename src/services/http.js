@@ -12,6 +12,7 @@ export const http = axios.create({
   headers: {
     "Content-Type": "application/json",
   },
+  withCredentials: true,
   timeout: 8000,
 });
 

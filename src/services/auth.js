@@ -16,9 +16,8 @@ const decodeToken = (token) => {
 /**
  * Guarda el token y los datos del usuario en localStorage.
  */
-const saveAuthData = (token, refreshToken) => {
+const saveAuthData = (token) => {
   localStorage.setItem("authToken", token);
-  if (refreshToken) localStorage.setItem("refreshToken", refreshToken);
 
   const decoded = decodeToken(token);
   if (decoded) {
@@ -53,9 +52,9 @@ export const register = async (userData) => {
 export const login = async (email, password) => {
   try {
     const response = await http.post("/auth/login", { email, password });
-    const { token, refreshToken } = response.data;
+    const { token } = response.data;
     if (token) {
-      const user = saveAuthData(token, refreshToken);
+      const user = saveAuthData(token);
       return { success: true, user };
     }
     return { success: false, error: "Token no recibido" };
@@ -70,14 +69,11 @@ export const login = async (email, password) => {
  */
 export const refresh = async () => {
   try {
-    const refreshToken = localStorage.getItem("refreshToken");
-    if (!refreshToken) return null;
-
-    const response = await http.post("/auth/refresh", { refreshToken });
-    const { token, refreshToken: newRefreshToken } = response.data;
+    const response = await http.post("/auth/refresh");
+    const { token } = response.data;
 
     if (token) {
-      saveAuthData(token, newRefreshToken);
+      saveAuthData(token);
       return token;
     }
     return null;
@@ -91,10 +87,15 @@ export const refresh = async () => {
 /**
  * Cierra la sesión del usuario.
  */
-export const logout = () => {
-  localStorage.removeItem("authToken");
-  localStorage.removeItem("refreshToken");
-  localStorage.removeItem("userData");
+export const logout = async () => {
+  try {
+    await http.post("/auth/logout");
+  } catch (error) {
+    console.error("Error al cerrar sesión", error);
+  } finally {
+    localStorage.removeItem("authToken");
+    localStorage.removeItem("userData");
+  }
 };
 
 /**

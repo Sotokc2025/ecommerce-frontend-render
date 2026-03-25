@@ -78,3 +78,18 @@ export const deletePaymentMethod = async (id) => {
     throw error;
   }
 };
+
+/**
+ * Crea un PaymentIntent en Stripe para una orden especifica.
+ * @param {string} orderId El ID de la orden generada
+ * @returns {Promise<{clientSecret: string}>}
+ */
+export const createStripePaymentIntent = async (orderId) => {
+  try {
+    const response = await http.post("/create-payment-intent", { orderId });
+    return response.data;
+  } catch (error) {
+    console.error("Error creating Stripe payment intent", error);
+    throw error;
+  }
+};
