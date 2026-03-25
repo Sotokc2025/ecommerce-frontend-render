@@ -1,6 +1,7 @@
 
 // Importa hooks y componentes necesarios para la página principal.
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import BannerCarousel from "../components/organisms/BannerCarousel";
 import "./Home.css";
 import List from "../components/organisms/List/List";
@@ -52,6 +53,11 @@ export default function Home() {
   // Renderiza el banner y la lista de productos o mensajes de estado.
   return (
     <div>
+      <Helmet>
+        <title>Inicio | Maderas y Triplay TyMCO</title>
+        <meta name="description" content="Encuentra la mejor calidad en maderas, triplay y materiales de construcción en Maderas TyMCO." />
+        <meta name="keywords" content="Maderas, Triplay, MDF, Construcción, Carpintería" />
+      </Helmet>
       {/* Carrusel de banners */}
       <BannerCarousel banners={homeImages} />
       {/* Muestra loading, error o lista de productos según el estado */}

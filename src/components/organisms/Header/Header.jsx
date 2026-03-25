@@ -7,6 +7,7 @@ import { useCart } from "../../../context/CartContext";
 import { useAuth } from "../../../context/AuthContext";
 import { useTheme } from "../../../context/ThemeContext";
 import Navigation from "../Navigation/Navigation";
+import NotificationBell from "../../molecules/NotificationBell/NotificationBell";
 import "./Header.css";
 
 // Componente principal del Header, incluye navegación, búsqueda y usuario.
@@ -231,6 +232,12 @@ export default function Header() {
                 <Icon name="search" size={20} />
               </button>
 
+              {isAuth && (
+                <div className="mobile-only" style={{ marginRight: '8px' }}>
+                  <NotificationBell isMobile />
+                </div>
+              )}
+
               {/* Menú de usuario desktop */}
               <div
                 className="user-menu-container desktop-only"
@@ -354,6 +361,9 @@ export default function Header() {
                   <span className="action-label">Pedidos</span>
                 </Link>
               )}
+
+              {/* Botón de Notificaciones */}
+              {isAuth && <NotificationBell />}
 
               {/* Botón de carrito */}
               <Link

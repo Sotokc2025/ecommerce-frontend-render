@@ -4,6 +4,7 @@ import Header from "../../organisms/Header/Header";
 import "./Layout.css";
 import Newsletter from "../../organisms/Newsletter/Newsletter";
 import TyMCoBot from "../../organisms/TyMCoBot/TyMCoBot";
+import ServerErrorToast from "../../atoms/ServerErrorToast/ServerErrorToast";
 
 export default function Layout({ children }) {
   const location = useLocation();
@@ -15,6 +16,8 @@ export default function Layout({ children }) {
       {isHome && <Newsletter />}
       <Footer />
       <TyMCoBot />
+      {/* Toast global para errores de red y servidor (5xx) */}
+      <ServerErrorToast />
     </div>
   );
 }

@@ -12,15 +12,18 @@ import "./styles/madera-moderno.css";
 // Importa una función para medir el rendimiento de la aplicación (opcional).
 import reportWebVitals from './reportWebVitals';
 
+import { HelmetProvider } from 'react-helmet-async';
 // Crea la raíz de la aplicación React, vinculándola al elemento HTML con id 'root'.
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // Renderiza la aplicación dentro de React.StrictMode (ayuda a detectar problemas en desarrollo).
 // El ThemeProvider envuelve a App para que todos los componentes puedan acceder al contexto de tema.
 root.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
+    <HelmetProvider>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </HelmetProvider>
   </React.StrictMode>
 );
 

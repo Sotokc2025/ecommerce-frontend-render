@@ -58,6 +58,15 @@ export function AuthProvider({ children }) {
     return await authUtils.register(userData);
   };
 
+  /**
+   * Helper: obtiene el ID del usuario resolviendo `_id` o `id` del payload JWT.
+   * Centraliza la normalización para evitar duplicación en toda la app.
+   */
+  const getUserId = () => {
+    if (!user) return null;
+    return user._id || user.id || null;
+  };
+
   const value = {
     user,
     token,
@@ -65,7 +74,8 @@ export function AuthProvider({ children }) {
     isLoading,
     login,
     logout,
-    register
+    register,
+    getUserId,
   };
 
   return (

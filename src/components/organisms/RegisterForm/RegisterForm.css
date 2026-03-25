@@ -68,3 +68,25 @@
         font-size: 1.5rem;
     }
 }
+
+/* Indicadores de validación de email en tiempo real */
+.email-hint {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 4px;
+    display: inline-block;
+    transition: color 0.2s;
+}
+
+.email-hint.checking {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.email-hint.available {
+    color: #16a34a;
+}
+
+.email-hint.taken {
+    color: #dc2626;
+}

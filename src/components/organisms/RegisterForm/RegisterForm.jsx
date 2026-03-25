@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useCallback, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../../context/AuthContext";
+import { checkEmail } from "../../../services/auth";
 import Button from "../../atoms/Button";
 import ErrorMessage from "../../atoms/ErrorMessage/ErrorMessage";
 import Input from "../../atoms/Input";
@@ -8,6 +9,7 @@ import "./RegisterForm.css";
 
 /**
  * Componente funcional para el formulario de registro de nuevos usuarios.
+ * Incluye validación en tiempo real del email con debounce.
  */
 export default function RegisterForm() {
     const [displayName, setDisplayName] = useState("");
@@ -16,15 +18,48 @@ export default function RegisterForm() {
     const [confirmPassword, setConfirmPassword] = useState("");
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
-    
+
+    // Estado de validación de email en tiempo real
+    const [emailStatus, setEmailStatus] = useState(null); // null | 'checking' | 'available' | 'taken' | 'invalid'
+    const debounceTimer = useRef(null);
+
     const navigate = useNavigate();
     const { register } = useAuth();
+
+    /**
+     * Valida y verifica disponibilidad del email con debounce de 600ms.
+     */
+    const handleEmailChange = useCallback((e) => {
+        const val = e.target.value;
+        setEmail(val);
+        setEmailStatus(null);
+
+        if (debounceTimer.current) clearTimeout(debounceTimer.current);
+
+        // Formato básico requerido antes de consultar el servidor
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(val)) return;
+
+        setEmailStatus("checking");
+        debounceTimer.current = setTimeout(async () => {
+            const isTaken = await checkEmail(val);
+            if (isTaken === null) {
+                setEmailStatus(null); // Error silencioso
+            } else {
+                setEmailStatus(isTaken ? "taken" : "available");
+            }
+        }, 600);
+    }, []);
 
     const onSubmit = async (e) => {
         e.preventDefault();
         setError("");
 
-        // Validación de coincidencia de contraseñas
+        if (emailStatus === "taken") {
+            setError("Este email ya está registrado. Intenta iniciar sesión.");
+            return;
+        }
+
         if (password !== confirmPassword) {
             setError("Las contraseñas no coinciden");
             return;
@@ -33,9 +68,7 @@ export default function RegisterForm() {
         setLoading(true);
         try {
             const result = await register(displayName, email, password);
-            
             if (result.success) {
-                // Redirige al login tras registro exitoso para que el usuario inicie sesión.
                 navigate("/login");
             } else {
                 setError(result.error);
@@ -45,6 +78,13 @@ export default function RegisterForm() {
         } finally {
             setLoading(false);
         }
+    };
+
+    const emailHint = () => {
+        if (emailStatus === "checking") return <span className="email-hint checking">Verificando disponibilidad...</span>;
+        if (emailStatus === "available") return <span className="email-hint available">✔ Email disponible</span>;
+        if (emailStatus === "taken") return <span className="email-hint taken">✖ Este email ya está en uso</span>;
+        return null;
     };
 
     return (
@@ -69,11 +109,11 @@ export default function RegisterForm() {
                             label="Email: "
                             type="email"
                             value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            onChange={handleEmailChange}
                             placeholder="Ingresa tu email"
                             required
-                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
                         />
+                        {emailHint()}
                     </div>
                     <div className="form-group">
                         <Input
@@ -101,7 +141,11 @@ export default function RegisterForm() {
 
                     {error && <ErrorMessage>{error}</ErrorMessage>}
 
-                    <Button disabled={loading} type="submit" variant="primary">
+                    <Button
+                        disabled={loading || emailStatus === "taken" || emailStatus === "checking"}
+                        type="submit"
+                        variant="primary"
+                    >
                         {loading ? "Creando cuenta..." : "Registrarse"}
                     </Button>
                 </form>

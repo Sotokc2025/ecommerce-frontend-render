@@ -15,6 +15,7 @@ import ReviewList from "../ReviewList/ReviewList";
 import ReviewForm from "../../organisms/ReviewForm/ReviewForm";
 import * as wishListService from "../../../services/wishListService";
 import ProductDetailsSkeleton from "./ProductDetailsSkeleton";
+import { Helmet } from "react-helmet-async";
 import "./ProductDetails.css";
 
 // Componente funcional para mostrar el detalle de un producto.
@@ -160,6 +161,14 @@ export default function ProductDetails({ productId }) {
   // Renderiza el detalle del producto.
   return (
     <div className="product-details-container">
+      <Helmet>
+        <title>{name} | Maderas TyMCO</title>
+        <meta name="description" content={description.substring(0, 150) + '...'} />
+        <meta property="og:title" content={`${name} - TyMCO`} />
+        <meta property="og:description" content={description.substring(0, 150) + '...'} />
+        <meta property="og:image" content={imagesUrl?.[0] || "https://maderas-tymco.com/img/og-default.jpg"} />
+        <meta property="twitter:card" content="summary_large_image" />
+      </Helmet>
       {/* Migas de pan para navegación */}
       <Breadcrumb
         items={[
