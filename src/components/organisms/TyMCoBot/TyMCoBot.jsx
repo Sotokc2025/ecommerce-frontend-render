@@ -89,7 +89,7 @@ const TyMCoBot = () => {
         }
     ]);
 
-    const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3000/api';
+    const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
 
     useEffect(() => {
         if (scrollRef.current) {
@@ -108,26 +108,34 @@ const TyMCoBot = () => {
             .replace(/#/g, '');
 
         const utterance = new SpeechSynthesisUtterance(cleanText);
-        
-        // Intentar encontrar una voz en español
-        const voices = synthesisRef.current.getVoices();
-        const preferredVoice = voices.find(v => v.lang === 'es-MX') || 
-                               voices.find(v => v.lang.startsWith('es')) || 
-                               voices[0];
-        
-        if (preferredVoice) utterance.voice = preferredVoice;
         utterance.lang = 'es-MX';
         utterance.rate = 1.0;
         utterance.pitch = 1.1;
 
-        utterance.onstart = () => setIsSpeaking(true);
-        utterance.onend = () => setIsSpeaking(false);
-        utterance.onerror = (e) => {
-            console.error('SpeechSynthesis Error:', e);
-            setIsSpeaking(false);
+        // getVoices() es async: esperar voiceschanged si aún no hay voces cargadas
+        const assignVoiceAndSpeak = () => {
+            const voices = synthesisRef.current.getVoices();
+            const preferredVoice =
+                voices.find(v => v.lang === 'es-MX') ||
+                voices.find(v => v.lang.startsWith('es')) ||
+                voices[0];
+            if (preferredVoice) utterance.voice = preferredVoice;
+
+            utterance.onstart = () => setIsSpeaking(true);
+            utterance.onend   = () => setIsSpeaking(false);
+            utterance.onerror = (e) => {
+                console.error('SpeechSynthesis Error:', e);
+                setIsSpeaking(false);
+            };
+            synthesisRef.current.speak(utterance);
         };
 
-        synthesisRef.current.speak(utterance);
+        const voices = synthesisRef.current.getVoices();
+        if (voices.length > 0) {
+            assignVoiceAndSpeak();
+        } else {
+            synthesisRef.current.addEventListener('voiceschanged', assignVoiceAndSpeak, { once: true });
+        }
     }, [isMuted]);
 
     useEffect(() => {

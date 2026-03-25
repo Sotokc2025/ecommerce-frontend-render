@@ -25,11 +25,11 @@ export function CartProvider({ children }) {
             id: item.product._id || item.product.id,
             quantity: item.quantity
           }));
-          
+
           // Fusionar con el local si existe (transición de invitado a logueado)
           const savedLocalCart = localStorage.getItem("cart");
           const localItems = savedLocalCart ? JSON.parse(savedLocalCart) : [];
-          
+
           if (localItems.length > 0) {
             // Si hay local, lo subimos al BE (simulamos merge)
             // En una app real, esto podría hacerse en el BE, pero aquí lo forzamos
@@ -81,7 +81,7 @@ export function CartProvider({ children }) {
     // Identificar cantidad real que podemos agregar
     const existingSyncItem = cartItems.find((item) => item.id === productId);
     let quantityToAdd = quantity;
-    
+
     if (existingSyncItem) {
       if (existingSyncItem.quantity + quantity > maxStock) {
         quantityToAdd = maxStock - existingSyncItem.quantity;
@@ -133,7 +133,7 @@ export function CartProvider({ children }) {
 
     const existingItem = cartItems.find((item) => item.id === productId);
     if (!existingItem) return;
-    
+
     const maxStock = existingItem.stock || 0;
     const finalQuantity = newQuantity > maxStock ? maxStock : newQuantity;
 
@@ -178,6 +178,7 @@ export function CartProvider({ children }) {
     getTotalItems,
     getTotalPrice,
     isLoading
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }), [cartItems, isLoading, isAuthenticated]);
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;

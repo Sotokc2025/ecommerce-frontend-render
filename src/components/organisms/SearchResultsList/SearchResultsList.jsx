@@ -9,7 +9,7 @@ import "./SearchResultsList.css";
 // Componente principal para mostrar resultados de búsqueda de productos.
 export default function SearchResultsList() {
   // Hook para obtener y modificar los parámetros de búsqueda en la URL.
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   // Estado para almacenar los productos obtenidos.
   const [products, setProducts] = useState([]);
   // Estado para mostrar spinner de carga.
