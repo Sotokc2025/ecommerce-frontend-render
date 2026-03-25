@@ -1,14 +1,25 @@
 
 // Importa Link para navegación interna y Icon para íconos sociales y de pago.
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 import Icon from "../../atoms/Icon/Icon";
+import CategoryModal from "../../molecules/CategoryModal/CategoryModal";
 import "./Footer.css";
 
 // Componente Footer para mostrar el pie de página completo.
 export default function Footer() {
+  // Estado para el modal de categoría
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
   // Obtiene la ubicación actual para mostrar secciones solo en la home.
   const location = useLocation();
   const isHome = location.pathname === "/";
+
+  // Función para manejar el clic en categorías
+  const handleCategoryClick = (e, category) => {
+    e.preventDefault();
+    setSelectedCategory(category);
+  };
 
   // Renderiza el pie de página con secciones condicionales.
   return (
@@ -51,11 +62,11 @@ export default function Footer() {
               <div className="footer-section categorias">
                 <h3>Categorías</h3>
                 <ul>
-                  <li><Link to="#">Triplay</Link></li>
-                  <li><Link to="#">Maderas Finas</Link></li>
-                  <li><Link to="#">Herramientas</Link></li>
-                  <li><Link to="#">Accesorios</Link></li>
-                  <li><Link to="#">Ofertas</Link></li>
+                  <li><Link to="#" onClick={(e) => handleCategoryClick(e, "Triplay")}>Triplay</Link></li>
+                  <li><Link to="#" onClick={(e) => handleCategoryClick(e, "Maderas Finas")}>Maderas Finas</Link></li>
+                  <li><Link to="#" onClick={(e) => handleCategoryClick(e, "Herramientas")}>Herramientas</Link></li>
+                  <li><Link to="#" onClick={(e) => handleCategoryClick(e, "Accesorios")}>Accesorios</Link></li>
+                  <li><Link to="#" onClick={(e) => handleCategoryClick(e, "Ofertas")}>Ofertas</Link></li>
                 </ul>
               </div>
               {/* Enlaces de atención al cliente */}
@@ -183,6 +194,15 @@ export default function Footer() {
           </div>
         </div>
       </section>
+
+      {/* Modal de Categoría */}
+      {selectedCategory && (
+        <CategoryModal
+          categoryName={selectedCategory}
+          isOpen={!!selectedCategory}
+          onClose={() => setSelectedCategory(null)}
+        />
+      )}
     </footer>
   );
 }
