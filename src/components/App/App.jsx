@@ -9,8 +9,8 @@ import { NotificationProvider } from "../../context/NotificationContext"; // Pro
 import Layout from "../templates/Layout/Layout"; // Componente de layout general (header, footer, etc).
 import Loading from "../atoms/Loading/Loading"; // Componente de carga para fallbacks.
 import Home from "../../pages/Home"; // Página principal (catálogo) -> Crítica, no lazy-load.
-const CategoryPage = lazy(() => import("../../pages/CategoryPage"));
 import ProtectedRoute from "../templates/ProtectedRoute/ProtectedRoute"; // Componente para proteger rutas privadas.
+const CategoryPage = lazy(() => import("../../pages/CategoryPage"));
 
 // Lazy loading para páginas no críticas (Code Splitting).
 const Cart = lazy(() => import("../../pages/Cart"));

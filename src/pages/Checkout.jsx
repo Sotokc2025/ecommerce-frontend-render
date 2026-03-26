@@ -18,17 +18,19 @@ import {
   updateShippingAddress,
   deleteShippingAddress,
 } from "../services/shippingService";
-import { createStripePaymentIntent } from "../services/paymentService";
+import {
+  getPaymentMethods,
+  getDefaultPaymentMethod,
+  addPaymentMethod,
+  updatePaymentMethod,
+  deletePaymentMethod,
+  createStripePaymentIntent 
+} from "../services/paymentService";
+import PaymentList from "../components/organisms/Checkout/Payment/PaymentList";
+import PaymentForm from "../components/organisms/Checkout/Payment/PaymentForm";
 import "./Checkout.css";
 
-// STRIPE IMPORTS
-import { loadStripe } from "@stripe/stripe-js";
-import {
-  Elements,
-  CardElement,
-  useStripe,
-  useElements,
-} from "@stripe/react-stripe-js";
+// STRIPE IMPORTS REDMOVED - POLAR.SH MOR USED INSTEAD
 
 // Inicializar Stripe fuera del componente para evitar recreaciones
 /**
@@ -46,8 +48,7 @@ import {
  * @property {boolean} isDefault
  */
 
-// @ts-ignore
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY || "pk_test_placeholder");
+
 
 function CheckoutContent() {
   const navigate = useNavigate();
@@ -62,8 +63,7 @@ function CheckoutContent() {
     orderResult
   } = useCheckout();
 
-  const stripe = useStripe();
-  const elements = useElements();
+
 
   const subtotal = totalPrice();
   const TAX_RATE = 0.16;
@@ -104,17 +104,29 @@ function CheckoutContent() {
   // Stripe local states
   const [isProcessingPayment, setIsProcessingPayment] = useState(false);
 
+  // Payment local states
+  const [payments, setPayments] = useState([]);
+  const [showPaymentForm, setShowPaymentForm] = useState(false);
+  const [editingPayment, setEditingPayment] = useState(null);
+  const [selectedPayment, setSelectedPayment] = useState(null);
+
   useEffect(() => {
     async function loadData() {
       setLoadingLocal(true);
       setLocalError(null);
-      const [addrList, firstAddress] = await Promise.all([
+      const [addrList, firstAddress, payList, firstPayment] = await Promise.all([
         getShippingAddresses(),
         getDefaultShippingAddress(),
+        getPaymentMethods(),
+        getDefaultPaymentMethod()
       ]);
       setAddresses(addrList || []);
       setSelectedAddress(firstAddress);
       setAddressSectionOpen(!firstAddress);
+
+      setPayments(payList || []);
+      setSelectedPayment(firstPayment);
+
       setLoadingLocal(false);
     }
     loadData();
@@ -200,9 +212,86 @@ function CheckoutContent() {
     setAddressSectionOpen(false);
   };
 
+  const handlePaymentToggle = () => {
+    setShowPaymentForm(false);
+    setEditingPayment(null);
+    setPaymentSectionOpen((prev) => !prev);
+  };
+
+  const handleSelectPayment = (payment) => {
+    setSelectedPayment(payment);
+    setShowPaymentForm(false);
+    setEditingPayment(null);
+    setPaymentSectionOpen(false);
+  };
+
+  const handlePaymentNew = () => {
+    setShowPaymentForm(true);
+    setEditingPayment(null);
+    setPaymentSectionOpen(true);
+  };
+
+  const handlePaymentEdit = (payment) => {
+    setShowPaymentForm(true);
+    setEditingPayment(payment);
+    setPaymentSectionOpen(true);
+  };
+
+  const handlePaymentDelete = async (payment) => {
+    try {
+      const paymentId = payment._id || payment.id;
+      if (!paymentId) return;
+      await deletePaymentMethod(paymentId);
+      const updatedPayments = payments.filter((p) => (p._id || p.id) !== paymentId);
+      if ((selectedPayment?._id || selectedPayment?.id) === paymentId) {
+        setSelectedPayment(updatedPayments[0] || null);
+      }
+      setPayments(updatedPayments);
+      setNotification("Método de pago eliminado");
+      setTimeout(() => setNotification(null), 2000);
+    } catch (err) {
+      setNotification("Error al eliminar método de pago");
+    }
+  };
+
+  const handlePaymentSubmit = async (formData) => {
+    setLoadingLocal(true);
+    try {
+      let savedPayment;
+      if (editingPayment) {
+        const payId = editingPayment._id || editingPayment.id;
+        if (!payId) throw new Error("ID de pago no válido");
+        savedPayment = await updatePaymentMethod(payId, formData);
+        setPayments(payments.map(p => (p._id || p.id) === (savedPayment._id || savedPayment.id) ? savedPayment : p));
+      } else {
+        savedPayment = await addPaymentMethod(formData);
+        setPayments([...payments, savedPayment]);
+      }
+      setSelectedPayment(savedPayment);
+      setShowPaymentForm(false);
+      setEditingPayment(null);
+      setPaymentSectionOpen(false);
+      setNotification("Método de pago guardado correctamente");
+      setTimeout(() => setNotification(null), 2000);
+    } catch (err) {
+      const errorMsg = err instanceof Error ? err.message : "Error al guardar método de pago";
+      setNotification(errorMsg);
+    } finally {
+      setLoadingLocal(false);
+    }
+  };
+
+  const handleCancelPayment = () => {
+    setShowPaymentForm(false);
+    setEditingPayment(null);
+    setPaymentSectionOpen(false);
+  };
+
   const handleCreateOrder = async () => {
-    if (!selectedAddress || !cartItems || cartItems.length === 0) return;
-    if (!stripe || !elements) return;
+  if (!selectedAddress || !selectedPayment || !cartItems || cartItems.length === 0) {
+    setNotification("Por favor selecciona una dirección y un método de pago.");
+    return;
+  }
 
     if (!user) {
       setNotification("Debes iniciar sesión para realizar la compra");
@@ -213,13 +302,15 @@ function CheckoutContent() {
     setNotification("Validando stock y procesando pago seguro...");
 
     try {
-      // 1. Crear Orden en Atlas (Modo Pendiente) a través del Hook Senior
+      // 1. Crear Orden en Atlas (Modo Pendiente)
       const addressId = selectedAddress._id || selectedAddress.id;
+      const paymentId = selectedPayment._id || selectedPayment.id;
       if (!addressId) throw new Error("Dirección de envío no válida");
+      if (!paymentId) throw new Error("Método de pago no válido");
 
       const checkoutPayload = {
         shippingAddressId: addressId,
-        paymentMethodId: undefined, // Se actualizará tras el cobro de Stripe
+        paymentMethodId: paymentId,
         shippingCost: shippingCost
       };
 
@@ -255,21 +346,7 @@ function CheckoutContent() {
     }
   };
 
-  // Opciones de estilo para Stripe CardElement
-  const cardElementOptions = {
-    style: {
-      base: {
-        fontSize: '16px',
-        color: '#32325d',
-        fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-        '::placeholder': { color: '#aab7c4' },
-      },
-      invalid: {
-        color: '#fa755a',
-        iconColor: '#fa755a',
-      },
-    },
-  };
+
 
   return loadingLocal ? (
     <Loading>Cargando direcciones y checkout...</Loading>
@@ -318,21 +395,34 @@ function CheckoutContent() {
         </SummarySection>
 
         <SummarySection
-          title="2. Método de pago (Stripe)"
-          selected={true} // Siempre mostrar expandido o validado
+          title="2. Método de pago"
+          selected={selectedPayment}
           summaryContent={
             <div className="selected-payment">
-              <p>Tarjeta Bancaria</p>
-              <p>Procesado de forma segura por Stripe</p>
+              <p>{selectedPayment?.alias || "Tarjeta TDC/TDD"}</p>
+              <p>Procesado por Polar.sh</p>
             </div>
           }
-          isExpanded={paymentSectionOpen}
-          onToggle={() => setPaymentSectionOpen(!paymentSectionOpen)}
+          isExpanded={showPaymentForm || paymentSectionOpen || !selectedPayment}
+          onToggle={handlePaymentToggle}
         >
-          <div style={{ padding: '20px', border: '1px solid #ddd', borderRadius: '8px', backgroundColor: '#fafafa' }}>
-            <p style={{ marginBottom: '15px', fontWeight: 'bold' }}>Ingresa los detalles de tu tarjeta:</p>
-            <CardElement options={cardElementOptions} />
-          </div>
+          {!showPaymentForm && !editingPayment ? (
+            <PaymentList
+              payments={payments}
+              selectedPayment={selectedPayment}
+              onSelect={handleSelectPayment}
+              onEdit={handlePaymentEdit}
+              onAdd={handlePaymentNew}
+              onDelete={handlePaymentDelete}
+            />
+          ) : (
+            <PaymentForm
+              onSubmit={handlePaymentSubmit}
+              onCancel={handleCancelPayment}
+              initialValues={editingPayment || {}}
+              isEdit={!!editingPayment}
+            />
+          )}
         </SummarySection>
 
         <SummarySection
@@ -354,7 +444,7 @@ function CheckoutContent() {
               <strong>Dirección de envío:</strong> {selectedAddress?.name || "No seleccionada"}
             </p>
             <p>
-              <strong>Método de pago:</strong> Stripe
+              <strong>Método de pago:</strong> {selectedPayment?.alias || "Seleccionada"} (Polar.sh)
             </p>
             <div className="order-costs">
               <p>
@@ -377,10 +467,10 @@ function CheckoutContent() {
             className="pay-button"
             disabled={
               !selectedAddress?._id ||
+              !selectedPayment?._id ||
               !cartItems ||
               cartItems.length === 0 ||
-              isProcessingPayment ||
-              !stripe
+              isProcessingPayment
             }
             onClick={handleCreateOrder}
           >
@@ -394,8 +484,6 @@ function CheckoutContent() {
 
 export default function Checkout() {
   return (
-    <Elements stripe={stripePromise}>
-      <CheckoutContent />
-    </Elements>
+    <CheckoutContent />
   );
 }

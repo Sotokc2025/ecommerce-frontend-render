@@ -41,8 +41,7 @@ export function AuthProvider({ children }) {
 export function useAuth() {
   const context = useContext(AuthContext);
   if (!context) {
-    // @ts-ignore
-    return useAuthStore();
+    throw new Error("useAuth debe usarse dentro de un AuthProvider");
   }
   return context;
 }

@@ -10,7 +10,8 @@ export const getPaymentMethods = async () => {
     const response = await http.get("/payment-methods/me");
     // El backend devuelve { message, count, paymentMethods } o el array directamente
     return response.data.paymentMethods || response.data || [];
-  } catch (error) {
+  } catch (err) {
+    const error = /** @type {any} */ (err);
     console.error("Error fetching payment methods", error);
     return [];
   }
@@ -25,7 +26,8 @@ export const getDefaultPaymentMethod = async () => {
     // El backend devuelve { message, paymentMethod } o { message, address } (según el controlador)
     // Importante: devolver null si no hay datos reales para evitar objetos "truthy" vacíos
     return response.data?.paymentMethod || response.data?.address || null;
-  } catch (error) {
+  } catch (err) {
+    const error = /** @type {any} */ (err);
     // No logueamos error para el default si es un 404 (común si no tiene ninguno)
     if (error.response?.status !== 404) {
       console.error("Error fetching default payment method", error);
@@ -36,13 +38,15 @@ export const getDefaultPaymentMethod = async () => {
 
 /**
  * Agrega un nuevo método de pago.
+ * @param {any} paymentData Datos del método de pago
  */
 export const addPaymentMethod = async (paymentData) => {
   try {
     const response = await http.post("/payment-methods", paymentData);
     // El backend devuelve { message, paymentMethod } o el objeto directamente
     return response.data?.paymentMethod || response.data;
-  } catch (error) {
+  } catch (err) {
+    const error = /** @type {any} */ (err);
     console.error("Error adding payment method", error);
     throw error;
   }
@@ -55,13 +59,16 @@ export const createPaymentMethod = addPaymentMethod;
 
 /**
  * Actualiza un método de pago.
+ * @param {string} id ID del método
+ * @param {any} paymentData Datos a actualizar
  */
 export const updatePaymentMethod = async (id, paymentData) => {
   try {
     const response = await http.put(`/payment-methods/${id}`, paymentData);
     // El backend devuelve { message, paymentMethod } o el objeto directamente
     return response.data?.paymentMethod || response.data;
-  } catch (error) {
+  } catch (err) {
+    const error = /** @type {any} */ (err);
     console.error("Error updating payment method", error);
     throw error;
   }
@@ -69,25 +76,27 @@ export const updatePaymentMethod = async (id, paymentData) => {
 
 /**
  * Elimina un método de pago.
+ * @param {string} id ID del método
  */
 export const deletePaymentMethod = async (id) => {
   try {
     const response = await http.delete(`/payment-methods/${id}`);
     return response.data;
-  } catch (error) {
+  } catch (err) {
+    const error = /** @type {any} */ (err);
     console.error("Error deleting payment method", error);
     throw error;
   }
 };
 
 /**
- * Crea un PaymentIntent en Stripe para una orden especifica.
+ * Crea una sesión de Checkout de Polar.sh para una orden específica.
  * @param {string} orderId El ID de la orden generada
- * @returns {Promise<{clientSecret: string}>}
+ * @returns {Promise<{checkoutUrl: string, message?: string}>}
  */
 export const createStripePaymentIntent = async (orderId) => {
   try {
-    const response = await http.post("/create-payment-intent", { orderId });
+    const response = await http.post("/payments/create-payment-intent", { orderId });
     return response.data;
   } catch (error) {
     console.error("Error creating Stripe payment intent", error);

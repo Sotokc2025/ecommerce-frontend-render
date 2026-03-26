@@ -44,9 +44,7 @@ export function CartProvider({ children }) {
 export function useCart() {
   const context = useContext(CartContext);
   if (!context) {
-    // Si no hay contexto, fallamos silenciosamente al store directo (Fase de transición)
-    // @ts-ignore
-    return useCartStore();
+    throw new Error("useCart debe usarse dentro de un CartProvider");
   }
   return context;
 }

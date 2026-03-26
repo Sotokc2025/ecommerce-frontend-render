@@ -49,8 +49,7 @@ export const NotificationProvider = ({ children }) => {
 export const useNotifications = () => {
   const context = useContext(NotificationContext);
   if (!context) {
-    // @ts-ignore
-    return useNotificationStore();
+    throw new Error("useNotifications debe usarse dentro de un NotificationProvider");
   }
   return context;
 };
