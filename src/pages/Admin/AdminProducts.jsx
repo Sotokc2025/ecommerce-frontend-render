@@ -1,3 +1,4 @@
+// @ts-check
 import React, { useEffect, useState } from 'react';
 import AdminLayout from '../../components/templates/AdminLayout/AdminLayout';
 import { http } from '../../services/http';

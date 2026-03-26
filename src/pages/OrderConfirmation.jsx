@@ -1,16 +1,22 @@
+// @ts-check
 
 // Importa hooks, componentes y estilos necesarios para la confirmación de pedido.
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Icon from "../components/atoms/Icon/Icon";
 import "./OrderConfirmation.css";
 
 // Componente principal OrderConfirmation
 export default function OrderConfirmation() {
-  // Obtiene la información de la orden desde la navegación.
+  // Obtiene la información de la orden desde la navegación o la URL.
   const location = useLocation();
   const navigate = useNavigate();
-  const { order } = location.state || {};
+  const [order, setOrder] = useState(location.state?.order || null);
+  const [loading, setLoading] = useState(!order);
+  
+  const query = new URLSearchParams(location.search);
+  const orderId = query.get('orderId');
+  const isMock = query.get('mock') === 'true';
 
   // Extrae datos de la orden para mostrar. Corregido para mapeo del backend.
   const address = order?.shippingAddress || {};
@@ -27,20 +33,49 @@ export default function OrderConfirmation() {
     : "No disponible";
 
   // Utilidad para formatear moneda (MXN)
+  /** @param {any} v */
   const formatMoney = (v) =>
     new Intl.NumberFormat("es-MX", {
       style: "currency",
       currency: "MXN",
     }).format(Number(v) || 0);
-
-  // Redirige al inicio si no hay orden después de un tiempo, pero muestra un error amigable primero.
+  
+    // Redirige al inicio si no hay orden después de un tiempo, pero muestra un error amigable primero.
   useEffect(() => {
-    if (!order) {
-      const timer = setTimeout(() => navigate("/"), 5000);
-      return () => clearTimeout(timer);
-    }
-  }, [order, navigate]);
+    const fetchOrder = async () => {
+      if (!order && orderId) {
+        try {
+          // @ts-ignore
+          const apiBase = import.meta.env?.VITE_API_BASE_URL || 'http://localhost:3000/api';
+          const response = await fetch(`${apiBase}/orders/${orderId}`);
+          const data = await response.json();
+          if (response.ok) setOrder(data);
+          else throw new Error("Orden no encontrada");
+        } catch (err) {
+          console.error("Error recuperando orden:", err);
+          setTimeout(() => navigate("/"), 5000);
+        } finally {
+          setLoading(false);
+        }
+      } else if (!order && !orderId) {
+        const timer = setTimeout(() => navigate("/"), 5000);
+        return () => clearTimeout(timer);
+      }
+    };
 
+    fetchOrder();
+  }, [order, orderId, navigate]);
+
+  if (loading) {
+    return (
+      <div className="order-confirmation">
+        <div className="confirmation-content">
+          <h1>Verificando Pago... ⏳</h1>
+          <p>Estamos confirmando tu transacción con la Entidad Registrada (MoR).</p>
+        </div>
+      </div>
+    );
+  }
   if (!order) {
     return (
       <div className="order-confirmation error-view">
@@ -53,7 +88,6 @@ export default function OrderConfirmation() {
       </div>
     );
   }
-
   // Renderiza la confirmación de pedido con detalles y acciones.
   return (
     <div className="order-confirmation">
@@ -61,6 +95,11 @@ export default function OrderConfirmation() {
         <div className="confirmation-icon">
           <Icon name="checkCircle" size={64} className="success"></Icon>
         </div>
+        {isMock && (
+          <div className="bg-amber-100 text-amber-800 px-4 py-2 rounded-xl mb-4 text-xs font-bold animate-pulse">
+            🧪 MODO SIMULADOR ACTIVO
+          </div>
+        )}
         <h1>¡Gracias por tu compra!</h1>
         <p className="confirmation-message">
           Tu pedido <strong>#{order?._id || order?.id || "N/A"}</strong> ha sido confirmado y
@@ -75,7 +114,7 @@ export default function OrderConfirmation() {
             </p>
             <h3>Productos</h3>
             <ul className="order-items">
-              {(order.products || order.items || []).map((item, idx) => (
+              {/** @type {any[]} */ (order.products || order.items || []).map((item, idx) => (
                 <li key={item?._id || item?.id || idx}>
                   {(item?.productId?.name || item?.name || "Producto")} x {item?.quantity || 1} - {formatMoney(item?.price)}
                   <span>{formatMoney((item?.price || 0) * (item?.quantity || 0))}</span>

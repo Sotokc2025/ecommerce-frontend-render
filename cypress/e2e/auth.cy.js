@@ -1,3 +1,4 @@
+// @ts-check
 describe('Authentication Flow - Register & Login', () => {
     const uniqueEmail = `test_${Date.now()}@tymco.com`;
 

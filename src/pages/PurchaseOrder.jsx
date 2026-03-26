@@ -1,3 +1,4 @@
+// @ts-check
 
 // Importa los componentes necesarios para la vista de orden de compra
 import CartView from "../components/organisms/Cart/CartView";

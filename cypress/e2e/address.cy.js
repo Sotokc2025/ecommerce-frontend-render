@@ -1,3 +1,4 @@
+// @ts-check
 describe('Address Management Flow', () => {
     beforeEach(() => {
         cy.loginByApi(); // Login rápido vía API

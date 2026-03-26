@@ -1,3 +1,4 @@
+// @ts-check
 import RegisterForm from "../components/organisms/RegisterForm/RegisterForm";
 
 /**

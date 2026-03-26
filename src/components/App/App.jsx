@@ -1,4 +1,6 @@
+// @ts-check
 // Importa los componentes y páginas principales de la app.
+
 import { lazy, Suspense } from "react"; // Para lazy loading y suspense.
 import { BrowserRouter, Route, Routes } from "react-router-dom"; // Para la navegación entre rutas.
 import { AuthProvider } from "../../context/AuthContext"; // Proveedor de contexto para autenticación.
@@ -7,7 +9,7 @@ import { NotificationProvider } from "../../context/NotificationContext"; // Pro
 import Layout from "../templates/Layout/Layout"; // Componente de layout general (header, footer, etc).
 import Loading from "../atoms/Loading/Loading"; // Componente de carga para fallbacks.
 import Home from "../../pages/Home"; // Página principal (catálogo) -> Crítica, no lazy-load.
-import CategoryPage from "../../pages/CategoryPage";
+const CategoryPage = lazy(() => import("../../pages/CategoryPage"));
 import ProtectedRoute from "../templates/ProtectedRoute/ProtectedRoute"; // Componente para proteger rutas privadas.
 
 // Lazy loading para páginas no críticas (Code Splitting).

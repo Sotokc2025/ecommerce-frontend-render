@@ -1,3 +1,4 @@
+// @ts-check
 
 // Importa el hook useParams para obtener el parámetro de la URL y el componente de detalle.
 import { useParams } from "react-router-dom";

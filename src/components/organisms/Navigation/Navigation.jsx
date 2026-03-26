@@ -1,3 +1,4 @@
+// @ts-check
 
 // Importa los hooks y componentes necesarios para la barra de navegación.
 import { useEffect, useState } from "react";

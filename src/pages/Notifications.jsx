@@ -1,3 +1,4 @@
+// @ts-check
 import React from 'react';
 import { useNotifications } from '../context/NotificationContext';
 import Icon from '../components/atoms/Icon/Icon';

@@ -1,3 +1,4 @@
+// @ts-check
 // Importa hooks de React para manejar estado y efectos.
 import { useEffect, useState } from "react";
 // Importa el componente Button reutilizable.

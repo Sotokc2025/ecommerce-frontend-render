@@ -1,8 +1,10 @@
+// @ts-check
 import { http } from "./http";
 import { getCurrentUser } from "./auth";
 
 /**
  * Obtiene los pedidos de un usuario específico.
+ * @returns {Promise<any[]>}
  */
 export const getUserOrders = async () => {
   try {
@@ -20,11 +22,13 @@ export const getUserOrders = async () => {
 };
 
 /**
- * Crea una nueva orden.
+ * Crea una nueva orden con soporte para idempotencia.
+ * @param {Object} orderData 
+ * @param {import('axios').AxiosRequestConfig} [config] - Configuración opcional para headers
  */
-export const createOrder = async (orderData) => {
+export const createOrder = async (orderData, config = {}) => {
   try {
-    const response = await http.post("/orders", orderData);
+    const response = await http.post("/orders", orderData, config);
     return response.data;
   } catch (error) {
     console.error("Error creating a order", error);
@@ -34,6 +38,8 @@ export const createOrder = async (orderData) => {
 
 /**
  * Obtiene una orden por su ID.
+ * @param {string} id - UUID de la orden
+ * @returns {Promise<any>}
  */
 export const getOrderById = async (id) => {
   try {

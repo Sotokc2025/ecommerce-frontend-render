@@ -1,3 +1,4 @@
+// @ts-check
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import CartView from "../components/organisms/Cart/CartView";
@@ -7,7 +8,9 @@ import SummarySection from "../components/organisms/Checkout/shared/SummarySecti
 import Button from "../components/atoms/Button";
 import ErrorMessage from "../components/atoms/ErrorMessage/ErrorMessage";
 import Loading from "../components/atoms/Loading/Loading";
-import { useCart } from "../context/CartContext";
+import { useCartStore } from "../store/useCartStore";
+import { useAuthStore } from "../store/useAuthStore";
+import { useCheckout } from "../hooks/useCheckout";
 import {
   getDefaultShippingAddress,
   getShippingAddresses,
@@ -15,9 +18,7 @@ import {
   updateShippingAddress,
   deleteShippingAddress,
 } from "../services/shippingService";
-import { createOrder as apiCreateOrder } from "../services/orderService";
 import { createStripePaymentIntent } from "../services/paymentService";
-import { getCurrentUser } from "../services/auth";
 import "./Checkout.css";
 
 // STRIPE IMPORTS
@@ -30,27 +31,53 @@ import {
 } from "@stripe/react-stripe-js";
 
 // Inicializar Stripe fuera del componente para evitar recreaciones
-const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY || "pk_test_placeholder");
+/**
+ * @typedef {Object} ShippingAddress
+ * @property {string} [_id] - ID único (MongoDB)
+ * @property {string} [id] - ID único (Legacy)
+ * @property {string} [name] - Nombre descriptivo (ej: Casa, Oficina)
+ * @property {string} [address1] - Dirección línea 1
+ * @property {string} street
+ * @property {string} city
+ * @property {string} state
+ * @property {string} zipCode
+ * @property {string} [postalCode] - Código postal (Alias de zipCode)
+ * @property {string} country
+ * @property {boolean} isDefault
+ */
+
+// @ts-ignore
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY || "pk_test_placeholder");
 
 function CheckoutContent() {
-  const [notification, setNotification] = useState(null);
   const navigate = useNavigate();
-  const { cartItems, total, clearCart } = useCart();
+  const { cartItems, totalPrice, clearCart } = useCartStore();
+  const { user } = useAuthStore();
+  const { 
+    currentStep, 
+    setCurrentStep, 
+    isProcessing: isProcessingCheckout, 
+    error: checkoutError, 
+    processCheckout,
+    orderResult
+  } = useCheckout();
 
   const stripe = useStripe();
   const elements = useElements();
 
-  const subtotal = typeof total === "number" ? total : 0;
+  const subtotal = totalPrice();
   const TAX_RATE = 0.16;
   const SHIPPING_RATE = 350;
-  const FREE_SHIPPING_THRESHOLD = 1000;
+  const FREE_SHIPPING_THRESHOLD = 5000; // Incrementado para ordenes Sayer-Lack
 
   const taxAmount = parseFloat((subtotal * TAX_RATE).toFixed(2));
   const shippingCost = subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : SHIPPING_RATE;
   const grandTotal = parseFloat((subtotal + taxAmount + shippingCost).toFixed(2));
   
   const [isOrderFinished, setIsOrderFinished] = useState(false);
+  const [notification, setNotification] = useState(/** @type {string | null} */ (null));
 
+  /** @param {number} v */
   const formatMoney = (v) =>
     new Intl.NumberFormat("es-MX", {
       style: "currency",
@@ -63,16 +90,16 @@ function CheckoutContent() {
     }
   }, [cartItems, navigate, isOrderFinished]);
 
-  const [addresses, setAddresses] = useState([]);
+  const [addresses, setAddresses] = useState(/** @type {ShippingAddress[]} */ ([]));
   const [loadingLocal, setLoadingLocal] = useState(true);
-  const [localError, setLocalError] = useState(null);
+  const [localError, setLocalError] = useState(/** @type {string | null} */ (null));
 
   const [showAddressForm, setShowAddressForm] = useState(false);
-  const [editingAddress, setEditingAddress] = useState(null);
+  const [editingAddress, setEditingAddress] = useState(/** @type {ShippingAddress | null} */ (null));
   const [addressSectionOpen, setAddressSectionOpen] = useState(false);
   const [paymentSectionOpen, setPaymentSectionOpen] = useState(true);
 
-  const [selectedAddress, setSelectedAddress] = useState(null);
+  const [selectedAddress, setSelectedAddress] = useState(/** @type {ShippingAddress | null} */ (null));
 
   // Stripe local states
   const [isProcessingPayment, setIsProcessingPayment] = useState(false);
@@ -99,6 +126,7 @@ function CheckoutContent() {
     setAddressSectionOpen((prev) => !prev);
   };
 
+  /** @param {ShippingAddress} address */
   const handleSelectAddress = (address) => {
     setSelectedAddress(address);
     setShowAddressForm(false);
@@ -112,17 +140,21 @@ function CheckoutContent() {
     setAddressSectionOpen(true);
   };
 
+  /** @param {ShippingAddress} address */
   const handleAddressEdit = (address) => {
     setShowAddressForm(true);
     setEditingAddress(address);
     setAddressSectionOpen(true);
   };
 
+  /** @param {ShippingAddress} address */
   const handleAddressDelete = async (address) => {
     try {
-      await deleteShippingAddress(address._id);
-      const updatedAddresses = addresses.filter((add) => add._id !== address._id);
-      if (selectedAddress?._id === address._id) {
+      const addressId = address._id || address.id;
+      if (!addressId) return;
+      await deleteShippingAddress(addressId);
+      const updatedAddresses = addresses.filter((add) => (add._id || add.id) !== addressId);
+      if ((selectedAddress?._id || selectedAddress?.id) === addressId) {
         setSelectedAddress(updatedAddresses[0] || null);
       }
       setAddresses(updatedAddresses);
@@ -133,13 +165,17 @@ function CheckoutContent() {
     }
   };
 
+  /** @param {any} formData */
   const handleAddressSubmit = async (formData) => {
     setLoadingLocal(true);
     try {
+      /** @type {ShippingAddress} */
       let savedAddress;
       if (editingAddress) {
-        savedAddress = await updateShippingAddress(editingAddress._id, formData);
-        setAddresses(addresses.map(a => a._id === savedAddress._id ? savedAddress : a));
+        const addrId = editingAddress._id || editingAddress.id;
+        if (!addrId) throw new Error("ID de dirección no válido");
+        savedAddress = await updateShippingAddress(addrId, formData);
+        setAddresses(addresses.map(a => (a._id || a.id) === (savedAddress._id || savedAddress.id) ? savedAddress : a));
       } else {
         savedAddress = await createShippingAddress(formData);
         setAddresses([...addresses, savedAddress]);
@@ -151,7 +187,8 @@ function CheckoutContent() {
       setNotification("Dirección guardada correctamente");
       setTimeout(() => setNotification(null), 2000);
     } catch (err) {
-      setNotification(err.message || "Error al guardar dirección");
+      const errorMsg = err instanceof Error ? err.message : "Error al guardar dirección";
+      setNotification(errorMsg);
     } finally {
       setLoadingLocal(false);
     }
@@ -167,32 +204,27 @@ function CheckoutContent() {
     if (!selectedAddress || !cartItems || cartItems.length === 0) return;
     if (!stripe || !elements) return;
 
-    const currentUser = getCurrentUser();
-    if (!currentUser) {
+    if (!user) {
       setNotification("Debes iniciar sesión para realizar la compra");
       return;
     }
 
     setIsProcessingPayment(true);
-    setNotification("Procesando tu pedido y pago...");
+    setNotification("Validando stock y procesando pago seguro...");
 
     try {
-      // 1. Guardar la orden en BD primero como pendiente
-      const orderPayload = {
-        user: currentUser._id || currentUser.id,
-        products: cartItems.map((item) => ({
-          productId: item.productId?._id || item.productId || item._id || item.id,
-          quantity: item.quantity,
-          price: item.price,
-        })),
-        shippingAddress: selectedAddress._id || selectedAddress.id,
-        // Mandamos null u omitimos paymentMethod local ya que usaremos Stripe
-        paymentMethod: null, 
-        shippingCost: shippingCost,
-        totalPrice: Number(subtotal) + Number(shippingCost)
+      // 1. Crear Orden en Atlas (Modo Pendiente) a través del Hook Senior
+      const addressId = selectedAddress._id || selectedAddress.id;
+      if (!addressId) throw new Error("Dirección de envío no válida");
+
+      const checkoutPayload = {
+        shippingAddressId: addressId,
+        paymentMethodId: undefined, // Se actualizará tras el cobro de Stripe
+        shippingCost: shippingCost
       };
 
-      const createdOrder = await apiCreateOrder(orderPayload);
+      // 2. Ejecutar proceso de creación de orden con idempotencia
+      const createdOrder = await processCheckout(checkoutPayload);
 
       if (!createdOrder || (!createdOrder._id && !createdOrder.id)) {
         throw new Error("Respuesta de orden inválida del servidor");
@@ -200,40 +232,23 @@ function CheckoutContent() {
 
       const orderId = createdOrder._id || createdOrder.id;
 
-      // 2. Crear PaymentIntent en Stripe
-      const { clientSecret } = await createStripePaymentIntent(orderId);
+      // 3. Obtener URL de Checkout de Polar en lugar de PaymentIntent de Stripe
+      setNotification("Redirigiendo a pasarela segura de TyMCO (Polar)...");
+      const paymentResponse = await createStripePaymentIntent(orderId); // Mantenemos el nombre de la función para no romper contratos FE por ahora
+      
+      const checkoutUrl = paymentResponse.checkoutUrl;
 
-      // 3. Confirmar pago con Stripe Element
-      const cardElement = elements.getElement(CardElement);
-      const paymentResult = await stripe.confirmCardPayment(clientSecret, {
-        payment_method: {
-          card: cardElement,
-          billing_details: {
-            name: currentUser.displayName || currentUser.email,
-            email: currentUser.email,
-          },
-        },
-      });
-
-      if (paymentResult.error) {
-        throw new Error(paymentResult.error.message);
+      if (!checkoutUrl) {
+        throw new Error("No se pudo obtener la URL de pago de Polar.");
       }
 
-      // Pago Exitoso!
-      if (paymentResult.paymentIntent.status === "succeeded") {
-        setIsOrderFinished(true);
-        setNotification("¡Compra y pago realizados con éxito!");
-
-        setTimeout(() => {
-          navigate("/order-confirmation", { state: { order: createdOrder } });
-          clearCart();
-          setNotification(null);
-        }, 2000);
-      }
+      // REDIRECCIÓN MAESTRA: Polar asume el control del pago y los impuestos (MoR)
+      window.location.href = checkoutUrl;
 
     } catch (err) {
-      console.error("Error en checkout:", err);
-      const msg = err.response?.data?.message || err.message || "Error al procesar la compra";
+      console.error("Error en checkout Senior (Polar):", err);
+      // @ts-ignore
+      const msg = err.response?.data?.message || err.message || "Error al procesar la compra. Intente nuevamente.";
       setNotification(msg);
     } finally {
       setIsProcessingPayment(false);
@@ -324,6 +339,8 @@ function CheckoutContent() {
           title="3. Revisa tu pedido"
           selected={true}
           isExpanded={true}
+          summaryContent={null}
+          onToggle={() => {}}
         >
           <CartView />
         </SummarySection>

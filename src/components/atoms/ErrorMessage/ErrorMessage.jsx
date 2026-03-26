@@ -1,3 +1,4 @@
+// @ts-check
 // Importa los estilos CSS para el mensaje de error.
 import "./ErrorMessage.css";
 

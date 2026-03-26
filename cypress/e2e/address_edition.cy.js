@@ -1,3 +1,4 @@
+// @ts-check
 describe('Flujo de Direcciones - Edición', () => {
     const timestamp = Date.now()
     const user = {

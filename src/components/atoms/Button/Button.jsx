@@ -1,3 +1,4 @@
+// @ts-check
 // Importa React para crear el componente.
 import React from "react";
 // Importa los estilos CSS del botón.

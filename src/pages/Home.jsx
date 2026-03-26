@@ -1,54 +1,28 @@
-
+// @ts-check
 // Importa hooks y componentes necesarios para la página principal.
-import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet-async";
+// @ts-ignore
+import { Helmet as HelmetComponent } from "react-helmet-async";
 import BannerCarousel from "../components/organisms/BannerCarousel";
 import "./Home.css";
 import List from "../components/organisms/List/List";
 import ErrorMessage from "../components/atoms/ErrorMessage/ErrorMessage";
-import Loading from "../components/atoms/Loading/Loading";
+import ProductCardSkeleton from "../components/molecules/ProductCard/ProductCardSkeleton";
 import homeImages from "../data/homeImages.json";
-import { fetchProducts, fetchBestSellers } from "../services/productService";
+import { useHomeProducts, useHomeCategories } from "../hooks/useProducts"; // Hook soberano de datos.
+import CategoryCard from "../components/molecules/CategoryCard/CategoryCard";
 
-// TODO: Agregar paginación o scroll infinito si la lista de productos crece mucho.
-// TODO: Mejorar accesibilidad (etiquetas ARIA, roles, etc.) en los componentes visuales.
-// TODO: Mostrar filtros de productos por categoría, precio, etc. para mejorar la experiencia de usuario.
-// TODO: Agregar pruebas unitarias para el manejo de errores y estados vacíos.
+/** @type {any} */
+const Helmet = HelmetComponent;
 
 // Componente principal Home
 export default function Home() {
-  // Estado para productos, carga y error.
-  const [products, setProducts] = useState([]);
-  const [bestSellers, setBestSellers] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  // Lógica delegada al hook para mayor claridad y mantenimiento.
+  // @ts-ignore
+  const { products, bestSellers, loading: productsLoading, error: productsError } = useHomeProducts();
+  const { categories, loading: catsLoading } = useHomeCategories();
 
-  // useEffect para cargar productos al montar el componente.
-  useEffect(() => {
-    // Función asíncrona para obtener productos.
-    const loadProducts = async () => {
-      try {
-        setLoading(true); // Activa el estado de carga.
-        setError(null);   // Limpia errores previos.
-        
-        const [productsData, bestSellersData] = await Promise.all([
-          fetchProducts(),
-          fetchBestSellers()
-        ]);
-        
-        setProducts(productsData); // Actualiza el estado con los productos.
-        setBestSellers(bestSellersData); // Actualiza con los más vendidos.
-      } catch (err) {
-        setError("No se pudieron cargar los productos de madera. Intenta más tarde."); // Maneja error.
-        setProducts([]); // Limpia productos si falla.
-        setBestSellers([]);
-      } finally {
-        setLoading(false); // Finaliza el estado de carga.
-      }
-    };
-
-    loadProducts(); // Ejecuta la carga de productos.
-  }, []);
+  const loading = productsLoading || catsLoading;
+  const error = productsError;
 
   // Renderiza el banner y la lista de productos o mensajes de estado.
   return (
@@ -58,11 +32,37 @@ export default function Home() {
         <meta name="description" content="Encuentra la mejor calidad en maderas, triplay y materiales de construcción en Maderas TyMCO." />
         <meta name="keywords" content="Maderas, Triplay, MDF, Construcción, Carpintería" />
       </Helmet>
+      
       {/* Carrusel de banners */}
-      <BannerCarousel banners={homeImages} />
+      <BannerCarousel banners={/** @type {any} */ (homeImages)} />
+      
+      {/* Grid de Categorías */}
+      {!loading && !error && categories.length > 0 && (
+        <section className="categories-grid-section" style={{ padding: "40px 20px" }}>
+          <h2 style={{ marginBottom: "24px", fontSize: "1.8rem", fontWeight: "700" }}>Nuestras Líneas de Productos</h2>
+          <div style={{ 
+            display: "grid", 
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", 
+            gap: "24px" 
+          }}>
+            {categories.map((cat) => (
+              <CategoryCard 
+                key={cat._id}
+                id={cat._id} 
+                name={cat.name} 
+                description={cat.description} 
+                imageURL={cat.imageURL} 
+              />
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Muestra loading, error o lista de productos según el estado */}
       {loading ? (
-        <Loading>Cargando productos...</Loading>
+        <div style={{ padding: "0 20px" }}>
+          <List loading={true} skeletonCount={8} title="Cargando maderas..." />
+        </div>
       ) : error ? (
         <ErrorMessage>{error}</ErrorMessage>
       ) : products.length > 0 ? (

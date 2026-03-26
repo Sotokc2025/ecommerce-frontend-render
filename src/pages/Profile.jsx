@@ -1,3 +1,4 @@
+// @ts-check
 
 // Importa el componente ProfileCard que muestra la información del usuario
 import ProfileCard from "../components/organisms/ProfileCard/ProfileCard";

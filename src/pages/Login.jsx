@@ -1,3 +1,4 @@
+// @ts-check
 
 // Importa el componente LoginForm que contiene el formulario de inicio de sesión.
 import LoginForm from "../components/organisms/LoginForm/LoginForm";

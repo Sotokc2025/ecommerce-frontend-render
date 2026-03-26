@@ -1,3 +1,4 @@
+// @ts-check
 // Importa el hook useCart para acceder al estado y funciones del carrito.
 import React, { useState } from "react";
 import { useCart } from "../../../context/CartContext";

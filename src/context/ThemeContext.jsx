@@ -1,3 +1,4 @@
+// @ts-check
 
 // Importa los hooks necesarios de React para crear el contexto y manejar el estado.
 import { createContext, useContext, useEffect, useMemo, useState } from "react";

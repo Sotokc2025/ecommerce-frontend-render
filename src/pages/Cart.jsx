@@ -1,3 +1,4 @@
+// @ts-check
 
 // Importa hooks, componentes y contexto necesarios para la página del carrito.
 import { useNavigate } from "react-router-dom";

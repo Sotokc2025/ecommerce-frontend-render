@@ -1,3 +1,4 @@
+// @ts-check
 // Importa la librería principal de React, necesaria para crear componentes y usar JSX.
 import React from 'react';
 // Importa el módulo de React para renderizar la aplicación en el DOM, usando la API moderna de React 18+.

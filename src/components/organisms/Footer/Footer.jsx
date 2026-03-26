@@ -1,3 +1,4 @@
+// @ts-check
 
 // Importa Link para navegación interna y Icon para íconos sociales y de pago.
 import { Link, useLocation } from "react-router-dom";

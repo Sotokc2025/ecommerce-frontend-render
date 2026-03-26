@@ -1,3 +1,4 @@
+// @ts-check
 
 // Importa el componente SearchResultsList que muestra los resultados de búsqueda
 import SearchResultsList from "../components/organisms/SearchResultsList/SearchResultsList";

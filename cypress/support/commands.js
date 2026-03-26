@@ -1,3 +1,4 @@
+// @ts-check
 Cypress.Commands.add('loginByApi', (email = 'browser@test.com', password = 'Password123') => {
     cy.request('POST', 'http://localhost:3000/api/auth/login', {
         email,

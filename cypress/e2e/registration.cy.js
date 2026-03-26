@@ -1,3 +1,4 @@
+// @ts-check
 describe('Flujo de Autenticación - Registro', () => {
     const timestamp = Date.now()
     const newUser = {

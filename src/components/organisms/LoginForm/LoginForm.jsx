@@ -1,3 +1,4 @@
+// @ts-check
 // Importa hooks y componentes necesarios para el formulario de login.
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";

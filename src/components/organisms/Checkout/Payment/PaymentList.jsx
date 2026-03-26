@@ -1,3 +1,4 @@
+// @ts-check
 // Importa el componente Button reutilizable.
 import Button from "../../../atoms/Button";
 // Importa el componente PaymentItem para mostrar cada método de pago.

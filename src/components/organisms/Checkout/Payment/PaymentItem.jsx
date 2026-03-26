@@ -1,3 +1,4 @@
+// @ts-check
 // Importa el componente Button reutilizable.
 import Button from "../../../atoms/Button";
 // Importa los estilos CSS para el ítem de pago.

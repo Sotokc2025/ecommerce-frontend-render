@@ -1,3 +1,4 @@
+// @ts-check
 
 // Claves utilizadas para guardar datos en localStorage
 export const STORAGE_KEYS = {

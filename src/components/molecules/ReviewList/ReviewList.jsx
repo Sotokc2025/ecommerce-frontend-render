@@ -1,3 +1,4 @@
+// @ts-check
 import { useEffect, useState } from "react";
 import StarRating from "../../atoms/StarRating/StarRating";
 import ErrorMessage from "../../atoms/ErrorMessage/ErrorMessage";

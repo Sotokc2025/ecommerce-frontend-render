@@ -1,3 +1,4 @@
+// @ts-check
 
 // Importa Navigate para redirección y funciones de autenticación
 import { Navigate } from "react-router-dom";
@@ -6,10 +7,16 @@ import { useAuth } from "../../../context/AuthContext";
 import "./ProtectedRoute.css";
 
 // Componente ProtectedRoute para proteger rutas según autenticación y roles
+/**
+ * @param {object} props
+ * @param {React.ReactNode} props.children
+ * @param {string} [props.redirectTo]
+ * @param {string[] | null} [props.allowedRoles]
+ */
 export default function ProtectedRoute({
-  children, // Componentes hijos a renderizar si pasa la validación
-  redirectTo = "/login", // Ruta a la que se redirige si no está autenticado
-  allowedRoles, // Roles permitidos para acceder a la ruta
+  children,
+  redirectTo = "/login",
+  allowedRoles = null,
 }) {
   const { user, isAuthenticated, isLoading } = useAuth();
 

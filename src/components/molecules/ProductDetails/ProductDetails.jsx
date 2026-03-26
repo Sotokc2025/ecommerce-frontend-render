@@ -1,3 +1,4 @@
+// @ts-check
 // Importa hooks y componentes necesarios para mostrar el detalle de producto.
 import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";

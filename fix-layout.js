@@ -1,3 +1,4 @@
+// @ts-check
 const fs = require('fs');
 
 const jsxPath = 'c:\\\\Users\\\\alexa\\\\Documents\\\\segunda copia ecommerce con pruebas unitarias\\\\segunda-copia-ecommerce-con-pruebas-unitarias\\\\copia-ecommerce-con-pruebas-parte-2\\\\frontend\\\\src\\\\components\\\\molecules\\\\ProductCard\\\\ProductCard.jsx';

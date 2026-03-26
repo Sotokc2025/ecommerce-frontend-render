@@ -1,3 +1,4 @@
+// @ts-check
 // Importa React y hooks para estado y efectos.
 import React, { useState, useEffect } from "react";
 // Importa PropTypes para validar las props del componente.

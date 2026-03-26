@@ -1,97 +1,48 @@
-import { createContext, useContext, useEffect, useState } from "react";
-import * as authUtils from "../services/auth";
-import { setLogoutCallback } from "../services/http";
+// @ts-check
+import { createContext, useContext } from "react";
+import { useAuthStore } from "../store/useAuthStore";
 
-const AuthContext = createContext();
+/**
+ * @typedef {import('../store/useAuthStore').AuthState} AuthState
+ */
 
+/**
+ * AuthContext (Proxy para Zustand).
+ * Esta capa de compatibilidad permite migrar a Zustand (Fase 3) 
+ * sin necesidad de refactorizar cada componente individualmente.
+ * 🛡️🚀✨
+ * @type {import('react').Context<AuthState | null>}
+ */
+
+const AuthContext = createContext(/** @type {any} */ (null));
+
+/** @param {{ children: import('react').ReactNode }} props */
 export function AuthProvider({ children }) {
-  const [user, setUser] = useState(null);
-  const [token, setToken] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  // Registrar el callback de logout en el cliente HTTP
-  useEffect(() => {
-    setLogoutCallback(logout);
-  }, []);
-  useEffect(() => {
-    const initializeAuth = () => {
-      const savedToken = localStorage.getItem("authToken");
-      const savedUser = authUtils.getCurrentUser();
-      
-      if (savedToken && savedUser) {
-        setToken(savedToken);
-        setUser(savedUser);
-      }
-      setIsLoading(false);
-    };
-
-    initializeAuth();
-  }, []);
-
-  /**
-   * Maneja el inicio de sesión.
-   * Centraliza la llamada a la API y la actualización del estado.
-   */
-  const login = async (email, password) => {
-    const response = await authUtils.login(email, password);
-    if (response.success) {
-      setUser(response.user);
-      setToken(localStorage.getItem("authToken"));
-    }
-    return response;
-  };
-
-  /**
-   * Maneja el cierre de sesión.
-   * Limpia el estado reactivo y el almacenamiento persistente.
-   */
-  const logout = () => {
-    authUtils.logout();
-    setUser(null);
-    setToken(null);
-  };
-
-  /**
-   * Maneja el registro de usuario.
-   */
-  const register = async (userData) => {
-    return await authUtils.register(userData);
-  };
-
-  /**
-   * Helper: obtiene el ID del usuario resolviendo `_id` o `id` del payload JWT.
-   * Centraliza la normalización para evitar duplicación en toda la app.
-   */
-  const getUserId = () => {
-    if (!user) return null;
-    return user._id || user.id || null;
-  };
-
+  const store = useAuthStore();
+  // Re-exportamos los valores del store como el valor del contexto para compatibilidad
+  /** @type {AuthState} */
   const value = {
-    user,
-    token,
-    isAuthenticated: !!token,
-    isLoading,
-    login,
-    logout,
-    register,
-    getUserId,
+    ...store,
+    login: store.login,
+    logout: store.logout,
+    register: store.register,
+    getUserId: store.getUserId,
   };
-
   return (
     <AuthContext.Provider value={value}>
-      {!isLoading && children}
+      {!store.isLoading && children}
     </AuthContext.Provider>
   );
 }
-
 /**
- * Hook para consumir el contexto de autenticación.
+ * Hook useAuth: Ahora consume del store de Zustand vía Proxy de Contexto.
+ * @returns {AuthState}
  */
 export function useAuth() {
   const context = useContext(AuthContext);
   if (!context) {
-    throw new Error("useAuth debe ser usado dentro de un AuthProvider");
+    // @ts-ignore
+    return useAuthStore();
   }
   return context;
 }

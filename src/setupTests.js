@@ -1,3 +1,4 @@
+// @ts-check
 // jest-dom agrega matchers personalizados para Jest, permitiendo hacer aserciones sobre nodos del DOM.
 // Ejemplo: expect(element).toHaveTextContent(/react/i)
 // Más información: https://github.com/testing-library/jest-dom

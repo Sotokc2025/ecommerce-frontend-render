@@ -1,3 +1,4 @@
+// @ts-check
 
 // Esta función permite medir métricas de rendimiento en la app React.
 // Recibe una función (onPerfEntry) que se ejecuta con los resultados de las métricas.

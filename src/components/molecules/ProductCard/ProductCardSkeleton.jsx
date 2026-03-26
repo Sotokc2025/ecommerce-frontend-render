@@ -1,22 +1,33 @@
+// @ts-check
 import React from "react";
 import Skeleton from "../../atoms/Skeleton/Skeleton";
 import "./ProductCardSkeleton.css";
 
+/**
+ * Skeleton para la tarjeta de producto.
+ * Mantiene el layout para evitar saltos visuales durante la carga.
+ * 🛡️🦴✨
+ */
 const ProductCardSkeleton = ({ orientation = "vertical" }) => {
-    return (
-        <div className={`product-card-skeleton product-card-skeleton--${orientation}`}>
-            <Skeleton variant="rect" className="skeleton-image" />
-            <div className="skeleton-content">
-                <Skeleton variant="text" width="80%" height="24px" className="skeleton-title" />
-                <Skeleton variant="text" width="60%" height="16px" className="skeleton-description" />
-                <Skeleton variant="text" width="40%" height="20px" className="skeleton-price" />
-                <div className="skeleton-actions">
-                    <Skeleton variant="rect" width="60px" height="28px" className="skeleton-badge" />
-                    <Skeleton variant="rect" width="100px" height="36px" className="skeleton-button" />
-                </div>
-            </div>
+  const isHorizontal = orientation === "horizontal";
+
+  return (
+    <div className={`product-card-skeleton product-card-skeleton--${orientation}`}>
+      <div className="product-card-skeleton__image">
+        <Skeleton variant="rect" height={isHorizontal ? "100%" : "200px"} />
+      </div>
+      
+      <div className="product-card-skeleton__content">
+        <Skeleton variant="text" width="40%" className="category-skeleton" />
+        <Skeleton variant="text" width="85%" height="24px" className="title-skeleton" />
+        
+        <div className="product-card-skeleton__footer">
+          <Skeleton variant="text" width="30%" height="28px" />
+          <Skeleton variant="rect" width="100px" height="36px" />
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default ProductCardSkeleton;

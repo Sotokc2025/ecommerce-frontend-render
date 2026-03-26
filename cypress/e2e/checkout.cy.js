@@ -1,3 +1,4 @@
+// @ts-check
 describe('Checkout Flow - Happy Path', () => {
     beforeEach(() => {
         // Limpiar localStorage y cookies antes de cada test

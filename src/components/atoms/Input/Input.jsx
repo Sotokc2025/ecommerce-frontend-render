@@ -1,3 +1,4 @@
+// @ts-check
 // Importa los estilos CSS para el input.
 import "./Input.css";
 

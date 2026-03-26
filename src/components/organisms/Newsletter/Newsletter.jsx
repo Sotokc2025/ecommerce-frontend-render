@@ -1,3 +1,4 @@
+// @ts-check
 
 // Importa React y el hook useState para manejar el estado del email.
 import React, { useState } from "react";

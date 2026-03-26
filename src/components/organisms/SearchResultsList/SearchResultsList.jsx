@@ -1,3 +1,4 @@
+// @ts-check
 
 // Importa hooks de React y componentes necesarios para la búsqueda y visualización de productos.
 import { useEffect, useMemo, useState } from "react";

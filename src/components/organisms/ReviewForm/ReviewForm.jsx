@@ -1,3 +1,4 @@
+// @ts-check
 import { useState } from "react";
 import { useAuth } from "../../../context/AuthContext";
 import Button from "../../atoms/Button";

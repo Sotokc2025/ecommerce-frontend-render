@@ -1,3 +1,4 @@
+// @ts-check
 import React, { useEffect } from "react";
 import "./Modal.css";
 import Icon from "../Icon/Icon";
